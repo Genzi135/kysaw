@@ -38,7 +38,7 @@ const Slider = () => {
             <button className="arrow-button left" onClick={handlePrevClick}><BsChevronLeft /></button>
             <div className="slider-wrapper mt-10 flex" style={{ transform: `translateX(-${indexImage * 100}%)` }}>
                 {listImage.map((image, index) => (
-                    <Image key={index} src={image.path} alt={image.label} className="slider-image" layout="responsive" loading='lazy' />
+                    <Image key={index} src={image.path} alt={image.label} className="slider-image " layout="responsive" loading='lazy' />
                 ))}
             </div>
             <button className="arrow-button right" onClick={handleNextClick}><BsChevronRight /></button>
