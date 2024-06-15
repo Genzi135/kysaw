@@ -9,7 +9,7 @@ import GeneBenefitCard from "@/components/GeneBenefitCard";
 import LogoBackgroundImage from '../../assets/Logo/KYSAW_LOGO_FINAL_WHITE_COLOR.png';
 import LogoBackgroundMain from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png';
 import JH from '../../assets/Partners/JH.jpg';
-import GS from '../../assets/Partners/Gene-Solutions-logo.png';
+import GS from '../../assets/Partners/GS.png';
 import { COLOR } from "@/utils/COLORS";
 import ProductCard from "@/components/ProductCard";
 import ReasonCard from "@/components/ReasonCard";
