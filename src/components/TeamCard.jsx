@@ -11,13 +11,13 @@ export default function TeamCard({ props }) {
                 <label className="text-lg font-semibold">{props.name}</label>
             </div>
             <div className="flex justify-center items-center">
-                <label className="text-base">{props.position}</label>
+                <label className="text-base text-center">{props.position}</label>
             </div>
             <div className="flex justify-center items-center">
-                <label className="text-sm">{props.major}</label>
+                <label className="text-sm text-center">{props.major}</label>
             </div>
             <div className="flex justify-center items-center">
-                <label className="text-sm">{props.description}</label>
+                <label className="text-sm text-center">{props.description}</label>
             </div>
         </div>
     )
