@@ -7,13 +7,14 @@ import GenePremium from '../../assets/Products/Gencare Premium.jpg';
 import YamuGene from '../../assets/Products/Yamugene.jpg';
 import GeneBenefitCard from "@/components/GeneBenefitCard";
 import LogoBackgroundImage from '../../assets/Logo/KYSAW_LOGO_FINAL_WHITE_COLOR.png';
-import LogoBackgroundMain from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png';
 import JH from '../../assets/Partners/JH.jpg';
 import GS from '../../assets/Partners/GS.png';
 import { COLOR } from "@/utils/COLORS";
 import ProductCard from "@/components/ProductCard";
-import ReasonCard from "@/components/ReasonCard";
-import TeamCard from "@/components/TeamCard";
+import nuocbot from '../../assets/reason/nuocbot.jpg';
+import congnghe from '../../assets/reason/congnghe.jpg';
+import tuvan from '../../assets/reason/tuvan.jpg';
+import family from '../../assets/Slider/Family 1 copy.jpg';
 
 export default function Home() {
 
@@ -75,21 +76,6 @@ export default function Home() {
     },
   ]
 
-  const reasonChoose = [
-    {
-      image: '',
-      title: 'reason 1',
-    }, {
-      image: '',
-      title: 'reason 2',
-    }, {
-      image: '',
-      title: 'reason 3',
-    }, {
-      image: '',
-      title: 'reason 4',
-    },
-  ]
 
   const teamFounder = [
     {
@@ -131,37 +117,32 @@ export default function Home() {
       name: 'IPHA',
       position: 'HUẤN LUYỆN VIÊN TINH THẦN',
       major: 'Reiki, Chuông xoay, Thiền, Yoga',
-      description: 'Thiết kế liệu trình giúp cân bằng tâm lý trong các trường hợp căng thẳng lo âu quá mứcá'
+      description: 'Thiết kế liệu trình giúp cân bằng tâm lý trong các trường hợp căng thẳng lo âu quá mức'
     },
   ]
 
   return (
     <main className="mt-14">
-      <div style={{ backgroundColor: COLOR.backgroundPrimary, }} className="flex justify-around items-center relative w-full h-auto p-5 md:p-20 gap-5 flex-wrap md:flex-nowrap">
-        <div className="flex flex-col justify-center items-start gap-5">
-          <label className="text-teal-400 text-3xl md:text-6xl font-semibold mt-10">KYSAW</label>
-          <label className="text-white text-xl md:text-2xl flex flex-wrap gap-2">
-            <label>{`"Beats your bad genes, `} </label>
-            <label>{`keep yourself save and well"`}</label>
-          </label>
-          <label className="text-white text-sm">KYSAW là cánh tay nối dài của các công ty xét nghiệm gene di truyền, đem các sản phẩm có tính thiết thực đối với sức khỏe lan tỏa đến người tiêu dùng.</label>
-        </div>
-        <Image src={LogoBackgroundImage} alt="logoBackground" height={500} className="opacity-5 absolute mt-20 -z-0" layout="responsive" />
-        <Image src={LogoBackgroundMain} alt="logoBackground" height={200} className="" />
+      <div className="flex justify-center items-center">
+        <Image src={family} alt="banner" width={'auto'} height={'auto'} layout="responsive" />
       </div>
-      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-white" style={{}}>
-        <label className="text-black text-xl md:text-3xl font-semibold">Lợi ích của việc giải mã gen</label>
-        <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10">
-          {geneBenefit.map((e, index) => {
-            return (
-              <GeneBenefitCard key={index} props={e} />
-            )
-          })}
+
+      <div className="flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-white max-w-[1220px]" style={{}}>
+          <label className="text-black text-xl md:text-3xl font-manropeBold ">Lợi ích của việc giải mã gen</label>
+          <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10">
+            {geneBenefit.map((e, index) => {
+              return (
+                <GeneBenefitCard key={index} props={e} />
+              )
+            })}
+          </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10" style={{ backgroundColor: COLOR.backgroundPrimary10 }}>
-        <label className="text-black text-xl md:text-3xl font-semibold">Sản phẩm gen từ chúng tôi</label>
-        <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10">
+
+      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50">
+        <label className="text-black text-xl md:text-3xl font-manropeBold">Sản phẩm gen từ chúng tôi</label>
+        <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10 max-w-[1220px]">
           {products.map((e, index) => {
             return (
               <ProductCard data={e} key={index} />
@@ -174,64 +155,74 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10" style={{ backgroundColor: COLOR.backgroundPrimary10 }}>
-        <lable className="text-black text-xl md:text-3xl font-semibold">Tại sao nên chọn KYSAW</lable>
-        <div className="flex flex-wrap justify-center items-center gap-5">
-          {reasonChoose.map((e, index) => {
-            return (
-              <ReasonCard props={e} key={index} />
-            )
-          })}
+
+      <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5 " >
+        <lable className="text-black text-xl md:text-3xl font-manropeBold p-2">Tại sao nên chọn KYSAW</lable>
+        <div className="flex flex-col justify-center items-center pl-10 pb-10 pr-10 max-w-[1220px] gap-2 xl:gap-5">
+          <div className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md">
+            <Image
+              src={nuocbot}
+              alt="reason1"
+              className="rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl w-[100%] sm:w-[55%]"
+            />
+            <div className="text-base lg:p-5 lg:text-lg p-2 flex flex-col gap-2 w-full sm:w-[44%]">
+              <label className="font-manropeBold">
+                <div className="flex justify-center sm:justify-start items-center">Lấy mẫu bằng nước bọt</div>
+              </label>
+              <label className="flex justify-center items-center">
+                Phương pháp an toàn, không đau và dễ thực hiện, cho phép khách hàng tự lấy mẫu tại nhà một cách tiện lợi.
+              </label>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row-reverse justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
+            <Image
+              src={congnghe}
+              alt="reason2"
+              className="rounded-t-xl sm:rounded-tl-none sm:rounded-r-xl w-[100%] sm:w-[55%]"
+            />
+            <div className="text-base lg:p-5 lg:text-lg p-2 flex flex-col gap-2 w-full sm:w-[44%]">
+              <label className="font-manropeBold">
+                <div className="flex justify-center sm:justify-start items-center">Công nghệ giải mã gen hiện đại,</div>
+                <div className="flex justify-center sm:justify-start items-center">độ chính xác cao</div>
+              </label>
+              <label className="flex justify-center items-center">
+                Sử dụng công nghệ tiên tiến nhất để đảm bảo kết quả phân tích gen có độ tin cậy cao và mang lại giá trị ý nghĩa cho người dùng.
+              </label>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
+            <Image
+              src={tuvan}
+              alt="reason3"
+              className="rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl w-[100%] sm:w-[55%]"
+            />
+            <div className="text-base lg:p-5 lg:text-lg p-2 flex flex-col gap-2 w-full sm:w-[44%]">
+              <label className="font-manropeBold">
+                <div className="flex justify-center sm:justify-start items-center">Đội ngũ hỗ trợ chuyên nghiệp,</div>
+                <div className="flex justify-center sm:justify-start items-center">đồng hành lâu dài</div>
+              </label>
+              <label className="flex justify-center items-center">
+                Chúng tôi tự hào về đội ngũ chuyên gia tận tâm, luôn sẵn sàng hỗ trợ và đồng hành cùng khách hàng trong suốt quá trình sử dụng dịch vụ.
+              </label>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="flex justify-center items-center p-5 md:p-10 bg-white">
-        <div className="flex flex-col justify-center items-start p-5 md:p-10 rounded-lg text-white" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-          <p className="md:text-xl text-sm">
-            <label className="font-semibold">KYSAW</label> là đơn vị tiên phong đem lại giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong quá trình điều trị y tế.
-          </p>
-          <p className="md:text-xl text-sm">
-            KYSAW là cánh tay nối dài của các công ty xét nghiệm gene di truyền, đem các sản phẩm có tính
-            thiết thực đối với sức khỏe lan tỏa đến người tiêu dùng.
-            Chúng tôi hiểu rằng, giá trị từ thông tin di truyền là vô cùng to lớn. Biết được thông tin di truyền
-            của bản thân và những người thân trong gia đình sẽ là lợi thế tuyệt vời để có thể thiết kế một
-            cuộc sống khỏe mạnh hơn, ít bệnh tật hơn, đạt được nhiều thành tựu hơn, kéo dài tuổi thọ và
-            nâng cao chất lượng cuộc sống hiệu quả.
-          </p>
-          <p className="md:text-xl text-sm">
-            Thông tin di truyền giúp chúng ta định hướng được những biến cố sức khỏe có thể xảy ra trong
-            tương lai, từ đó ta có nhiều thời gian để lên kế hoạch ứng phó với những nguy cơ và đẩy lùi bệnh
-            tật ngay từ thời điểm hiện tại, đồng thời chuẩn xác sàng lọc phát hiện các bệnh lý nguy hiểm từ
-            giai đoạn rất sớm để vượt qua cách dễ dàng.
-          </p>
-          <p className="md:text-xl text-sm">
-            KYSAW hân hạnh phân phối độc quyền sản phẩm Yamugene từ công ty JH Bioholdings và dòng
-            sản phẩm GenLove từ công ty Gene Solutions - Việt Nam.
-          </p>
-          <label className="font-semibold md:text-xl text-base">Beat your bad genes, keep you safe and well! - KYSAW</label>
+
+      <div className="flex justify-center items-center" style={{ backgroundColor: COLOR.backgroundPrimary }}>
+        <div className="flex flex-col justify-center items-center p-5 md:p-5  rounded-lg text-white max-w-[1220px]">
+          <Image src={LogoBackgroundImage} alt="logo" width={'auto'} className="w-[800px]" />
+          <div className="flex justify-center items-center">
+            <div className="md:text-xl  text-sm xl:p-2 p-6">
+              <label className="font-manropeBold">KYSAW</label> là đơn vị tiên phong đem lại giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong quá trình điều trị y tế.
+            </div>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-        <label className="text-white text-xl md:text-3xl font-semibold">Đội ngũ của chúng tôi</label>
-        <label className="text-white text-lg md:text-2xl font-semibold">Founder & co-founders</label>
-        <div className="flex flex-wrap justify-center items-center gap-10">
-          {teamFounder.map((e, index) => {
-            return (
-              <TeamCard props={e} key={index} />
-            )
-          })}
-        </div>
-        <label className="text-white text-lg md:text-2xl font-semibold">Hệ sinh thái mở rộng</label>
-        <div className="flex flex-wrap justify-center items-center gap-10 ">
-          {teamOpen.map((e, index) => {
-            return (
-              <TeamCard props={e} key={index} />
-            )
-          })}
-        </div>
-      </div>
-      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5">
-        <label className="text-black text-xl md:text-3xl font-semibold">Đối tác của chúng tôi</label>
-        <div className="flex justify-center items-center gap-5 md:gap-10">
+
+      <div className="flex flex-col justify-center items-center p-5 md:p-10">
+        <label className="text-black text-xl md:text-3xl font-manropeBold">Đối tác của chúng tôi</label>
+        <div className="flex justify-center items-center gap-5 md:gap-10 max-w-[1220px]">
           <div className="flex justify-center items-center bg-white">
             <Image src={JH} alt="logo" width={200} height={200} />
           </div>

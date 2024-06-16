@@ -54,59 +54,63 @@ export default function About() {
         <div className="mt-20">
             <div className="flex justify-center items-center p-40 bg-gray-100">
             </div>
-            <div className="flex flex-col justify-center items-center p-5 md:p-10">
-                <label className="font-semibold text-2xl md:text-4xl pb-5">
-                    Giới thiệu
-                </label>
-                <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-nowrap flex-wrap" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-                    <div className="text-white">
-                        <p className="text-lg">
-                            <label className="font-semibold">KYSAW</label> là đơn vị tiên phong đem lại  giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong  quá trình điều trị y tế.
-                        </p>
+            <div className="flex justify-center items-center">
+                <div className="flex flex-col justify-center items-center p-5 md:p-10 max-w-[1220px]">
+                    <label className="font-semibold text-2xl md:text-4xl pb-5">
+                        Giới thiệu
+                    </label>
+                    <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-nowrap flex-wrap" style={{ backgroundColor: COLOR.backgroundPrimary }}>
+                        <div className="text-white">
+                            <p className="text-lg">
+                                <label className="font-semibold">KYSAW</label> là đơn vị tiên phong đem lại  giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong  quá trình điều trị y tế.
+                            </p>
+                        </div>
+                        <Image src={KYSAW} alt="kysaw" width={500} height={500} />
                     </div>
-                    <Image src={KYSAW} alt="kysaw" width={500} height={500} />
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center p-5 md:p-10">
-                <label className="font-semibold text-2xl md:text-4xl pb-5">Tầm nhìn & sứ mệnh</label>
-                <div className="flex flex-col justify-center items-center md:gap-10 gap-5">
-                    <div className="flex justify-center items-start flex-col md:flex-row">
-                        <div className="md:w-[20%] flex justify-center items-center w-[100%]">
-                            <label className="font-semibold text-xl text-teal-500 md:text-2xl">Tầm nhìn</label>
+            <div className="flex justify-center items-center">
+                <div className="flex flex-col justify-center items-center p-5 md:p-10 max-w-[1220px]">
+                    <label className="font-semibold text-2xl md:text-4xl pb-5">Tầm nhìn & sứ mệnh</label>
+                    <div className="flex flex-col justify-center items-center md:gap-10 gap-5">
+                        <div className="flex justify-center items-start flex-col md:flex-row">
+                            <div className="md:w-[20%] flex justify-center items-center w-[100%]">
+                                <label className="font-semibold text-xl text-teal-500 md:text-2xl">Tầm nhìn</label>
+                            </div>
+                            <div className="md:w-[60%] w-[100%] border-2 border-teal-500 p-5 rounded-lg">KYSAW tiên phong đi sâu vào cộng đồng, lan tỏa giá trị thông tin di truyền, từ đó giúp
+                                định hướng sàng lọc nhằm chẩn đoán sớm bệnh ung thư và các bệnh lý mãn tính nguy
+                                hiểm khác, đem lại cơ hội điều trị thành công và cải thiện chất lượng cuộc sống cho
+                                người Việt.</div>
                         </div>
-                        <div className="md:w-[60%] w-[100%] border-2 border-teal-500 p-5 rounded-lg">KYSAW tiên phong đi sâu vào cộng đồng, lan tỏa giá trị thông tin di truyền, từ đó giúp
-                            định hướng sàng lọc nhằm chẩn đoán sớm bệnh ung thư và các bệnh lý mãn tính nguy
-                            hiểm khác, đem lại cơ hội điều trị thành công và cải thiện chất lượng cuộc sống cho
-                            người Việt.</div>
+                        <div className="flex justify-center items-start flex-col-reverse md:flex-row">
+                            <div className="md:w-[60%] w-[100%] border-2 border-teal-500 p-5 rounded-lg">
+                                Giúp người Việt chăm sóc sức khỏe hiệu quả hơn qua việc kết nối khoa học công nghệ gene với các giải pháp chủ động khác.
+                                <br></br>
+                                Nỗ lực giáo dục cộng đồng và kết hợp với các đơn vị y khoa nhằm nâng cao tỷ lệ chẩn đoán ung thư giai đoạn sớm, từ tiền ung thư đến giai đoạn 1, nhờ bản  đồ giải mã đột biến gene định hướng tầm soát sâu và trúng đích, từ đó bảo vệ khách hàng sống khỏe dài lâu.
+                            </div>
+                            <div className="md:w-[20%] flex justify-center items-center w-[100%]">
+                                <label className="font-semibold text-xl text-teal-500 md:text-2xl">Sứ mệnh</label>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex justify-center items-start flex-col-reverse md:flex-row">
-                        <div className="md:w-[60%] w-[100%] border-2 border-teal-500 p-5 rounded-lg">
-                            Giúp người Việt chăm sóc sức khỏe hiệu quả hơn qua việc kết nối khoa học công nghệ gene với các giải pháp chủ động khác.
-                            <br></br>
-                            Nỗ lực giáo dục cộng đồng và kết hợp với các đơn vị y khoa nhằm nâng cao tỷ lệ chẩn đoán ung thư giai đoạn sớm, từ tiền ung thư đến giai đoạn 1, nhờ bản  đồ giải mã đột biến gene định hướng tầm soát sâu và trúng đích, từ đó bảo vệ khách hàng sống khỏe dài lâu.
-                        </div>
-                        <div className="md:w-[20%] flex justify-center items-center w-[100%]">
-                            <label className="font-semibold text-xl text-teal-500 md:text-2xl">Sứ mệnh</label>
-                        </div>
-                    </div>
-                </div>
 
-                <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg  :flex-nowrap" style={{ backgroundColor: COLOR.backgroundPrimary10 }}>
-                    <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
-                        <label className="font-medium text-lg text-teal-600">
-                            Đặt sức khỏe người Việt làm trọng tâm
-                        </label>
-                        <label className="font-medium text-lg text-teal-600">
-                            Sản phẩm phải tốt nhất
-                        </label>
-                    </div>
-                    <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
-                        <label className="font-medium text-lg text-teal-600">
-                            Trung thực và đạo đức
-                        </label>
-                        <label className="font-medium text-lg text-teal-600">
-                            Giá trị và toàn diện
-                        </label>
+                    <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap" style={{ backgroundColor: COLOR.backgroundPrimary10 }}>
+                        <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
+                            <label className="font-medium text-lg text-teal-600">
+                                Đặt sức khỏe người Việt làm trọng tâm
+                            </label>
+                            <label className="font-medium text-lg text-teal-600">
+                                Sản phẩm phải tốt nhất
+                            </label>
+                        </div>
+                        <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
+                            <label className="font-medium text-lg text-teal-600">
+                                Trung thực và đạo đức
+                            </label>
+                            <label className="font-medium text-lg text-teal-600">
+                                Giá trị và toàn diện
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>

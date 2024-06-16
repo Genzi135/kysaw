@@ -97,7 +97,7 @@ const Navbar = () => {
                                 </Link>
                             )
                         })}
-                        <button className='btn text-white mt-4' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
+                        <button className='btn text-white mt-4 transition-transform ease-linear hover:scale-125' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
                     </div>
                 </div>
             </div>

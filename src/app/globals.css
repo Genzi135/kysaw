@@ -31,3 +31,35 @@ body {
     text-wrap: balance;
   }
 } */
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../public//fonts/static/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope-bold';
+  src: url('../../public//fonts/static/Manrope-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-medium';
+  src: url('../../public//fonts/font-poppins/Poppins-Medium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url('../../public//fonts/font-poppins/Poppins-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Manrope', 'Manrope-bold', 'Poppins-medium', 'Poppins-bold';
+}

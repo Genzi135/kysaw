@@ -50,6 +50,7 @@ const Slider = () => {
                     display: flex;
                     overflow: hidden;
                     font-size: 20px;
+                    min-width:100%;
                 }
                 .slider-wrapper {
                     display: flex;

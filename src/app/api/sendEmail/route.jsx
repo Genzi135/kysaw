@@ -1,12 +1,11 @@
 import nodemailer from 'nodemailer';
 
-export default async function handler(req, res) {
+export async function POST(req, res) {
     if (req.method === 'POST') {
         const { name, email, message } = req.body;
 
-        // Cấu hình transporter của Nodemailer
         let transporter = nodemailer.createTransport({
-            host: "smtp.example.com", // Sử dụng SMTP của nhà cung cấp email của bạn
+            host: "smtp.gmail.com", // Sử dụng SMTP của Gmail
             port: 587,
             secure: false, // true cho port 465, false cho các port khác
             auth: {
@@ -18,8 +17,8 @@ export default async function handler(req, res) {
         try {
             // Gửi email
             let info = await transporter.sendMail({
-                from: '"Website Contact Form" <noreply@example.com>', // Địa chỉ người gửi
-                to: "your-email@example.com", // Địa chỉ người nhận
+                from: '"Website Contact Form" genzi13052002@example.com>', // Địa chỉ người gửi
+                to: "phu13052002@gmail.com", // Địa chỉ người nhận
                 subject: "New Contact Form Submission",
                 text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
             });
@@ -27,10 +26,12 @@ export default async function handler(req, res) {
             console.log("Message sent: %s", info.messageId);
             res.status(200).json({ success: true });
         } catch (error) {
+            console.log(req);
             console.error("Error sending email:", error);
             res.status(500).json({ success: false });
         }
     } else {
+        console.log(req);
         res.status(405).json({ message: 'Method not allowed' });
     }
 }

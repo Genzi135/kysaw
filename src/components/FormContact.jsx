@@ -16,11 +16,11 @@ export default function FormContact({ setIsFormOpen }) {
                         </label>
                         <div className="flex justify-start items-center gap-2">
                             <BiSolidPhoneCall size={30} className="rounded-full p-1 border-[2px] border-teal-300 text-teal-300" />
-                            <div className="text-teal-300">(+84) 977 565 645</div>
+                            <div className="text-teal-300">(+84) 345 972 986</div>
                         </div>
                         <div className="flex justify-start items-center gap-2">
                             <BiLogoGmail size={30} className="rounded-full p-1 border-[2px] border-teal-300 text-teal-300" />
-                            <div className="text-teal-300">kysawgenetic@gmail.com</div>
+                            <div className="text-teal-300">info@kysaw.vn</div>
                         </div>
                     </div>
                     <form className="space-y-4 pb-5 w-full md:w-96">
