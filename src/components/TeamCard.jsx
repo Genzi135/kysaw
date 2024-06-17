@@ -8,7 +8,7 @@ export default function TeamCard({ props }) {
 
             </div>
             <div className="flex justify-center items-center">
-                <label className="text-lg font-semibold">{props.name}</label>
+                <label className="text-lg font-manropeBold">{props.name}</label>
             </div>
             <div className="flex justify-center items-center">
                 <label className="text-base text-center">{props.position}</label>

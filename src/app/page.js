@@ -15,6 +15,7 @@ import nuocbot from '../../assets/reason/nuocbot.jpg';
 import congnghe from '../../assets/reason/congnghe.jpg';
 import tuvan from '../../assets/reason/tuvan.jpg';
 import family from '../../assets/Slider/Family 1 copy.jpg';
+import HomepageBanner from '../../assets/Slider/HomepageBanner.png'
 
 export default function Home() {
 
@@ -122,20 +123,25 @@ export default function Home() {
   ]
 
   return (
-    <main className="mt-14">
-      <div className="flex justify-center items-center">
-        <Image src={family} alt="banner" width={'auto'} height={'auto'} layout="responsive" />
+    <main className="mt-[70px]">
+      <div
+        className="flex justify-center items-center"
+        style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},${COLOR.backgroundSecondary})` }}
+      >
+        <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" />
       </div>
 
-      <div className="flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-white max-w-[1220px]" style={{}}>
-          <label className="text-black text-xl md:text-3xl font-manropeBold ">Lợi ích của việc giải mã gen</label>
-          <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10">
-            {geneBenefit.map((e, index) => {
-              return (
-                <GeneBenefitCard key={index} props={e} />
-              )
-            })}
+      <div className="flex justify-center items-center w-full">
+        <div className="flex flex-col justify-center items-center p-5 gap-5 bg-white max-w-[1220px] w-full">
+          <label className="text-black text-xl md:text-3xl font-manropeBold">Lợi ích của việc giải mã gen</label>
+          <div className="w-full overflow-hidden flex justify-start md:justify-center items-center">
+            <div className="flex md:pl-5 md:pr-5 overflow-x-auto scrollbar-hide w-full md:w-auto md:p-10">
+              <div className="flex flex-nowrap gap-5 md:gap-10 pb-5 p-5">
+                {geneBenefit.map((e, index) => (
+                  <GeneBenefitCard key={index} props={e} />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -213,7 +219,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center p-5 md:p-5  rounded-lg text-white max-w-[1220px]">
           <Image src={LogoBackgroundImage} alt="logo" width={'auto'} className="w-[800px]" />
           <div className="flex justify-center items-center">
-            <div className="md:text-xl  text-sm xl:p-2 p-6">
+            <div className="md:text-xl text-sm xl:p-2 p-6">
               <label className="font-manropeBold">KYSAW</label> là đơn vị tiên phong đem lại giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong quá trình điều trị y tế.
             </div>
           </div>

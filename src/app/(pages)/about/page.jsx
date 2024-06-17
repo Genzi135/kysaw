@@ -4,6 +4,7 @@ import JH from '../../../../assets/Partners/JH.jpg'
 import GS from '../../../../assets/Partners/GS.png'
 import { COLOR } from "@/utils/COLORS";
 import TeamCard from "@/components/TeamCard";
+import HomepageBanner from '../../../../assets/Slider/HomepageBanner.png'
 
 export default function About() {
     const teamFounder = [
@@ -51,11 +52,15 @@ export default function About() {
     ]
 
     return (
-        <div className="mt-20">
-            <div className="flex justify-center items-center p-40 bg-gray-100">
+        <div className="mt-[70px]">
+            <div
+                className="flex justify-center items-center"
+                style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},#15BEF2)` }}
+            >
+                <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
             </div>
             <div className="flex justify-center items-center">
-                <div className="flex flex-col justify-center items-center p-5 md:p-10 max-w-[1220px]">
+                <div className="flex flex-col justify-center items-center p-5 md:pl-10 md:pr-10 max-w-[1220px]">
                     <label className="font-semibold text-2xl md:text-4xl pb-5">
                         Giới thiệu
                     </label>
@@ -70,44 +75,44 @@ export default function About() {
                 </div>
             </div>
             <div className="flex justify-center items-center">
-                <div className="flex flex-col justify-center items-center p-5 md:p-10 max-w-[1220px]">
+                <div className="flex flex-col justify-center items-center p-5 md:pl-10 md:pr-10 max-w-[1220px]">
                     <label className="font-semibold text-2xl md:text-4xl pb-5">Tầm nhìn & sứ mệnh</label>
                     <div className="flex flex-col justify-center items-center md:gap-10 gap-5">
-                        <div className="flex justify-center items-start flex-col md:flex-row">
+                        <div className="flex justify-center items-center flex-col md:flex-row">
                             <div className="md:w-[20%] flex justify-center items-center w-[100%]">
-                                <label className="font-semibold text-xl text-teal-500 md:text-2xl">Tầm nhìn</label>
+                                <label className="font-semibold text-xl  md:text-2xl">Tầm nhìn</label>
                             </div>
-                            <div className="md:w-[60%] w-[100%] border-2 border-teal-500 p-5 rounded-lg">KYSAW tiên phong đi sâu vào cộng đồng, lan tỏa giá trị thông tin di truyền, từ đó giúp
+                            <div className="md:w-[60%] w-[100%] border-2  p-5 rounded-lg">KYSAW tiên phong đi sâu vào cộng đồng, lan tỏa giá trị thông tin di truyền, từ đó giúp
                                 định hướng sàng lọc nhằm chẩn đoán sớm bệnh ung thư và các bệnh lý mãn tính nguy
                                 hiểm khác, đem lại cơ hội điều trị thành công và cải thiện chất lượng cuộc sống cho
                                 người Việt.</div>
                         </div>
-                        <div className="flex justify-center items-start flex-col-reverse md:flex-row">
-                            <div className="md:w-[60%] w-[100%] border-2 border-teal-500 p-5 rounded-lg">
+                        <div className="flex justify-center items-center flex-col-reverse md:flex-row">
+                            <div className="md:w-[60%] w-[100%] border-2 p-5 rounded-lg">
                                 Giúp người Việt chăm sóc sức khỏe hiệu quả hơn qua việc kết nối khoa học công nghệ gene với các giải pháp chủ động khác.
                                 <br></br>
                                 Nỗ lực giáo dục cộng đồng và kết hợp với các đơn vị y khoa nhằm nâng cao tỷ lệ chẩn đoán ung thư giai đoạn sớm, từ tiền ung thư đến giai đoạn 1, nhờ bản  đồ giải mã đột biến gene định hướng tầm soát sâu và trúng đích, từ đó bảo vệ khách hàng sống khỏe dài lâu.
                             </div>
                             <div className="md:w-[20%] flex justify-center items-center w-[100%]">
-                                <label className="font-semibold text-xl text-teal-500 md:text-2xl">Sứ mệnh</label>
+                                <label className="font-manropeBold text-xl  md:text-2xl">Sứ mệnh</label>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap" style={{ backgroundColor: COLOR.backgroundPrimary10 }}>
+                    <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap bg-blue-50 text-center   " >
                         <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
-                            <label className="font-medium text-lg text-teal-600">
+                            <label className="font-manropeBold text-lg ">
                                 Đặt sức khỏe người Việt làm trọng tâm
                             </label>
-                            <label className="font-medium text-lg text-teal-600">
+                            <label className="font-manropeBold text-lg">
                                 Sản phẩm phải tốt nhất
                             </label>
                         </div>
                         <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
-                            <label className="font-medium text-lg text-teal-600">
+                            <label className="font-manropeBold text-lg">
                                 Trung thực và đạo đức
                             </label>
-                            <label className="font-medium text-lg text-teal-600">
+                            <label className="font-manropeBold text-lg">
                                 Giá trị và toàn diện
                             </label>
                         </div>
@@ -115,8 +120,8 @@ export default function About() {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-                <label className="text-white text-xl md:text-3xl font-semibold">Đội ngũ của chúng tôi</label>
-                <label className="text-white text-lg md:text-2xl font-semibold">Founder & co-founders</label>
+                <label className="text-white text-xl md:text-3xl font-manropeBold">Đội ngũ của chúng tôi</label>
+                <label className="text-white text-lg md:text-2xl font-manropeBold">Founder & co-founders</label>
                 <div className="flex flex-wrap justify-center items-center gap-10">
                     {teamFounder.map((e, index) => {
                         return (
@@ -124,7 +129,7 @@ export default function About() {
                         )
                     })}
                 </div>
-                <label className="text-white text-lg md:text-2xl font-semibold">Hệ sinh thái mở rộng</label>
+                <label className="text-white text-lg md:text-2xl font-manropeBold">Hệ sinh thái mở rộng</label>
                 <div className="flex flex-wrap justify-center items-center gap-10 ">
                     {teamOpen.map((e, index) => {
                         return (
@@ -134,7 +139,7 @@ export default function About() {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5">
-                <label className="text-black text-xl md:text-3xl font-semibold">Đối tác của chúng tôi</label>
+                <label className="text-black text-xl md:text-3xl font-manropeBold">Đối tác của chúng tôi</label>
                 <div className="flex justify-center items-center gap-5 md:gap-10">
                     <div className="flex justify-center items-center bg-white">
                         <Image src={JH} alt="logo" width={200} height={200} />

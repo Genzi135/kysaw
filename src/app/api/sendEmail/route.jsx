@@ -1,37 +1,46 @@
 import nodemailer from 'nodemailer';
 
-export async function POST(req, res) {
+export async function POST(req) {
+    console.log(req.body);
     if (req.method === 'POST') {
         const { name, email, message } = req.body;
 
-        let transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com", // Sử dụng SMTP của Gmail
-            port: 587,
-            secure: false, // true cho port 465, false cho các port khác
-            auth: {
-                user: process.env.EMAIL_USER, // Đặt email người dùng từ biến môi trường
-                pass: process.env.EMAIL_PASS, // Đặt mật khẩu từ biến môi trường
-            },
-        });
+        // Check if all required fields are provided
+        // if (!name || !email || !message) {
+        //     return Response.json({ success: false, message: 'Missing required fields' });
+        // }
 
         try {
-            // Gửi email
-            let info = await transporter.sendMail({
-                from: '"Website Contact Form" genzi13052002@example.com>', // Địa chỉ người gửi
-                to: "phu13052002@gmail.com", // Địa chỉ người nhận
-                subject: "New Contact Form Submission",
-                text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+            // Create a Nodemailer transporter
+            let transporter = nodemailer.createTransport({
+                host: "smtp.gmail.com", // SMTP host of your email provider
+                port: 587,
+                secure: false, // true for 465, false for other ports
+                auth: {
+                    user: process.env.EMAIL_USER, // Your email address
+                    pass: process.env.EMAIL_PASS, // Your email password or app-specific password
+                },
             });
 
+            // Define email options
+            let mailOptions = {
+                from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
+                to: "genzi13052002@gmail.com", // Receiver's email address
+                subject: "New Contact Form Submission",
+                // text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+            };
+
+            // Send email
+            let info = await transporter.sendMail(mailOptions);
+
             console.log("Message sent: %s", info.messageId);
-            res.status(200).json({ success: true });
+            Response.json({ success: true, message: 'Email sent successfully' });
         } catch (error) {
-            console.log(req);
             console.error("Error sending email:", error);
-            res.status(500).json({ success: false });
+            Response.json({ success: false, message: 'Failed to send email' });
         }
     } else {
-        console.log(req);
-        res.status(405).json({ message: 'Method not allowed' });
+        // res.setHeader('Allow', ['POST']);
+        Response.json({ message: `Method ${req.method} not allowed` });
     }
 }

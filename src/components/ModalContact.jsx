@@ -1,7 +1,9 @@
+'use client'
 import { useState } from "react";
 import { COLOR } from "@/utils/COLORS";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
+import axios from "axios";
 
 export default function ModalContact({ closeModal }) {
     const [formData, setFormData] = useState({
@@ -19,22 +21,20 @@ export default function ModalContact({ closeModal }) {
     };
 
     const handleSubmit = async (e) => {
-        console.log('start');
         e.preventDefault();
-        const response = await fetch('/api/sendEmail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
-        console.log(response);
 
-        const result = await response.json();
-        if (result.success) {
-            alert("Email sent successfully!");
-        } else {
-            alert(`Failed to send email: ${result.error}`);
+        try {
+            const response = await axios.post('/api/sendEmail', formData);
+            console.log(response.data);
+
+            if (response.data.success) {
+                alert("Email sent successfully!");
+            } else {
+                alert(`Failed to send email: ${response.data.message}`);
+            }
+        } catch (error) {
+            console.log(error);
+            alert("Failed to send email. Please try again later.");
         }
     };
 
@@ -51,25 +51,25 @@ export default function ModalContact({ closeModal }) {
                     <div className='flex flex-1 justify-start items-start w-80 flex-col gap-5 p-5 rounded-bl-lg' style={{ backgroundColor: COLOR.backgroundPrimary }}>
                         <label className='text-white'>Chúng tôi luôn muốn bạn hiểu rõ về sản phẩm trước khi mua bất kì sản phẩm nào từ chúng tôi vì vậy bạn có thể liên hệ với chúng tôi hoặc để lại tên, số điện thoại và câu hỏi (nếu có) để chúng tôi có thể liên hệ với bạn, xin chân thành cảm ơn!</label>
                         <div className="flex justify-start items-center gap-2">
-                            <BiSolidPhoneCall size={30} className="rounded-full p-1 border-[2px] border-teal-300 text-teal-300" />
-                            <div className="text-teal-300">(+84) 345 972 986</div>
+                            <BiSolidPhoneCall size={30} className="rounded-full p-1 border-[2px] border-white text-white" />
+                            <div className="text-white">(+84) 345 972 986</div>
                         </div>
                         <div className="flex justify-start items-center gap-2">
-                            <BiLogoGmail size={30} className="rounded-full p-1 border-[2px] border-teal-300 text-teal-300" />
-                            <div className="text-teal-300">info@kysaw.vn</div>
+                            <BiLogoGmail size={30} className="rounded-full p-1 border-[2px] border-white text-white" />
+                            <div className="text-white">info@kysaw.vn</div>
                         </div>
                     </div>
                     <form className="space-y-4 pr-5 pb-5 w-96" onSubmit={handleSubmit}>
                         <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Tên</label>
+                            <label htmlFor="name" className="block text-sm font-manropeBold text-gray-700">Tên</label>
                             <input type="text" id="name" value={formData.name} onChange={handleChange} className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder='Tên' required />
                         </div>
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                            <label htmlFor="email" className="block text-sm font-manropeBold text-gray-700">Email</label>
                             <input type="email" id="email" value={formData.email} onChange={handleChange} className="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder='Email' required />
                         </div>
                         <div>
-                            <label htmlFor="message" className="block text-sm font-medium text-gray-700">Câu hỏi của bạn (nếu có)</label>
+                            <label htmlFor="message" className="block text-sm font-ma text-gray-700">Câu hỏi của bạn (nếu có)</label>
                             <textarea id="message" value={formData.message} onChange={handleChange} rows="4" className="mt-1 block w-full p-2 border border-gray-300 rounded-md resize" placeholder='Câu hỏi của bạn...' required></textarea>
                         </div>
                         <button type="submit" className="btn text-white w-full" style={{ backgroundColor: COLOR.backgroundPrimary }}>Gửi</button>

@@ -32,14 +32,12 @@ const Navbar = () => {
     ]
 
     const path = usePathname();
-    console.log(path);
-
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
     const handleFreeConsultClick = () => {
-        if (window.innerWidth >= 768) { // md: breakpoint for desktop
+        if (window.innerWidth >= 768) {
             setIsModalOpen(true);
         } else {
             setIsFormOpen(true);
@@ -66,13 +64,13 @@ const Navbar = () => {
                         return (
                             <Link href={e.tag}
                                 key={e.id}
-                                className={`flex justify-center items-center p-2 hover:bg-gray-100 cursor-pointer ${e.tag === path ? " font-semibold" : ""}`}
+                                className={`flex justify-center items-center p-2 hover:bg-gray-100 cursor-pointer ${e.tag === path ? " font-manropeBold" : ""}`}
                             >
                                 {e.title}
                             </Link>
                         )
                     })}
-                    <button className='btn text-white' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
+                    <button className='btn text-white transition-transform duration-200 ease-linear hover:scale-105 font-manrope' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
                 </div>
                 <div className="flex md:hidden">
                     <button onClick={toggleMenu}>
@@ -90,14 +88,14 @@ const Navbar = () => {
                             return (
                                 <Link href={e.tag}
                                     key={e.id}
-                                    className={`block p-4 hover:bg-gray-100 cursor-pointer ${e.tag === path ? " font-semibold" : ""}`}
+                                    className={`block p-4 hover:bg-gray-100 cursor-pointer ${e.tag === path ? " font-manropeBold" : ""}`}
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {e.title}
                                 </Link>
                             )
                         })}
-                        <button className='btn text-white mt-4 transition-transform ease-linear hover:scale-125' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
+                        <button className='btn text-white mt-4 transition-transform duration-200 ease-linear hover:scale-105 font-manrope' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
                     </div>
                 </div>
             </div>
