@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from "next/image";
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import image1 from '../../assets/Slider/Family 1 copy.jpg';
@@ -16,29 +16,83 @@ const listImage = [
 
 const Slider = () => {
     const [indexImage, setIndexImage] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+    const wrapperRef = useRef(null);
+    const autoChangeRef = useRef(null);
+
+    const resetAutoChange = () => {
+        if (autoChangeRef.current) {
+            clearInterval(autoChangeRef.current);
+        }
+        autoChangeRef.current = setInterval(() => {
+            handleNextClick();
+        }, 10000);
+    };
 
     useEffect(() => {
-        const autoChange = setInterval(() => {
-            setIndexImage((prevIndex) => (prevIndex + 1) % listImage.length);
-        }, 10000);
-
-        return () => clearInterval(autoChange);
+        resetAutoChange();
+        return () => clearInterval(autoChangeRef.current);
     }, []);
 
+    useEffect(() => {
+        resetAutoChange();
+    }, [indexImage]);
+
     const handlePrevClick = () => {
-        setIndexImage((prevIndex) => (prevIndex === 0 ? listImage.length - 1 : prevIndex - 1));
+        if (isTransitioning) return;
+        setIsTransitioning(true);
+        setIndexImage((prevIndex) => prevIndex - 1);
     };
 
     const handleNextClick = () => {
-        setIndexImage((prevIndex) => (prevIndex + 1) % listImage.length);
+        if (isTransitioning) return;
+        setIsTransitioning(true);
+        setIndexImage((prevIndex) => prevIndex + 1);
     };
 
+    const handleTransitionEnd = () => {
+        setIsTransitioning(false);
+        if (indexImage >= listImage.length) {
+            setIndexImage(0);
+            wrapperRef.current.style.transition = 'none';
+            wrapperRef.current.style.transform = `translateX(0%)`;
+        } else if (indexImage < 0) {
+            setIndexImage(listImage.length - 1);
+            wrapperRef.current.style.transition = 'none';
+            wrapperRef.current.style.transform = `translateX(-${(listImage.length - 1) * 100}%)`;
+        }
+    };
+
+    useEffect(() => {
+        if (indexImage >= 0 && indexImage < listImage.length) {
+            wrapperRef.current.style.transition = 'transform 0.5s ease';
+            wrapperRef.current.style.transform = `translateX(-${indexImage * 100}%)`;
+        } else if (indexImage < 0) {
+            wrapperRef.current.style.transition = 'none';
+            wrapperRef.current.style.transform = `translateX(-${listImage.length * 100}%)`;
+            setTimeout(() => {
+                setIsTransitioning(true);
+                setIndexImage(listImage.length - 1);
+                wrapperRef.current.style.transition = 'transform 0.5s ease';
+                wrapperRef.current.style.transform = `translateX(-${(listImage.length - 1) * 100}%)`;
+            }, 50);
+        }
+    }, [indexImage]);
+
     return (
-        <div className="slider-container">
+        <div className="slider-container mt-8">
             <button className="arrow-button left" onClick={handlePrevClick}><BsChevronLeft /></button>
-            <div className="slider-wrapper mt-10 flex" style={{ transform: `translateX(-${indexImage * 100}%)` }}>
-                {listImage.map((image, index) => (
-                    <Image key={index} src={image.path} alt={image.label} className="slider-image " layout="responsive" loading='lazy' />
+            <div
+                className="slider-wrapper mt-10 flex"
+                style={{
+                    transform: `translateX(-${indexImage * 100}%)`,
+                    transition: isTransitioning ? 'transform 0.5s ease' : 'none'
+                }}
+                onTransitionEnd={handleTransitionEnd}
+                ref={wrapperRef}
+            >
+                {listImage.concat(listImage).map((image, index) => (
+                    <Image key={index} src={image.path} alt={image.label} className="slider-image" layout="responsive" loading='lazy' />
                 ))}
             </div>
             <button className="arrow-button right" onClick={handleNextClick}><BsChevronRight /></button>
@@ -50,11 +104,10 @@ const Slider = () => {
                     display: flex;
                     overflow: hidden;
                     font-size: 20px;
-                    min-width:100%;
+                    min-width: 100%;
                 }
                 .slider-wrapper {
                     display: flex;
-                    transition: transform 0.5s ease;
                 }
                 .slider-image {
                     min-width: 100%;

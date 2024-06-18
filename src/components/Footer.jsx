@@ -109,7 +109,7 @@ export default function Footer() {
                                 <select className='select text-xl w-full'>
                                     {products.map((e, index) => {
                                         return (
-                                            <option className='option text-sm md:text-lg' key={index}>{e.title}</option>
+                                            <option className='option text-sm md:text-lg font-manropeBold' key={index}>{e.title}</option>
                                         )
                                     })}
                                 </select>
@@ -135,7 +135,7 @@ export default function Footer() {
                             />
                             <button onClick={() => onSubmitClick()} className='btn text-white w-full font-manropeBold tex-xl' style={{ backgroundColor: COLOR.backgroundPrimary }}>Gửi</button>
                         </div>
-                        <label className='flex justify-center items-center'>Hotline: (+84) 345 972 986</label>
+                        {/* <label className='flex justify-center items-center'>Hotline: (+84) 345 972 986</label> */}
                     </div>
                 </div>
             </div>

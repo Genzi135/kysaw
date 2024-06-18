@@ -22,16 +22,15 @@ export default function ModalContact({ closeModal }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(formData)
 
         try {
-            const response = await axios.post('/api/sendEmail', formData);
-            console.log(response.data);
-
-            if (response.data.success) {
-                alert("Email sent successfully!");
-            } else {
-                alert(`Failed to send email: ${response.data.message}`);
-            }
+            const response = await axios({
+                url: "/api/sendEmail",
+                method: 'POST',
+                data: { formData }
+            })
+            console.log(response);
         } catch (error) {
             console.log(error);
             alert("Failed to send email. Please try again later.");

@@ -14,7 +14,6 @@ import ProductCard from "@/components/ProductCard";
 import nuocbot from '../../assets/reason/nuocbot.jpg';
 import congnghe from '../../assets/reason/congnghe.jpg';
 import tuvan from '../../assets/reason/tuvan.jpg';
-import family from '../../assets/Slider/Family 1 copy.jpg';
 import HomepageBanner from '../../assets/Slider/HomepageBanner.png'
 
 export default function Home() {
@@ -78,57 +77,13 @@ export default function Home() {
   ]
 
 
-  const teamFounder = [
-    {
-      image: '',
-      name: 'BÙI THỊ KIM ANH',
-      position: 'GIÁM ĐỐC ĐIỀU HÀNH',
-      major: 'Củ nhân kinh tế Master Business Coach',
-      description: 'Hơn 10 năm giữ vài trò giám đốc chuyên môn tại các tập đoàn toàn cầu'
-    }, {
-      image: '',
-      name: 'BÙI NGỌC ĐOAN CHIÊU',
-      position: 'GIÁM ĐỐC CHUYÊN MÔN',
-      major: 'Th.S. Công nghệ sinh học & Sinh tin học',
-      description: 'Hơn 8 năm kinh nghiệm trong lĩnh vực xét nghiệm và chăm sóc sức khỏe chủ động'
-    }, {
-      image: '',
-      name: 'BÙI QUANG ANH CHIÊU',
-      position: 'CỐ VẤN Y KHOA',
-      major: 'BS CKI Ngoại tổng quát',
-      description: 'Hơn 10 năm trong lãnh vực điều trị các bệnh lý về tiêu hoá - gan mật tụy, ung thư tiêu hoá'
-    },
-  ]
-
-  const teamOpen = [
-    {
-      image: '',
-      name: 'CRMC',
-      position: 'TƯ VẤN TẦM SOÁT & ĐÁNH GIÁ NGUY CƠ UNG THƯ',
-      major: 'Đội ngũ bác sĩ chuyên khoa',
-      description: 'Tư vấn kết quả giải mã gene tầm soát bệnh giai đoạn sớm và theo dõi sức khỏe định kỳ'
-    }, {
-      image: '',
-      name: 'DKF',
-      position: 'HUẤN LUYỆN VIÊN DINH DƯỠNG',
-      major: 'Chứng nhận quốc tế từ Precision Nutrition',
-      description: 'Thiết kế giải pháp dinh dưỡng phòng bệnh cá nhân hóa'
-    }, {
-      image: '',
-      name: 'IPHA',
-      position: 'HUẤN LUYỆN VIÊN TINH THẦN',
-      major: 'Reiki, Chuông xoay, Thiền, Yoga',
-      description: 'Thiết kế liệu trình giúp cân bằng tâm lý trong các trường hợp căng thẳng lo âu quá mức'
-    },
-  ]
-
   return (
     <main className="mt-[70px]">
       <div
         className="flex justify-center items-center"
         style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},${COLOR.backgroundSecondary})` }}
       >
-        <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" />
+        <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
       </div>
 
       <div className="flex justify-center items-center w-full">
