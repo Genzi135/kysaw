@@ -14,7 +14,8 @@ import ProductCard from "@/components/ProductCard";
 import nuocbot from '../../assets/reason/nuocbot.jpg';
 import congnghe from '../../assets/reason/congnghe.jpg';
 import tuvan from '../../assets/reason/tuvan.jpg';
-import HomepageBanner from '../../assets/Slider/HomepageBanner.png'
+import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
+import ProductSlider from "@/components/ProductSlider";
 
 export default function Home() {
 
@@ -39,43 +40,6 @@ export default function Home() {
     },
   ];
 
-  const products = [
-    {
-      title: 'YamuGene',
-      image: YamuGene,
-      price: 2000000,
-      content: {
-        title: 'Content...',
-        benefit: [
-          'benefit 1', 'benefit 2', 'benefit 3'
-        ],
-      },
-      link: '/product/yamugene'
-    }, {
-      title: 'GenePremium',
-      image: GenePremium,
-      price: 2000000,
-      content: {
-        title: 'Content...',
-        benefit: [
-          'benefit 1', 'benefit 2', 'benefit 3'
-        ],
-      },
-      link: '/product/genepremium',
-    }, {
-      title: 'GeneLove',
-      image: GenePremium,
-      price: 2000000,
-      content: {
-        title: 'Content...',
-        benefit: [
-          'benefit 1', 'benefit 2', 'benefit 3'
-        ],
-      },
-      link: '/product/genelove'
-    },
-  ]
-
 
   return (
     <main className="mt-[70px]">
@@ -87,10 +51,10 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center items-center w-full">
-        <div className="flex flex-col justify-center items-center p-5 gap-5 bg-white max-w-[1220px] w-full">
-          <label className="text-black text-xl md:text-3xl font-manropeBold">Lợi ích của việc giải mã gen</label>
+        <div className="flex flex-col justify-center items-center p-5 bg-white max-w-[1220px] w-full">
+          <label className="text-black text-xl md:text-3xl font-manropeBold mt-5">Lợi ích của việc giải mã gen</label>
           <div className="w-full overflow-hidden flex justify-start md:justify-center items-center">
-            <div className="flex md:pl-5 md:pr-5 overflow-x-auto scrollbar-hide w-full md:w-auto md:p-10">
+            <div className="flex md:pl-5 md:pr-5 overflow-x-auto scrollbar-hide w-full md:w-auto ">
               <div className="flex flex-nowrap gap-5 md:gap-10 pb-5 p-5">
                 {geneBenefit.map((e, index) => (
                   <GeneBenefitCard key={index} props={e} />
@@ -102,24 +66,12 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50">
-        <label className="text-black text-xl md:text-3xl font-manropeBold">Sản phẩm gen từ chúng tôi</label>
-        <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10 max-w-[1220px]">
-          {products.map((e, index) => {
-            return (
-              <ProductCard data={e} key={index} />
-            )
-          })}
-        </div>
-        <div className="flex justify-center items-center">
-          <a href="/product">
-            <button className="btn text-white" style={{ backgroundColor: COLOR.backgroundPrimary }}>Xem thêm sản phẩm   →</button>
-          </a>
-        </div>
+        <ProductSlider />
       </div>
 
       <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5 " >
-        <lable className="text-black text-xl md:text-3xl font-manropeBold p-2">Tại sao nên chọn KYSAW</lable>
-        <div className="flex flex-col justify-center items-center pl-10 pb-10 pr-10 max-w-[1220px] gap-2 xl:gap-5">
+        <lable className="text-black text-xl md:text-3xl font-manropeBold p-8">Tại sao nên chọn KYSAW</lable>
+        <div className="flex flex-col justify-center items-center pl-10 pb-10 pr-10 max-w-[1220px] gap-10 xl:gap-10">
           <div className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md">
             <Image
               src={nuocbot}
@@ -170,28 +122,30 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-        <div className="flex flex-col justify-center items-center p-5 md:p-5  rounded-lg text-white max-w-[1220px]">
-          <Image src={LogoBackgroundImage} alt="logo" width={'auto'} className="w-[800px]" />
-          <div className="flex justify-center items-center">
-            <div className="md:text-xl text-sm xl:p-2 p-6">
-              <label className="font-manropeBold">KYSAW</label> là đơn vị tiên phong đem lại giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong quá trình điều trị y tế.
-            </div>
+      <div className="flex justify-center items-center pt-10 pb-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>
+        <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-nowrap flex-wrap rounded-xl max-w-[1220px]">
+          <div className="text-white" >
+            <p className="text-lg text-balance">
+              <label className="font-manropeBold">KYSAW</label> là đơn vị tiên phong đem lại  giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong  quá trình điều trị y tế.
+            </p>
           </div>
+          <Image src={LogoBackgroundImage} alt="kysaw" width={485} height={485} />
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center p-5 md:p-10">
-        <label className="text-black text-xl md:text-3xl font-manropeBold">Đối tác của chúng tôi</label>
-        <div className="flex justify-center items-center gap-5 md:gap-10 max-w-[1220px]">
+      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5">
+        <label className="text-black text-xl md:text-3xl font-manropeBold mt-5">Đối tác của chúng tôi</label>
+        <div className="flex justify-center items-center gap-5 md:gap-10">
           <div className="flex justify-center items-center bg-white">
             <Image src={JH} alt="logo" width={200} height={200} />
           </div>
           <div className="flex justify-center items-center bg-white">
-            <Image src={GS} alt="logo" width={200} height={200} />
+            <Image src={GS} alt="logo" width={260} height={260} />
           </div>
         </div>
       </div>
+
+      {/* <PartnerSlider /> */}
     </main>
   );
 }
