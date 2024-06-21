@@ -1,4 +1,3 @@
-// data.js
 const ProductData = [
     {
         productId: "genlovefit",

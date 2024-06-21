@@ -55,8 +55,8 @@ const Navbar = () => {
                     <Image
                         src={Logo}
                         alt="logo"
-                        width={120}
-                        height={120}
+                        width={100}
+                        height={100}
                     />
                 </Link>
                 <div className="hidden md:flex justify-center items-center gap-10">

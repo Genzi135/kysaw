@@ -92,8 +92,8 @@ export default function Footer() {
                         <Image src={contact} alt='contactEmail' className='w-[400px]' />
                     </div>
                     <div className='form flex flex-col gap-2 text-sm md:text-xl'>
-                        <label className='font-manropeBold text-3xl flex justify-center items-center m-5'>Dịch vụ khách hàng</label>
-                        <div className='flex justify-center items-center gap-1 flex-wrap mb-2'>
+                        <label className='font-manropeBold text-2xl flex justify-center items-center'>Dịch vụ khách hàng</label>
+                        <div className='flex justify-center items-center gap-1 flex-wrap'>
                             <label>
                                 Vui lòng để lại số điện thoại của bạn,
                             </label>
