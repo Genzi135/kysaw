@@ -2,16 +2,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from "next/image";
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import image1 from '../../assets/Slider/Family 1 copy.jpg';
-import image2 from '../../assets/Slider/GenLove Fit copy.jpg';
-import image3 from '../../assets/Slider/Skin copy.jpg';
-import image4 from '../../assets/Slider/Kids copy.jpg';
+import image1 from '../../assets/Slider/Family 1 copy.png';
+import image2 from '../../assets/Slider/GenLove Fit copy.png';
+import image3 from '../../assets/Slider/Skin final copy.png';
+import image4 from '../../assets/Slider/Kids copy.png';
 
 const listImage = [
-    { path: image1, label: 'img1' },
-    { path: image2, label: 'img2' },
-    { path: image3, label: 'img3' },
-    { path: image4, label: 'img4' },
+    { path: image1, label: 'img1', color: '#46c5e4' },
+    { path: image2, label: 'img2', color: '#4ebb85' },
+    { path: image3, label: 'img3', color: '#ed5c90' },
+    { path: image4, label: 'img4', color: '#fcc939' },
 ];
 
 const Slider = () => {
@@ -26,7 +26,7 @@ const Slider = () => {
         }
         autoChangeRef.current = setInterval(() => {
             handleNextClick();
-        }, 10000);
+        }, 5000);
     };
 
     useEffect(() => {
@@ -35,76 +35,63 @@ const Slider = () => {
     }, []);
 
     useEffect(() => {
-        resetAutoChange();
-    }, [indexImage]);
+        if (!isTransitioning) {
+            resetAutoChange();
+        }
+    }, [indexImage, isTransitioning]);
 
     const handlePrevClick = () => {
         if (isTransitioning) return;
         setIsTransitioning(true);
-        setIndexImage((prevIndex) => prevIndex - 1);
+        setIndexImage((prevIndex) => prevIndex - 1 < 0 ? listImage.length - 1 : prevIndex - 1);
     };
 
     const handleNextClick = () => {
         if (isTransitioning) return;
         setIsTransitioning(true);
-        setIndexImage((prevIndex) => prevIndex + 1);
+        setIndexImage((prevIndex) => (prevIndex + 1) % listImage.length);
     };
 
     const handleTransitionEnd = () => {
         setIsTransitioning(false);
-        if (indexImage >= listImage.length) {
-            setIndexImage(0);
-            wrapperRef.current.style.transition = 'none';
-            wrapperRef.current.style.transform = `translateX(0%)`;
-        } else if (indexImage < 0) {
-            setIndexImage(listImage.length - 1);
-            wrapperRef.current.style.transition = 'none';
-            wrapperRef.current.style.transform = `translateX(-${(listImage.length - 1) * 100}%)`;
-        }
     };
 
-    useEffect(() => {
-        if (indexImage >= 0 && indexImage < listImage.length) {
-            wrapperRef.current.style.transition = 'transform 0.5s ease';
-            wrapperRef.current.style.transform = `translateX(-${indexImage * 100}%)`;
-        } else if (indexImage < 0) {
-            wrapperRef.current.style.transition = 'none';
-            wrapperRef.current.style.transform = `translateX(-${listImage.length * 100}%)`;
-            setTimeout(() => {
-                setIsTransitioning(true);
-                setIndexImage(listImage.length - 1);
-                wrapperRef.current.style.transition = 'transform 0.5s ease';
-                wrapperRef.current.style.transform = `translateX(-${(listImage.length - 1) * 100}%)`;
-            }, 50);
-        }
-    }, [indexImage]);
-
     return (
-        <div className="slider-container mt-8">
-            <button className="arrow-button left" onClick={handlePrevClick}><BsChevronLeft /></button>
+        <div className='w-full flex justify-center items-center mt-8'>
             <div
-                className="slider-wrapper mt-10 flex"
-                style={{
-                    transform: `translateX(-${indexImage * 100}%)`,
-                    transition: isTransitioning ? 'transform 0.5s ease' : 'none'
-                }}
-                onTransitionEnd={handleTransitionEnd}
-                ref={wrapperRef}
+                className="slider-container"
+                style={{ backgroundColor: listImage[indexImage].color }}
             >
-                {listImage.concat(listImage).map((image, index) => (
-                    <Image key={index} src={image.path} alt={image.label} className="slider-image" layout="responsive" loading='lazy' />
-                ))}
+                <div className="slider-content max-w-[1220px] w-full mx-auto relative overflow-hidden">
+                    <button className="arrow-button left" onClick={handlePrevClick}><BsChevronLeft /></button>
+                    <div
+                        className="slider-wrapper mt-10 flex"
+                        style={{
+                            transform: `translateX(-${indexImage * 100}%)`,
+                            transition: isTransitioning ? 'transform 0.5s ease' : 'none'
+                        }}
+                        onTransitionEnd={handleTransitionEnd}
+                        ref={wrapperRef}
+                    >
+                        {listImage.map((image, index) => (
+                            <Image key={index} src={image.path} alt={image.label} className="slider-image" layout="responsive" loading='lazy' />
+                        ))}
+                    </div>
+                    <button className="arrow-button right" onClick={handleNextClick}><BsChevronRight /></button>
+                </div>
             </div>
-            <button className="arrow-button right" onClick={handleNextClick}><BsChevronRight /></button>
             <style jsx>{`
                 .slider-container {
                     position: relative;
                     width: 100%;
-                    height: 100%;
                     display: flex;
+                    justify-content: center;
                     overflow: hidden;
-                    font-size: 20px;
-                    min-width: 100%;
+                    transition: background-color 0.5s ease;
+                }
+                .slider-content {
+                    position: relative;
+                    width: 100%;
                 }
                 .slider-wrapper {
                     display: flex;

@@ -10,18 +10,18 @@ export default function Product() {
 
     return (
         <div className="flex flex-col justify-center items-center">
-            <div className="flex justify-center items-center max-w-[1220px]">
-                <Slider />
-            </div>
+
+            <Slider />
+
             <div className="mt-5 mb-5 flex flex-col justify-center items-center max-w-[1220px]">
                 <div className="w-auto">
                     <div className="p-5">
-                        <label className="border-l-8 border-l-teal-500 text-2xl font-semibold">Tất cả sản phẩm</label>
+                        <label className="border-l-8 border-l-teal-500 text-2xl font-semibold pl-3  ">Tất cả sản phẩm</label>
                     </div>
-                    <div className="flex justify-center items-centers overflow-x-auto gap-5 p-5 md:flex-wrap">
+                    <div className="grid grid-cols-3 overflow-x-auto gap-10 p-5 md:flex-wrap pb-20">
                         {dataSource.map((e, index) => {
                             return (
-                                <div className="min-w-[300px]" key={index}>
+                                <div className="w-[250px]" key={index}>
                                     <ProductCard data={e} />
                                 </div>
                             );

@@ -86,7 +86,7 @@ export default function Footer() {
 
     return (
         <div className="flex flex-col">
-            <div className='flex justify-center items-center bg-blue-50'>
+            <div className='flex justify-center items-center bg-blue-50 pb-10'>
                 <div className='flex flex-col md:flex-row justify-center items-center p-5 max-w-[1220px]'>
                     <div>
                         <Image src={contact} alt='contactEmail' className='w-[400px]' />
@@ -162,7 +162,7 @@ export default function Footer() {
                         </div>
                         <div className='flex justify-start items-center gap-2 mt-1'>
                             <BiLogoGmail size={30} className='rounded-full p-1 border-[2px] border-black text-black' />
-                            <div className='text-black'>info@kysaw.com</div>
+                            <div className='text-black'>info@kysaw.vn</div>
                         </div>
                     </div>
                 </div>

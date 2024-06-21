@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import Slider from '@/components/Slider';
 import { formatCurrency } from '@/utils/format';
 import { COLOR } from '@/utils/COLORS';
-import { BsClipboard2HeartFill, BsClockFill, BsHouseFill } from 'react-icons/bs';
+import { BsClipboard2HeartFill, BsClockFill, BsHeadset, BsHouseFill } from 'react-icons/bs';
 import Steps from '@/components/Steps';
 
 export default function ProductDetail() {
@@ -43,17 +43,17 @@ export default function ProductDetail() {
                     {data.avatarUrl && (
                         <div className='flex justify-center items-start flex-col'>
                             <img src={data.avatarUrl} alt='avatar' className='w-full max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6' />
-                            <label className='font-manropeBold pb-10 italic cursor-pointer' style={{ color: COLOR.backgroundPrimary }}>Tham khảo kết quả mẫu</label>
+                            <label className='font-extrabold pb-10 italic cursor-pointer' style={{ color: COLOR.backgroundPrimary }}>Tham khảo kết quả mẫu</label>
                         </div>
                     )}
                     <div className='flex flex-1 flex-col justify-center items-start gap-2 pl-20 pr-5 '>
                         {data.productName && (
-                            <div className='font-manropeBold text-3xl mt-5'>
+                            <div className='font-manropeExtrabold text-3xl mt-5' >
                                 {data.productName}
                             </div>
                         )}
                         {data.price && (
-                            <div className='font-manropeBold text-3xl' style={{ color: COLOR.backgroundSecondary }}>
+                            <div className='font-manropeBold text-3xl' style={{ color: data.color ? data.color : '' }}>
                                 {formatCurrency(data.price)}
                             </div>
                         )}
@@ -75,7 +75,9 @@ export default function ProductDetail() {
                             </div>
                         </div>
                         <div>
-                            <button className='btn w-[260px] text-lg text-white mt-5' style={{ backgroundColor: COLOR.backgroundPrimary }}>Tư vấn ngay</button>
+                            <button className='btn w-[260px] text-lg text-white mt-5 mb-14 ' style={{ backgroundColor: COLOR.backgroundPrimary }}>
+                                <BsHeadset size={20} />
+                                Tư vấn ngay</button>
                         </div>
                     </div>
                 </div>
@@ -97,6 +99,9 @@ export default function ProductDetail() {
                         </div>
                     </div>
                 )}
+                <div className='w-full border-[1px] max-w-[1220px]'>
+
+                </div>
             </div>
 
             <Steps />

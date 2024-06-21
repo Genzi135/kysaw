@@ -42,7 +42,7 @@ export default function Home() {
 
 
   return (
-    <main className="mt-[70px]">
+    <main className="mt-[70px] bg-white">
       <div
         className="flex justify-center items-center"
         style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},${COLOR.backgroundSecondary})` }}
@@ -80,7 +80,7 @@ export default function Home() {
             />
             <div className="text-base lg:p-5 lg:text-lg p-2 flex flex-col gap-2 w-full sm:w-[44%]">
               <label className="font-manropeBold">
-                <div className="flex justify-center sm:justify-start items-center">Lấy mẫu bằng nước bọt</div>
+                <div className="flex justify-center sm:justify-start items-center">Sản phẩm tiên tiến, lấy mẫu bằng nước bọt</div>
               </label>
               <label className="flex justify-center items-center">
                 Phương pháp an toàn, không đau và dễ thực hiện, cho phép khách hàng tự lấy mẫu tại nhà một cách tiện lợi.
@@ -123,7 +123,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center items-center pt-10 pb-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-        <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-nowrap flex-wrap rounded-xl max-w-[1220px]">
+        <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-row flex-col-reverse rounded-xl max-w-[1220px]">
           <div className="text-white" >
             <p className="text-lg text-balance">
               <label className="font-manropeBold">KYSAW</label> là đơn vị tiên phong đem lại  giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong  quá trình điều trị y tế.
@@ -136,7 +136,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5">
         <label className="text-black text-xl md:text-3xl font-manropeBold mt-5">Đối tác của chúng tôi</label>
         <div className="flex justify-center items-center gap-5 md:gap-10">
-          <div className="flex justify-center items-center bg-white">
+          <div className="flex justify-center items-center bg-white ">
             <Image src={JH} alt="logo" width={200} height={200} />
           </div>
           <div className="flex justify-center items-center bg-white">

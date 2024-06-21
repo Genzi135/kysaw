@@ -46,7 +46,14 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Manrope-extrabold';
+  src: url('../../public//fonts/static/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
-  font-family: 'Manrope', 'Manrope-bold', 'Poppins-medium', 'Poppins-bold';
+  font-family: 'Manrope', 'Manrope-bold', 'Manrope-extrabold';
 }

@@ -148,15 +148,48 @@ export default function About() {
                     })}
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5">
+            {/* <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5">
                 <label className="text-black text-xl md:text-3xl font-manropeBold mt-5">Đối tác của chúng tôi</label>
                 <div className="flex justify-center items-center gap-5 md:gap-10">
                     <div className="flex justify-center items-center bg-white">
                         <Image src={JH} alt="logo" width={200} height={200} />
-                    </div>
+                    </div>  
                     <div className="flex justify-center items-center bg-white">
                         <Image src={GS} alt="logo" width={200} height={200} />
                     </div>
+                </div>
+            </div> */}
+            <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5 mt-[60px]">
+                <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8">
+                    <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold w-[450px] h-[125px]">
+                        <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963130/kysaw/partners/JHBioHolding_Logo-02_hdewen.png" alt="jh bioholding" className="h-[90px] w-[auto]" />
+                    </div>
+                    <p className="mt-[52px] text-xl">
+                        JH Bioholdings là Bệnh viện - Viện nghiên cứu Trung tâm xét nghiệm hàng đầu và là đối tác của hơn 400 bệnh viện tại Hàn Quốc.  2023 là bước ngoặt lớn của sản phẩm xét nghiệm gen di truyền tầm soát ung thư Yamugene trên thị trường Việt Nam.</p>
+                    <p className="text-xl">Với phương châm hoạt động cống hiến hết mình để phát triển các sản phẩm và hệ thống chẩn đoán phân tử khác nhau thông qua việc đầu tư vào R&D nhằm đóng góp vào cuộc sống khỏe mạnh của nhân loại.</p>
+                    <p className="text-xl">Được sự gửi gắm chính phủ Hàn Quốc, JH là doanh nghiệp hàng đầu về mảng xét nghiệm tại Hàn và được bảo trợ của chính phủ Hàn Quốc đến với Việt Nam.</p>
+                    <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963131/kysaw/partners/YamuGene_Certificate-14_zw2qrd.png" alt="jg certificate" className="w-auto h-auto" />
+                    <p className="text-xl"> JH Bioholdings là đơn vị được cấp phép sản xuất, kinh doanh, nghiên cứu di truyền, và có đầy đủ chứng nhận quản lý chất lượng ISO, CE, GMP.</p>
+                    <p className="text-xl text-start">KYSAW hân hạnh được lựa chọn là đối tác môi giới độc quyền sản phẩm Yamugene của JH Bioholdings.
+                    </p>
+                </div>
+                <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8 mt-[80px]">
+                    <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold w-[450px] h-[125px]">
+                        <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963129/kysaw/partners/GenSolution_Logo-02_gewouq.png" alt="gs" className="h-[90px] w-[auto]" />
+                    </div>
+                    <p className="mt-[52px] text-xl">
+                        Gene Solutions thành lập với tầm nhìn trở thành tổ chức hàng đầu tại Việt Nam và khu vực trong lĩnh vực nghiên cứu phát triển, ứng dụng công nghệ phân tích di truyền và giải mã gene vào nền y học chính xác. Sứ mệnh của Gene Solutions là giúp cải thiện sức khỏe cộng đồng bằng giải pháp gene tiên tiến, chất lượng và đảm bảo chi phí hợp lý nhất. Hiện nay Gene Solutions đã vươn xa trong khu vực, có mặt tại 4 quốc gia gồm: Singapore, Indonesia, Thailand, Philippines</p>
+                    <div className="w-full text-xl">Năng lực mạnh mẽ và uy tín</div>
+                    <div className="w-full text-xl">
+                        <ul className="list-disc ml-10">
+                            <li>15 Tiến sĩ trong lĩnh vực Genetics, Cancer biology, Bioinformatics, ComputerScience...</li>
+                            <li>15 công bố quốc tế</li>
+                            <li>2 phòng LAB chuẩn ISO15189, hệ thống giải mã gene NGS tân tiến</li>
+                            <li>14 bác sĩ tư vấn</li>
+                            <li>Bảo mật dữ liệu tiêu chuẩn HIPAA</li>
+                        </ul>
+                    </div>
+                    <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963131/kysaw/partners/GenSolution_-_He_Sinh_Thai-13_lf9elt.png" alt="gs" className="w-auto h-auto" />
                 </div>
             </div>
         </div>

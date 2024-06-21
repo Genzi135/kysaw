@@ -15,8 +15,7 @@ module.exports = {
       fontFamily: {
         manrope: ['Manrope'],
         manropeBold: ['Manrope-bold'],
-        PoppinsMedium: ['Poppins-medium'],
-        PoppinsBold: ['Poppins-bold'],
+        manropeExtrabold: ['Manrope-extrabold'],
       },
     },
   },

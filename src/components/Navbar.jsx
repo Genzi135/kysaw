@@ -55,22 +55,22 @@ const Navbar = () => {
                     <Image
                         src={Logo}
                         alt="logo"
-                        width={100}
-                        height={100}
+                        width={120}
+                        height={120}
                     />
                 </Link>
-                <div className="hidden md:flex justify-center items-center gap-5">
+                <div className="hidden md:flex justify-center items-center gap-10">
                     {menu.map((e) => {
                         return (
                             <Link href={e.tag}
                                 key={e.id}
-                                className={`flex justify-center items-center p-2 hover:bg-gray-100 cursor-pointer ${e.tag === path ? " font-manropeBold" : ""}`}
+                                className={`flex text-base justify-center items-center cursor-pointer font-manropeBold relative hover:before:w-[100%] hover:text-[#1b6891] pl-1 pr-1 pt-3 pb-3 ${e.tag === path ? "before:w-full before:bg-black" : ""} before:bg-[#1b6891] before:w-[0%] before:left-0 before:absolute before:content-[''] before:h-[2px] before:duration-300 before:bottom-0`}
                             >
                                 {e.title}
                             </Link>
                         )
                     })}
-                    <button className='btn text-white transition-transform duration-200 ease-linear hover:scale-105 font-manrope' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
+                    <button className='btn text-white transition-transform duration-200 ease-linear hover:scale-105 font-manrope text-base' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
                 </div>
                 <div className="flex md:hidden">
                     <button onClick={toggleMenu}>

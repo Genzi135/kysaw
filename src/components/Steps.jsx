@@ -4,7 +4,7 @@ import { BsClipboard2HeartFill, BsClockFill, BsHouseFill } from "react-icons/bs"
 export default function Steps() {
     return (
         <div>
-            <div className='flex flex-col lg:flex-row justify-center items-center w-full max-w-[1220px]'>
+            <div className='flex flex-col lg:flex-row justify-center items-center w-full max-w-[1220px] mb-14'>
                 <div className='w-full lg:w-[49%] flex justify-center items-start flex-col'>
                     <div className="collapse collapse-arrow">
                         <input type="radio" name="my-accordion-2" defaultChecked />
