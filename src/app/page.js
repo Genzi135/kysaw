@@ -1,12 +1,5 @@
-'use client'
+'use client';
 import Image from "next/image";
-import GeneBenefit1 from '../../assets/Slider/Hieu ro co the.png';
-import GeneBenefit2 from '../../assets/Slider/Phong ngua rui ro.png';
-import GeneBenefit3 from '../../assets/Slider/Toi uu suc khoe.png';
-import GenePremium from '../../assets/Products/Gencare Premium.jpg';
-import YamuGene from '../../assets/Products/Yamugene.jpg';
-import GeneBenefitCard from "@/components/GeneBenefitCard";
-import LogoBackgroundImage from '../../assets/Logo/KYSAW_LOGO_FINAL_WHITE_COLOR.png';
 import JH from '../../assets/Partners/JH.jpg';
 import GS from '../../assets/Partners/GS.png';
 import { COLOR } from "@/utils/COLORS";
@@ -14,33 +7,50 @@ import ProductCard from "@/components/ProductCard";
 import nuocbot from '../../assets/reason/nuocbot.jpg';
 import congnghe from '../../assets/reason/congnghe.jpg';
 import tuvan from '../../assets/reason/tuvan.jpg';
-import HomepageBanner from '../../assets/Slider/HomepageBanner.png'
+import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
 import ProductData from "./(pages)/product/[id]/data";
+import './globals.css';
+import { useEffect, useRef, useState } from "react";
+import GeneBenefitSlider from "@/components/GeneBenefitSlider";
 
 export default function Home() {
+  const [animate, setAnimate] = useState(false);
+  const nuocbotRef = useRef(null);
+  const congngheRef = useRef(null);
+  const tuvanRef = useRef(null);
 
-  const geneBenefit = [
-    {
-      path: GeneBenefit1,
-      label: 'HieuRoCoThe',
-      title: 'Hiểu rõ cơ thể',
-      content: 'Xét nghiệm DNA giúp bạn hiểu rõ hơn về cơ thể và gen di truyền của mình. Thông tin từ xét nghiệm có thể tiết lộ về đặc điểm sinh học, tình trạng sức khỏe, và tiềm năng di truyền, giúp bạn có cái nhìn toàn diện về bản thân.'
-    },
-    {
-      path: GeneBenefit2,
-      label: 'PhongNguaRuiRo',
-      title: 'Phòng ngừa rủi ro',
-      content: 'Xét nghiệm DNA giúp phát hiện các yếu tố rủi ro di truyền, từ đó bạn có thể chuẩn bị và thực hiện các biện pháp phòng ngừa kịp thời nhằm giảm thiểu nguy cơ mắc các bệnh di truyền và bảo vệ sức khỏe của bản thân bạn và gia đình.'
-    },
-    {
-      path: GeneBenefit3,
-      label: 'ToiUuSucKhoe',
-      title: 'Tối ưu sức khỏe',
-      content: 'Dựa trên kết quả xét nghiệm DNA, bạn có thể điều chỉnh chế độ ăn uống, tập luyện và lối sống sao cho phù hợp với cấu trúc gen của mình. Điều này giúp tối ưu hóa sức khỏe và tăng cường chất lượng cuộc sống hàng ngày.'
-    },
-  ];
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains("hidden-left")) {
+              entry.target.classList.add("visible-left");
+              entry.target.classList.remove("hidden-left");
+            } else if (entry.target.classList.contains("hidden-right")) {
+              entry.target.classList.add("visible-right");
+              entry.target.classList.remove("hidden-right");
+            }
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
+    if (nuocbotRef.current) observer.observe(nuocbotRef.current);
+    if (congngheRef.current) observer.observe(congngheRef.current);
+    if (tuvanRef.current) observer.observe(tuvanRef.current);
 
+    return () => {
+      if (nuocbotRef.current) observer.unobserve(nuocbotRef.current);
+      if (congngheRef.current) observer.unobserve(congngheRef.current);
+      if (tuvanRef.current) observer.unobserve(tuvanRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
 
   return (
     <main className="mt-[70px] bg-white">
@@ -51,19 +61,8 @@ export default function Home() {
         <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
       </div>
 
-      <div className="flex justify-center items-center w-full">
-        <div className="flex flex-col justify-center items-center p-5 gap-5 bg-white max-w-[1220px] w-full">
-          <label className="text-black text-xl md:text-3xl font-manropeBold">Lợi ích của việc giải mã gen</label>
-          <div className="w-full overflow-hidden flex justify-start md:justify-center items-center">
-            <div className="flex md:pl-5 md:pr-5 overflow-x-auto scrollbar-hide w-full md:w-auto md:p-10">
-              <div className="flex flex-nowrap gap-5 md:gap-10 pb-5 p-5">
-                {geneBenefit.map((e, index) => (
-                  <GeneBenefitCard key={index} props={e} />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className={animate ? 'slide-up' : 'invisible'}>
+        <GeneBenefitSlider />
       </div>
 
       <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50">
@@ -72,7 +71,7 @@ export default function Home() {
           {ProductData.map((e, index) => {
             return (
               <ProductCard data={e} key={index} />
-            )
+            );
           })}
         </div>
         <div className="flex justify-center items-center">
@@ -82,10 +81,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5 " >
-        <lable className="text-black text-xl md:text-3xl font-manropeBold p-2">Tại sao nên chọn KYSAW</lable>
+      <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5 ">
+        <label className="text-black text-xl md:text-3xl font-manropeBold p-2">Tại sao nên chọn KYSAW</label>
         <div className="flex flex-col justify-center items-center pl-10 pb-10 pr-10 max-w-[1220px] gap-2 xl:gap-5">
-          <div className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md">
+          <div ref={nuocbotRef} className="hidden-left flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md">
             <Image
               src={nuocbot}
               alt="reason1"
@@ -100,7 +99,7 @@ export default function Home() {
               </label>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row-reverse justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
+          <div ref={congngheRef} className="hidden-right flex flex-col sm:flex-row-reverse justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
             <Image
               src={congnghe}
               alt="reason2"
@@ -116,7 +115,7 @@ export default function Home() {
               </label>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
+          <div ref={tuvanRef} className="hidden-left flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
             <Image
               src={tuvan}
               alt="reason3"
