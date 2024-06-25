@@ -47,7 +47,7 @@ export default function About() {
             name: 'IPHA',
             position: 'HUẤN LUYỆN VIÊN TINH THẦN',
             major: 'Reiki, Chuông xoay, Thiền, Yoga',
-            description: 'Thiết kế liệu trình giúp cân bằng tâm lý trong các trường hợp căng thẳng lo âu quá mứcá'
+            description: 'Thiết kế liệu trình giúp cân bằng tâm lý trong các trường hợp căng thẳng lo âu quá mức'
         },
     ]
 

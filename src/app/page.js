@@ -53,7 +53,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="mt-[70px] bg-white">
+    <main className="mt-[70px] bg-white scroll-smooth">
       <div
         className="flex justify-center items-center"
         style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},${COLOR.backgroundSecondary})` }}
