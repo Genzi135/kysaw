@@ -121,3 +121,9 @@ body {
   transform: translateX(0);
   transition: all 1s ease-in-out;
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}

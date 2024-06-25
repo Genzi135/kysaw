@@ -65,14 +65,25 @@ export default function Home() {
         <GeneBenefitSlider />
       </div>
 
-      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50">
+      <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50 ">
         <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Sản phẩm gen từ chúng tôi</label>
-        <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10 max-w-[1220px]">
-          {ProductData.map((e, index) => {
-            return (
-              <ProductCard data={e} key={index} />
-            );
-          })}
+        <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] md:max-w-[1220px] overflow-hidden">
+          <div class="flex overflow-hidden gap-10 group p-10">
+            <div class="flex justify-center items-center gap-10 flex-col sm:flex-row  animate-none sm:animate-loop-scroll group-hover:paused ">
+              {ProductData.map((e, index) => {
+                return (
+                  <ProductCard data={e} key={index} />
+                );
+              })}
+            </div>
+            <div class="hidden sm:flex space-x-10 animate-loop-scroll group-hover:paused">
+              {ProductData.map((e, index) => {
+                return (
+                  <ProductCard data={e} key={index} />
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div className="flex justify-center items-center">
           <a href="/product">
