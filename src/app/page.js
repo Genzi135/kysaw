@@ -66,7 +66,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50">
-        <label className="text-black text-xl md:text-3xl font-manropeBold">Sản phẩm gen từ chúng tôi</label>
+        <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Sản phẩm gen từ chúng tôi</label>
         <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10 max-w-[1220px]">
           {ProductData.map((e, index) => {
             return (
@@ -81,8 +81,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5 ">
-        <label className="text-black text-xl md:text-3xl font-manropeBold p-2">Tại sao nên chọn KYSAW</label>
+      <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5  overflow-hidden">
+        <label className="text-black text-xl md:text-3xl font-manropeBold p-2 mt-5 mb-5">Tại sao nên chọn KYSAW</label>
         <div className="flex flex-col justify-center items-center pl-10 pb-10 pr-10 max-w-[1220px] gap-2 xl:gap-5">
           <div ref={nuocbotRef} className="hidden-left flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md">
             <Image

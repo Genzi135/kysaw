@@ -61,7 +61,7 @@ export default function About() {
             </div>
             <div className="flex justify-center items-center">
                 <div className="flex flex-col justify-center items-center p-5 md:pl-10 md:pr-10 max-w-[1220px]">
-                    <label className="font-semibold text-2xl md:text-4xl pb-5">
+                    <label className="font-semibold text-2xl md:text-4xl pb-5 m-10">
                         Giới thiệu
                     </label>
                     <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-nowrap flex-wrap" style={{ backgroundColor: COLOR.backgroundPrimary }}>
@@ -76,7 +76,7 @@ export default function About() {
             </div>
             <div className="flex justify-center items-center">
                 <div className="flex flex-col justify-center items-center p-5 md:pl-10 md:pr-10 max-w-[1220px]">
-                    <label className="font-semibold text-2xl md:text-4xl pb-5">Tầm nhìn & sứ mệnh</label>
+                    <label className="font-semibold text-2xl md:text-4xl pb-10 m-5">Tầm nhìn & sứ mệnh</label>
                     <div className="flex flex-col justify-center items-center md:gap-10 gap-5">
                         <div className="flex justify-center items-center flex-col md:flex-row">
                             <div className="md:w-[20%] flex justify-center items-center w-[100%]">
@@ -99,7 +99,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap bg-blue-50 text-center   " >
+                    <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap bg-blue-50 text-center  mb-5" >
                         <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
                             <label className="font-manropeBold text-lg ">
                                 Đặt sức khỏe người Việt làm trọng tâm

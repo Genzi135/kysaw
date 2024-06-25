@@ -3,32 +3,33 @@ import ProductCard from "@/components/ProductCard";
 import Slider from "@/components/Slider";
 import ProductData from "./[id]/data";
 import { useState } from "react";
+import { COLOR } from "@/utils/COLORS";
 
 export default function Product() {
 
     const [dataSource, setDataSource] = useState(ProductData);
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="scroll-smooth">
 
             <Slider />
 
-            <div className="mt-5 mb-5 flex flex-col justify-center items-center max-w-[1220px]">
-                <div className="w-auto">
-                    <div className="p-5">
-                        <label className="border-l-8 border-l-teal-500 text-2xl font-semibold pl-3  ">Tất cả sản phẩm</label>
-                    </div>
-                    <div className="grid grid-cols-3 overflow-x-auto gap-10 p-5 md:flex-wrap pb-20">
-                        {dataSource.map((e, index) => {
-                            return (
-                                <div className="w-[250px]" key={index}>
-                                    <ProductCard data={e} />
-                                </div>
-                            );
-                        })}
-                    </div>
+            <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 ">
+                <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Sản phẩm gen từ chúng tôi</label>
+                <div className="flex flex-1 md:pl-5 md:pr-5 flex-wrap justify-around items-center gap-5 md:gap-10 max-w-[1220px]">
+                    {ProductData.map((e, index) => {
+                        return (
+                            <ProductCard data={e} key={index} />
+                        );
+                    })}
+                </div>
+                <div className="flex justify-center items-center">
+                    <a href="/product">
+                        <button className="btn text-white" style={{ backgroundColor: COLOR.backgroundPrimary }}>Xem thêm sản phẩm   →</button>
+                    </a>
                 </div>
             </div>
+
         </div>
     );
 }
