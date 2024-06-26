@@ -1,10 +1,12 @@
 import Image from "next/image";
-import KYSAW from '../../../../assets/Slider/kysaw.png';
+import LogoKysaw from '../../../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png'
 import JH from '../../../../assets/Partners/JH.jpg'
 import GS from '../../../../assets/Partners/GS.png'
 import { COLOR } from "@/utils/COLORS";
 import TeamCard from "@/components/TeamCard";
-import HomepageBanner from '../../../../assets/Slider/HomepageBanner.png'
+import HomepageBanner from '../../../../assets/Slider/HomepageBanner.png';
+import tamnhin from '../../../../assets/Slider/tamnhin.png';
+import sumenh from '../../../../assets/Slider/sumenh.png';
 
 export default function About() {
     const teamFounder = [
@@ -27,7 +29,7 @@ export default function About() {
             major: 'BS CKI Ngoại tổng quát',
             description: 'Hơn 10 năm trong lãnh vực điều trị các bệnh lý về tiêu hoá - gan mật tụy, ung thư tiêu hoá'
         },
-    ]
+    ];
 
     const teamOpen = [
         {
@@ -44,77 +46,70 @@ export default function About() {
             description: 'Thiết kế giải pháp dinh dưỡng phòng bệnh cá nhân hóa'
         }, {
             image: '',
-            name: 'IPHA',
+            name: 'ZOEL',
             position: 'HUẤN LUYỆN VIÊN TINH THẦN',
             major: 'Reiki, Chuông xoay, Thiền, Yoga',
             description: 'Thiết kế liệu trình giúp cân bằng tâm lý trong các trường hợp căng thẳng lo âu quá mức'
         },
-    ]
+    ];
 
     return (
         <div className="mt-[70px]">
-            <div
-                className="flex justify-center items-center"
-                style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},#15BEF2)` }}
-            >
-                <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
+            <div className="flex justify-center items-center" style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},#15BEF2)` }}>
+                <Image src={HomepageBanner} alt="banner" layout="responsive" className="max-w-[1220px]" />
             </div>
             <div className="flex justify-center items-center">
-                <div className="flex flex-col justify-center items-center p-5 md:pl-10 md:pr-10 max-w-[1220px]">
-                    <label className="font-semibold text-2xl md:text-4xl pb-5 m-10">
-                        Giới thiệu
-                    </label>
-                    <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-nowrap flex-wrap" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-                        <div className="text-white">
-                            <p className="text-lg">
-                                <label className="font-semibold">KYSAW</label> là đơn vị tiên phong đem lại  giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong  quá trình điều trị y tế.
+                <div className="flex flex-col justify-center items-center pl-5 pr-5 pb-5 md:pl-10 md:pr-10 max-w-[1220px]">
+                    <label className="font-manropeBold text-2xl md:text-4xl p-14">Giới thiệu</label>
+                    <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-nowrap flex-wrap rounded-xl border-2">
+                        <div style={{ color: COLOR.backgroundPrimary }}>
+                            <p className="text-lg text-balance">
+                                <label className="font-manropeBold">KYSAW</label> là đơn vị tiên phong đem lại giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong quá trình điều trị y tế.
                             </p>
                         </div>
-                        <Image src={KYSAW} alt="kysaw" width={500} height={500} />
+                        <Image src={LogoKysaw} alt="kysaw" width={485} height={485} />
                     </div>
                 </div>
             </div>
             <div className="flex justify-center items-center">
                 <div className="flex flex-col justify-center items-center p-5 md:pl-10 md:pr-10 max-w-[1220px]">
-                    <label className="font-semibold text-2xl md:text-4xl pb-10 m-5">Tầm nhìn & sứ mệnh</label>
-                    <div className="flex flex-col justify-center items-center md:gap-10 gap-5">
+                    <label className="font-manropeBold text-2xl md:text-4xl pb-5 mt-5">Tầm nhìn & sứ mệnh</label>
+                    <div className="flex flex-col justify-center items-center gap-10 lg:gap-0">
                         <div className="flex justify-center items-center flex-col md:flex-row">
-                            <div className="md:w-[20%] flex justify-center items-center w-[100%]">
-                                <label className="font-semibold text-xl  md:text-2xl">Tầm nhìn</label>
+
+                            <div className="w-[70%] flex flex-col justify-center items-center">
+                                <Image src={tamnhin} alt="tamnhin" layout="responsive" width={'100%'} height={'100%'} />
                             </div>
-                            <div className="md:w-[60%] w-[100%] border-2  p-5 rounded-lg">KYSAW tiên phong đi sâu vào cộng đồng, lan tỏa giá trị thông tin di truyền, từ đó giúp
-                                định hướng sàng lọc nhằm chẩn đoán sớm bệnh ung thư và các bệnh lý mãn tính nguy
-                                hiểm khác, đem lại cơ hội điều trị thành công và cải thiện chất lượng cuộc sống cho
-                                người Việt.</div>
+                            <div className="flex flex-col justify-center items-center relative">
+                                <label className="font-manropeBold text-xl text-white md:text-xl absolute top-[-20px] rounded-full pl-6 pr-6 pt-1 pb-1" style={{ backgroundColor: COLOR.backgroundPrimary }}>Tầm nhìn</label>
+                                <div className="w-[100%] border-2 rounded-lg p-10">
+                                    KYSAW tiên phong đi sâu vào cộng đồng, lan tỏa giá trị thông tin di truyền, từ đó giúp định hướng sàng lọc nhằm chẩn đoán sớm bệnh ung thư và các bệnh lý mãn tính nguy hiểm khác, đem lại cơ hội điều trị thành công và cải thiện chất lượng cuộc sống cho người Việt.
+                                </div>
+                            </div>
+
                         </div>
                         <div className="flex justify-center items-center flex-col-reverse md:flex-row">
-                            <div className="md:w-[60%] w-[100%] border-2 p-5 rounded-lg">
-                                Giúp người Việt chăm sóc sức khỏe hiệu quả hơn qua việc kết nối khoa học công nghệ gene với các giải pháp chủ động khác.
-                                <br></br>
-                                Nỗ lực giáo dục cộng đồng và kết hợp với các đơn vị y khoa nhằm nâng cao tỷ lệ chẩn đoán ung thư giai đoạn sớm, từ tiền ung thư đến giai đoạn 1, nhờ bản  đồ giải mã đột biến gene định hướng tầm soát sâu và trúng đích, từ đó bảo vệ khách hàng sống khỏe dài lâu.
+                            <div className="flex flex-col justify-center items-center relative">
+                                <div className="w-[100%] border-2 rounded-lg p-10">
+                                    Giúp người Việt chăm sóc sức khỏe hiệu quả hơn qua việc kết nối khoa học công nghệ gene với các giải pháp chủ động khác.
+                                    <br />
+                                    Nỗ lực giáo dục cộng đồng và kết hợp với các đơn vị y khoa nhằm nâng cao tỷ lệ chẩn đoán ung thư giai đoạn sớm, từ tiền ung thư đến giai đoạn 1, nhờ bản đồ giải mã đột biến gene định hướng tầm soát sâu và trúng đích, từ đó bảo vệ khách hàng sống khỏe dài lâu.
+                                </div>
+                                <label className="font-manropeBold text-xl text-white md:text-xl absolute top-[-20px] rounded-full pl-6 pr-6 pt-1 pb-1" style={{ backgroundColor: COLOR.backgroundPrimary }}>Sứ mệnh</label>
                             </div>
-                            <div className="md:w-[20%] flex justify-center items-center w-[100%]">
-                                <label className="font-manropeBold text-xl  md:text-2xl">Sứ mệnh</label>
+                            <div className="w-[70%] flex flex-col justify-center items-center">
+                                <Image src={sumenh} alt="sumenh" layout="responsive" width={'100%'} height={'100%'} />
                             </div>
                         </div>
-                    </div>
-
-                    <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap bg-blue-50 text-center  mb-5" >
-                        <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
-                            <label className="font-manropeBold text-lg ">
-                                Đặt sức khỏe người Việt làm trọng tâm
-                            </label>
-                            <label className="font-manropeBold text-lg">
-                                Sản phẩm phải tốt nhất
-                            </label>
-                        </div>
-                        <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
-                            <label className="font-manropeBold text-lg">
-                                Trung thực và đạo đức
-                            </label>
-                            <label className="font-manropeBold text-lg">
-                                Giá trị và toàn diện
-                            </label>
+                        <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap bg-blue-50 text-center mb-5">
+                            <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
+                                <label className="font-manropeBold text-lg">Đặt sức khỏe người Việt làm trọng tâm</label>
+                                <label className="font-manropeBold text-lg">Sản phẩm phải tốt nhất</label>
+                            </div>
+                            <div className="flex justify-center items-center gap-5 md:gap-10 flex-col sm:flex-row">
+                                <label className="font-manropeBold text-lg">Trung thực và đạo đức</label>
+                                <label className="font-manropeBold text-lg">Giá trị và toàn diện</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,45 +118,37 @@ export default function About() {
                 <label className="text-white text-xl md:text-3xl font-manropeBold">Đội ngũ của chúng tôi</label>
                 <label className="text-white text-lg md:text-2xl font-manropeBold">Founder & co-founders</label>
                 <div className="flex flex-wrap justify-center items-center gap-10">
-                    {teamFounder.map((e, index) => {
-                        return (
-                            <TeamCard props={e} key={index} />
-                        )
-                    })}
+                    {teamFounder.map((e, index) => (
+                        <TeamCard props={e} key={index} />
+                    ))}
                 </div>
                 <label className="text-white text-lg md:text-2xl font-manropeBold">Hệ sinh thái mở rộng</label>
-                <div className="flex flex-wrap justify-center items-center gap-10 ">
-                    {teamOpen.map((e, index) => {
-                        return (
-                            <TeamCard props={e} key={index} />
-                        )
-                    })}
+                <div className="flex flex-wrap justify-center items-center gap-10">
+                    {teamOpen.map((e, index) => (
+                        <TeamCard props={e} key={index} />
+                    ))}
                 </div>
             </div>
-            {/* <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5">
-                <label className="text-black text-xl md:text-3xl font-manropeBold mt-5">Đối tác của chúng tôi</label>
-
-                <div className="flex justify-center items-center gap-5 md:gap-10">
-                    <div className="flex justify-center items-center bg-white">
-                        <Image src={JH} alt="logo" width={200} height={200} />
-                    </div>  
-                    <div className="flex justify-center items-center bg-white">
-                        <Image src={GS} alt="logo" width={200} height={200} />
-                    </div>
-                </div>
-            </div> */}
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5 mt-[60px]">
                 <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8">
                     <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold w-[450px] h-[125px]">
                         <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963130/kysaw/partners/JHBioHolding_Logo-02_hdewen.png" alt="jh bioholding" className="h-[90px] w-[auto]" />
                     </div>
                     <p className="mt-[52px] text-xl">
-                        JH Bioholdings là Bệnh viện - Viện nghiên cứu Trung tâm xét nghiệm hàng đầu và là đối tác của hơn 400 bệnh viện tại Hàn Quốc.  2023 là bước ngoặt lớn của sản phẩm xét nghiệm gen di truyền tầm soát ung thư Yamugene trên thị trường Việt Nam.</p>
-                    <p className="text-xl">Với phương châm hoạt động cống hiến hết mình để phát triển các sản phẩm và hệ thống chẩn đoán phân tử khác nhau thông qua việc đầu tư vào R&D nhằm đóng góp vào cuộc sống khỏe mạnh của nhân loại.</p>
-                    <p className="text-xl">Được sự gửi gắm chính phủ Hàn Quốc, JH là doanh nghiệp hàng đầu về mảng xét nghiệm tại Hàn và được bảo trợ của chính phủ Hàn Quốc đến với Việt Nam.</p>
+                        JH Bioholdings là Bệnh viện - Viện nghiên cứu Trung tâm xét nghiệm hàng đầu và là đối tác của hơn 400 bệnh viện tại Hàn Quốc. 2023 là bước ngoặt lớn của sản phẩm xét nghiệm gen di truyền tầm soát ung thư Yamugene trên thị trường Việt Nam.
+                    </p>
+                    <p className="text-xl">
+                        Với phương châm hoạt động cống hiến hết mình để phát triển các sản phẩm và hệ thống chẩn đoán phân tử khác nhau thông qua việc đầu tư vào R&D nhằm đóng góp vào cuộc sống khỏe mạnh của nhân loại.
+                    </p>
+                    <p className="text-xl">
+                        Được sự gửi gắm chính phủ Hàn Quốc, JH là doanh nghiệp hàng đầu về mảng xét nghiệm tại Hàn và được bảo trợ của chính phủ Hàn Quốc đến với Việt Nam.
+                    </p>
                     <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963131/kysaw/partners/YamuGene_Certificate-14_zw2qrd.png" alt="jg certificate" className="w-auto h-auto" />
-                    <p className="text-xl"> JH Bioholdings là đơn vị được cấp phép sản xuất, kinh doanh, nghiên cứu di truyền, và có đầy đủ chứng nhận quản lý chất lượng ISO, CE, GMP.</p>
-                    <p className="text-xl text-start">KYSAW hân hạnh được lựa chọn là đối tác môi giới độc quyền sản phẩm Yamugene của JH Bioholdings.
+                    <p className="text-xl">
+                        JH Bioholdings là đơn vị được cấp phép sản xuất, kinh doanh, nghiên cứu di truyền, và có đầy đủ chứng nhận quản lý chất lượng ISO, CE, GMP.
+                    </p>
+                    <p className="text-xl text-start">
+                        KYSAW hân hạnh được lựa chọn là đối tác môi giới độc quyền sản phẩm Yamugene của JH Bioholdings.
                     </p>
                 </div>
                 <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8 mt-[80px]">
@@ -169,7 +156,8 @@ export default function About() {
                         <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963129/kysaw/partners/GenSolution_Logo-02_gewouq.png" alt="gs" className="h-[90px] w-[auto]" />
                     </div>
                     <p className="mt-[52px] text-xl">
-                        Gene Solutions thành lập với tầm nhìn trở thành tổ chức hàng đầu tại Việt Nam và khu vực trong lĩnh vực nghiên cứu phát triển, ứng dụng công nghệ phân tích di truyền và giải mã gene vào nền y học chính xác. Sứ mệnh của Gene Solutions là giúp cải thiện sức khỏe cộng đồng bằng giải pháp gene tiên tiến, chất lượng và đảm bảo chi phí hợp lý nhất. Hiện nay Gene Solutions đã vươn xa trong khu vực, có mặt tại 4 quốc gia gồm: Singapore, Indonesia, Thailand, Philippines</p>
+                        Gene Solutions thành lập với tầm nhìn trở thành tổ chức hàng đầu tại Việt Nam và khu vực trong lĩnh vực nghiên cứu phát triển, ứng dụng công nghệ phân tích di truyền và giải mã gene vào nền y học chính xác. Sứ mệnh của Gene Solutions là giúp cải thiện sức khỏe cộng đồng bằng giải pháp gene tiên tiến, chất lượng và đảm bảo chi phí hợp lý nhất. Hiện nay Gene Solutions đã vươn xa trong khu vực, có mặt tại 4 quốc gia gồm: Singapore, Indonesia, Thailand, Philippines.
+                    </p>
                     <div className="w-full text-xl">Năng lực mạnh mẽ và uy tín</div>
                     <div className="w-full text-xl">
                         <ul className="list-disc ml-10">
@@ -184,5 +172,5 @@ export default function About() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

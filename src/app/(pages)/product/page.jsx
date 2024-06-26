@@ -20,11 +20,11 @@ export default function Product() {
                         );
                     })}
                 </div>
-                <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
                     <a href="/product">
                         <button className="btn text-white" style={{ backgroundColor: COLOR.backgroundPrimary }}>Xem thêm sản phẩm   →</button>
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     );

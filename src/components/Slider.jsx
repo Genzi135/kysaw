@@ -17,25 +17,6 @@ const Slider = () => {
     const [indexImage, setIndexImage] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const wrapperRef = useRef(null);
-    const autoChangeRef = useRef(null);
-
-    const resetAutoChange = () => {
-        if (autoChangeRef.current) {
-            clearInterval(autoChangeRef.current);
-        }
-        autoChangeRef.current = setInterval(() => {
-            handleNextClick();
-        }, 5000);
-    };
-
-    useEffect(() => {
-        resetAutoChange();
-        return () => clearInterval(autoChangeRef.current);
-    }, []);
-
-    useEffect(() => {
-        resetAutoChange();
-    }, [indexImage]);
 
     const handlePrevClick = () => {
         if (isTransitioning) return;

@@ -148,7 +148,7 @@ export default function Home() {
       <div className="flex justify-center items-center pt-10 pb-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>
         <div className="flex justify-center items-center p-5 md:p-10 gap-5 lg:flex-row flex-col-reverse rounded-xl max-w-[1220px]">
           <div className="text-white" >
-            <p className="text-lg text-balance">
+            <p className="text-lg ">
               <label className="font-manropeBold">KYSAW</label> là đơn vị tiên phong đem lại  giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong  quá trình điều trị y tế.
             </p>
           </div>
