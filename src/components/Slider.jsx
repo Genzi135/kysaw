@@ -17,6 +17,7 @@ const Slider = () => {
     const [indexImage, setIndexImage] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const wrapperRef = useRef(null);
+    const autoChangeRef = useRef(null);
 
     const handlePrevClick = () => {
         if (isTransitioning) return;
@@ -40,18 +41,19 @@ const Slider = () => {
         setIndexImage((prevIndex) => prevIndex + 1);
     };
 
-    const handleTransitionEnd = () => {
-        setIsTransitioning(false);
-        if (indexImage >= listImage.length) {
-            setIndexImage(0);
-            wrapperRef.current.style.transition = 'none';
-            wrapperRef.current.style.transform = `translateX(0%)`;
-        } else if (indexImage < 0) {
-            setIndexImage(listImage.length - 1);
-            wrapperRef.current.style.transition = 'none';
-            wrapperRef.current.style.transform = `translateX(-${(listImage.length - 1) * 100}%)`;
+    const resetAutoChange = () => {
+        if (autoChangeRef.current) {
+            clearInterval(autoChangeRef.current);
         }
+        autoChangeRef.current = setInterval(() => {
+            handleNextClick();
+        }, 3000); // Change every 3 seconds
     };
+
+    useEffect(() => {
+        resetAutoChange();
+        return () => clearInterval(autoChangeRef.current);
+    }, []);
 
     useEffect(() => {
         if (indexImage >= 0 && indexImage < listImage.length) {
@@ -60,13 +62,15 @@ const Slider = () => {
         }
     }, [indexImage]);
 
+    const handleTransitionEnd = () => {
+        setIsTransitioning(false);
+    };
+
     return (
         <div className='w-full flex justify-center items-center transition duration-500 ease-linear'
             style={{ backgroundColor: listImage[indexImage % listImage.length].color }}>
             <div className="w-full justify-center items-center mt-8 max-w-[1220px]">
-                <div
-                    className="slider-container"
-                >
+                <div className="slider-container">
                     <button className="arrow-button left" onClick={handlePrevClick}>
                         <BsChevronLeft />
                     </button>
@@ -74,7 +78,7 @@ const Slider = () => {
                         className="slider-wrapper mt-10 flex"
                         style={{
                             transform: `translateX(-${indexImage * 100}%)`,
-                            transition: isTransitioning ? 'transform 0.5s ease' : 'none',
+                            transition: 'transform 0.5s ease',
                         }}
                         onTransitionEnd={handleTransitionEnd}
                         ref={wrapperRef}
