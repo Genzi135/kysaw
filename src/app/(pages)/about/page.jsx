@@ -144,8 +144,8 @@ export default function About() {
             </div>
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5 mt-[60px]">
                 <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8">
-                    <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold w-[450px] h-[125px]">
-                        <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963130/kysaw/partners/JHBioHolding_Logo-02_hdewen.png" alt="jh bioholding" className="h-[90px] w-[auto]" />
+                    <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-45px] sm:top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold sm:w-[450px] sm:h-[125px] h-[90px] w-[250px]">
+                        <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963130/kysaw/partners/JHBioHolding_Logo-02_hdewen.png" alt="jh bioholding" className="sm:h-[90px] w-[auto] h-[60px]" />
                     </div>
                     <p className="mt-[52px] text-xl">
                         JH Bioholdings là Bệnh viện - Viện nghiên cứu Trung tâm xét nghiệm hàng đầu và là đối tác của hơn 400 bệnh viện tại Hàn Quốc. 2023 là bước ngoặt lớn của sản phẩm xét nghiệm gen di truyền tầm soát ung thư Yamugene trên thị trường Việt Nam.
@@ -165,8 +165,8 @@ export default function About() {
                     </p>
                 </div>
                 <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8 mt-[80px]">
-                    <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold w-[450px] h-[125px]">
-                        <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963129/kysaw/partners/GenSolution_Logo-02_gewouq.png" alt="gs" className="h-[90px] w-[auto]" />
+                    <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-45px] sm:top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold sm:w-[450px] sm:h-[125px] h-[90px] w-[250px]">
+                        <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963129/kysaw/partners/GenSolution_Logo-02_gewouq.png" alt="gs" className="sm:h-[90px] w-[auto] h-[60px]" />
                     </div>
                     <p className="mt-[52px] text-xl">
                         Gene Solutions thành lập với tầm nhìn trở thành tổ chức hàng đầu tại Việt Nam và khu vực trong lĩnh vực nghiên cứu phát triển, ứng dụng công nghệ phân tích di truyền và giải mã gene vào nền y học chính xác. Sứ mệnh của Gene Solutions là giúp cải thiện sức khỏe cộng đồng bằng giải pháp gene tiên tiến, chất lượng và đảm bảo chi phí hợp lý nhất. Hiện nay Gene Solutions đã vươn xa trong khu vực, có mặt tại 4 quốc gia gồm: Singapore, Indonesia, Thailand, Philippines.
