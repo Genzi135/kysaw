@@ -49,8 +49,8 @@ const Navbar = () => {
     };
 
     return (
-        <div>
-            <div className="min-w-[100vw] h-auto flex justify-between items-center pl-5 pr-5 fixed top-0 z-50 bg-white border-b-gray-300 border-b-[0.1px] shadow-md p-2">
+        <div className='w-[100vw] h-auto flex justify-center items-center pl-5 pr-5 fixed top-0 z-50 border-b-gray-300 border-b-[0.1px] shadow-md p-2 bg-white'>
+            <div className=" flex justify-between items-center w-full max-w-[1220px]">
                 <Link href={'/'} className="flex justify-center items-center p-2">
                     <Image
                         src={Logo}

@@ -38,7 +38,7 @@ export default function GeneBenefitSlider() {
 
     return (
         <div className="flex justify-center items-center w-full p-5">
-            <div className="flex flex-col justify-center items-center p-5 gap-5 max-w-[1220px] w-full overflow-x-scroll">
+            <div className="flex flex-col justify-center items-center p-5 gap-5 max-w-[1220px] w-full ">
                 <label className="text-black text-xl md:text-3xl font-manropeBold mt-5">Lợi ích của việc giải mã gen</label>
                 <div className="w-full overflow-hidden justify-start md:justify-center items-center hidden sm:flex">
                     <div className="flex md:pl-5 md:pr-5 overflow-x-auto scrollbar-hide w-full md:w-auto md:p-10">

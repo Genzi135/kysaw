@@ -14,6 +14,7 @@ import { useState, useEffect } from "react";
 import GeneBenefitSlider from "@/components/GeneBenefitSlider";
 import ViewTest from "@/app/(pages)/test/ViewTest";
 import { motion } from "framer-motion";
+import MobileViewTest from "@/app/(pages)/test/MobileViewTest";
 
 export default function HomePage() {
     const [animate, setAnimate] = useState(false);
@@ -41,24 +42,28 @@ export default function HomePage() {
                 <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
             </div>
 
-            <div className={animate ? 'slide-up' : 'invisible'}>
+            <div className={animate ? 'slide-up' : 'invisible' + 'flex justify-center items-center '}>
                 <GeneBenefitSlider />
             </div>
             <div className="w-full hidden lg:flex flex-col justify-center items-center" style={{ backgroundImage: `linear-gradient(to bottom, ${COLOR.backgroundPrimary}, ${COLOR.backgroundSecondary}, ${COLOR.backgroundPrimary})` }}>
                 <label className="text-white text-2xl md:text-3xl font-manropeBold mt-14">Sản phẩm gen từ chúng tôi</label>
                 <ViewTest />
             </div>
+            <div className="w-full flex lg:hidden flex-col justify-center items-center" style={{ backgroundImage: `linear-gradient(to bottom, ${COLOR.backgroundPrimary}, ${COLOR.backgroundSecondary}, ${COLOR.backgroundPrimary})` }}>
+                <label className="text-white text-xl md:text-3xl font-manropeBold mt-14">Sản phẩm gen từ chúng tôi</label>
+                <MobileViewTest />
+            </div>
 
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50 ">
                 <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Thông tin về các sản phẩm</label>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] md:max-w-[1220px] overflow-hidden">
-                    <div className="flex overflow-hidden gap-10 group p-10">
-                        <div className="flex justify-center items-center gap-10 flex-col sm:flex-row  animate-none sm:animate-loop-scroll group-hover:paused ">
+                    <div className="flex overflow-hidden gap-10 group p-10 hover:overflow-x-scroll">
+                        <div className="flex flex-shrink-0 justify-center items-center gap-10 flex-col sm:flex-row  animate-none sm:animate-loop-scroll group-hover:paused ">
                             {ProductData.map((e, index) => (
                                 <ProductCard data={e} key={index} />
                             ))}
                         </div>
-                        <div className="hidden sm:flex space-x-10 animate-loop-scroll group-hover:paused">
+                        <div className="hidden sm:flex flex-shrink-0 space-x-10 animate-loop-scroll group-hover:paused">
                             {ProductData.map((e, index) => (
                                 <ProductCard data={e} key={index} />
                             ))}
