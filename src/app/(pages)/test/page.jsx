@@ -51,33 +51,33 @@ export default function Test() {
 
                 <div className='absolute flex gap-4 translate-y-[100px] -translate-x-8'>
                     <img src={subitem} alt='subitem' width={180} height={180} className='rotate-180 translate-x-2 translate-y-5' />
-                    <img src={medesc} alt='desc' width={250} height={250} className='animate-float' />
-                    <img src={genlovemeLogoHex} alt='item' width={230} height={230} className='animate-pingSlow' />
+                    <img src={medesc} alt='desc' width={250} height={250} className='animate-' />
+                    <img src={genlovemeLogoHex} alt='item' width={230} height={230} className='animate-float' />
                 </div>
                 <div className='absolute flex gap-4 translate-y-[300px] translate-x-6'>
-                    <img src={genloveskinLogoHex} alt='item' width={300} height={300} className='animate-pingSlow' />
-                    <img src={skindesc} alt='desc' width={300} height={300} className='animate-float' />
+                    <img src={genloveskinLogoHex} alt='item' width={300} height={300} className='animate-float' />
+                    <img src={skindesc} alt='desc' width={300} height={300} className='animate-' />
                     <img src={subitem} alt='subitem' width={250} height={250} className='-translate-x-6 translate-y-[-22px]' />
                 </div>
 
                 <div className='absolute flex gap-4 translate-y-[520px] translate-x-32'>
-                    <img src={kiddesc} alt='desc' width={250} height={250} className='animate-float' />
-                    <img src={genlovekidLogoHex} alt='item' width={230} height={230} className='animate-pingSlow' />
+                    <img src={kiddesc} alt='desc' width={250} height={250} className='animate-' />
+                    <img src={genlovekidLogoHex} alt='item' width={230} height={230} className='animate-float' />
                 </div>
                 <div className='absolute flex gap-6 translate-y-[700px] -translate-x-4'>
-                    <img src={genlovefitLogoHex} alt='item' width={300} height={300} className='animate-pingSlow' />
-                    <img src={fitdesc} alt='desc' width={300} height={300} className='animate-float' />
+                    <img src={genlovefitLogoHex} alt='item' width={300} height={300} className='animate-float' />
+                    <img src={fitdesc} alt='desc' width={300} height={300} className='animate-' />
                     <img src={subitem} alt='subitem' width={250} height={250} className='-translate-x-6 translate-y-[-22px]' />
                 </div>
 
-                <div className='absolute flex gap-4 translate-y-[920px] -translate-x-8'>
+                <div className='absolute flex gap-4 translate-y-[920px] -translate-x-10'>
                     <img src={subitem} alt='subitem' width={180} height={180} className='rotate-180 translate-x-2 translate-y-5' />
-                    <img src={yamudesc} alt='desc' width={280} height={280} className='animate-float' />
-                    <img src={yamugenLogoHex} alt='item' width={280} height={280} className='animate-pingSlow' />
+                    <img src={yamudesc} alt='desc' width={280} height={280} className='animate-' />
+                    <img src={yamugenLogoHex} alt='item' width={280} height={280} className='animate-float' />
                 </div>
                 <div className='absolute flex gap-4 translate-y-[1197px] '>
-                    <img src={gencarepreLogoHex} alt='item' width={300} height={300} className='animate-pingSlow' />
-                    <img src={gencarepredesc} alt='desc' width={300} height={300} className='animate-float' />
+                    <img src={gencarepreLogoHex} alt='item' width={300} height={300} className='animate-float' />
+                    <img src={gencarepredesc} alt='desc' width={300} height={300} className='animate-' />
                 </div>
             </div>
         </div>
