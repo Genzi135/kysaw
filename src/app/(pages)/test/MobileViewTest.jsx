@@ -3,26 +3,19 @@ import '../../globals.css'
 
 export default function MobileViewTest() {
 
-    const genloveskinLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875922/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Skin_button_vasvrs.svg';
-    const genlovekidLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875914/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Kid_button_fqpe8f.svg';
-    const genlovemeLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875916/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Me_button_m8qxpa.svg';
-    const genlovefitLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875911/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Fit_Button_vlitfa.svg';
-    const yamugenLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875927/kysaw/listProduct/KYSAW_Product_Logos_Yamugene_Button_ybosez.svg';
-    const gencarepreLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875911/kysaw/listProduct/KYSAW_Product_Logos_Gencare_Premium_button_v04xnm.svg';
+    const genloveskinLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Skin_button_ehlpxl.svg';
+    const genlovekidLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920402/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Kid_button_n5p1ps.svg';
+    const genlovemeLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920398/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Me_button_ehrsok.svg';
+    const genlovefitLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Fit_Button_rxrnc4.svg';
+    const gencarepreLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_Gencare_Premium_button_oz5lyn.svg';
+    const yamugenLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920403/kysaw/listProduct/KYSAW_Product_Logos_Yamugene_Button_yhc7n3.svg';
 
-    const genlovskinlogo = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875925/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Skin_org_yggjhu.svg';
-    const genlovekidlogo = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875914/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Kid_org_j3czui.svg';
-    const genlovemelogo = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875919/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Me_org_weqgap.svg';
-    const genlovefitlogo = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875913/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Fit_org_mwvvr5.svg';
-    const yamugenLogo = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875928/kysaw/listProduct/KYSAW_Product_Logos_Yamugene_Org_jq2net.svg';
-    const gencarepreLogo = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875911/kysaw/listProduct/KYSAW_Product_Logos_Gencare_Premium_org_kumdzh.svg';
-
-    const skindesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875925/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Skin_Tag_xsma7p.svg';
-    const kiddesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875915/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Kid_Tag_ppngas.svg';
-    const medesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875921/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Me_Tag_wabzvl.svg';
-    const fitdesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875913/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Fit_Tag_tankae.svg';
-    const yamudesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875911/kysaw/listProduct/KYSAW_Product_Logos_Gencare_Premium_Tag_k98qdd.svg';
-    const gencarepredesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875929/kysaw/listProduct/KYSAW_Product_Logos_Yamugene_Tag_libxt8.svg';
+    const skindesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920398/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Skin_Tag_nqgsk0.svg';
+    const kiddesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920399/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Kid_Tag_slhy6o.svg';
+    const medesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Me_Tag_fcsp5d.svg';
+    const fitdesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Fit_Tag_oyoubt.svg';
+    const yamudesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920404/kysaw/listProduct/KYSAW_Product_Logos_Yamugene_Tag_ixomz2.svg';
+    const gencarepredesc = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_Gencare_Premium_Tag_mphl8m.svg';
 
     const subitem = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875911/kysaw/listProduct/KYSAW_Product_Logos_DNA_nip_qiosut.svg';
 
@@ -33,29 +26,29 @@ export default function MobileViewTest() {
     return (
         <div className='flex flex-col justify-center items-center mt-10 relative w-full max-w-[1220px] h-auto'>
             <Image src={bg1} alt='background image' width={400} height={700} layout='fit' />
-            <div className='flex justify-center items-center gap-2 flex-row absolute top-0'>
-                <img src={genlovemeLogoHex} alt='logoHex' width={150} height={150} className='animate-float' />
-                <img src={medesc} alt='desc' width={150} height={150} />
+            <div className='flex justify-center items-center gap-[3px] flex-row-reverse absolute top-0'>
+                <img src={genlovemeLogoHex} alt='logoHex' width={120} height={120} className='animate-float' />
+                <img src={medesc} alt='desc' width={120} height={120} />
             </div>
-            <div className='flex justify-center items-center gap-2 flex-row-reverse absolute top-[130px]'>
-                <img src={genloveskinLogoHex} alt='logoHex' width={150} height={150} className='animate-float' />
+            <div className='flex justify-center items-center gap-[3px] flex-row absolute top-[100px]'>
+                <img src={genloveskinLogoHex} alt='logoHex' width={180} height={180} className='animate-float' />
                 <img src={skindesc} alt='desc' width={150} height={150} />
             </div>
-            <div className='flex justify-center items-center gap-2 flex-row absolute top-[260px]'>
-                <img src={genlovekidLogoHex} alt='logoHex' width={150} height={150} className='animate-float' />
-                <img src={kiddesc} alt='desc' width={150} height={150} />
+            <div className='flex justify-center items-center gap-[3px] flex-row-reverse absolute top-[260px]'>
+                <img src={genlovekidLogoHex} alt='logoHex' width={120} height={120} className='animate-float' />
+                <img src={kiddesc} alt='desc' width={120} height={120} />
             </div>
-            <div className='flex justify-center items-center gap-2 flex-row-reverse absolute top-[390px]'>
-                <img src={genlovefitLogoHex} alt='logoHex' width={150} height={150} className='animate-float' />
-                <img src={fitdesc} alt='desc' width={150} height={150} />
+            <div className='flex justify-center items-center gap-[3px] flex-row absolute top-[370px]'>
+                <img src={genlovefitLogoHex} alt='logoHex' width={140} height={140} className='animate-float' />
+                <img src={fitdesc} alt='desc' width={120} height={120} />
             </div>
-            <div className='flex justify-center items-center gap-2 flex-row absolute top-[520px]'>
+            <div className='flex justify-center items-center gap-[3px] flex-row-reverse absolute top-[500px]'>
+                <img src={yamugenLogoHex} alt='logoHex' width={190} height={190} className='animate-float' />
+                <img src={yamudesc} alt='desc' width={150} height={150} />
+            </div>
+            <div className='flex justify-center items-center gap-[3px] flex-row absolute top-[670px]'>
                 <img src={gencarepreLogoHex} alt='logoHex' width={150} height={150} className='animate-float' />
                 <img src={gencarepredesc} alt='desc' width={150} height={150} />
-            </div>
-            <div className='flex justify-center items-center gap-2 flex-row-reverse absolute top-[650px]'>
-                <img src={yamugenLogoHex} alt='logoHex' width={150} height={150} className='animate-float' />
-                <img src={yamudesc} alt='desc' width={150} height={150} />
             </div>
         </div>
     )

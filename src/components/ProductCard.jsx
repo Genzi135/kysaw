@@ -13,7 +13,7 @@ export default function ProductCard({ data }) {
         >
             <img src={data.avatarUrl && data.avatarUrl} alt={data.productName} width={300} height={300} />
             <label className="flex justify-center items-center text-lg md:text-xl font-manropeBold">{data && data.productName}</label>
-            <label className="flex justify-center items-center text-lg md:text-xl font-manropeBold">{data && formatCurrency(data.price)}</label>
+            <label className="flex justify-center items-center text-lg md:text-xl font-manropeBold">{data && data.price}</label>
 
             <div
                 className={`absolute left-0 bottom-0 bg-white shadow-lg p-4 transition-transform duration-500 flex flex-col justify-between ${isHovered ? 'translate-y-0' : 'translate-y-full'}`}

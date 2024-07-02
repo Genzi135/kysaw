@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
+import FloatingMenu from "@/components/FloatingMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Toaster />
         {children}
+        <FloatingMenu />
         <Footer />
       </body>
     </html>

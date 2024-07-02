@@ -7,19 +7,19 @@ import { useState } from "react";
 export default function GeneBenefitSlider() {
     const geneBenefit = [
         {
-            path: GeneBenefit1,
+            path: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719921533/kysaw/benefit/Duke_Illustration_for_KYSAW-39_od3jte.png',
             label: 'HieuRoCoThe',
             title: 'Hiểu rõ cơ thể',
             content: 'Xét nghiệm DNA giúp bạn hiểu rõ hơn về cơ thể và gen di truyền của mình. Thông tin từ xét nghiệm có thể tiết lộ về đặc điểm sinh học, tình trạng sức khỏe, và tiềm năng di truyền, giúp bạn có cái nhìn toàn diện về bản thân.'
         },
         {
-            path: GeneBenefit2,
+            path: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719921533/kysaw/benefit/Duke_Illustration_for_KYSAW-38_tyrgkh.png',
             label: 'PhongNguaRuiRo',
             title: 'Phòng ngừa rủi ro',
             content: 'Xét nghiệm DNA giúp phát hiện các yếu tố rủi ro di truyền, từ đó bạn có thể chuẩn bị và thực hiện các biện pháp phòng ngừa kịp thời nhằm giảm thiểu nguy cơ mắc các bệnh di truyền và bảo vệ sức khỏe của bản thân bạn và gia đình.'
         },
         {
-            path: GeneBenefit3,
+            path: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719921534/kysaw/benefit/Duke_Illustration_for_KYSAW-40_mq0wtl.png',
             label: 'ToiUuSucKhoe',
             title: 'Tối ưu sức khỏe',
             content: 'Dựa trên kết quả xét nghiệm DNA, bạn có thể điều chỉnh chế độ ăn uống, tập luyện và lối sống sao cho phù hợp với cấu trúc gen của mình. Điều này giúp tối ưu hóa sức khỏe và tăng cường chất lượng cuộc sống hàng ngày.'

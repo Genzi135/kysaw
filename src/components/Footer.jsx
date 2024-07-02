@@ -167,13 +167,15 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-between items-center pl-10 pr-10 pt-2 pb-2 flex-wrap' style={{ backgroundColor: COLOR.backgroundPrimary }}>
-                <div className='flex justify-center items-center'>
-                    <Image src={Logo} alt='logo' width={120} height={120} />
-                </div>
-                <div className='flex justify-start items-center gap-2'>
-                    <BiSolidMap size={30} className='rounded-full p-1 border-[2px] border-white text-white' />
-                    <div className='text-white'>373/48 Âu Cơ, Q. Tân Phú, TPHCM</div>
+            <div className='flex w-full justify-center items-center' style={{ backgroundColor: COLOR.backgroundPrimary }}>
+                <div className='flex justify-between items-center pl-10 pr-10 pt-2 pb-2 max-w-[1220px] w-full' >
+                    <div className='flex justify-center items-center'>
+                        <Image src={Logo} alt='logo' width={120} height={120} />
+                    </div>
+                    <div className='flex justify-start items-center gap-2'>
+                        <BiSolidMap size={30} className='rounded-full p-1 border-[2px] border-white text-white' />
+                        <div className='text-white'>373/48 Âu Cơ, Q. Tân Phú, TPHCM</div>
+                    </div>
                 </div>
             </div>
         </div>

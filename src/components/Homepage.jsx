@@ -54,7 +54,7 @@ export default function HomePage() {
                 <MobileViewTest />
             </div>
 
-            <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50 ">
+            <div className="hidden flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50 ">
                 <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Thông tin về các sản phẩm</label>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] md:max-w-[1220px] overflow-hidden">
                     <div className="flex overflow-hidden gap-10 group p-10 hover:overflow-x-scroll">

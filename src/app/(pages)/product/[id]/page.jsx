@@ -188,7 +188,7 @@ export default function ProductDetail() {
                     </div>
                 </div>
                 <div className='w-full lg:w-[49%] flex justify-center items-center'>
-                    <img src='' alt='img' className='w-[500px] h-[260px] bg-blue-200' />
+                    <img src='https://res.cloudinary.com/diribdgsz/image/upload/v1719924082/kysaw/benefit/genesolutions-san-pham-genloveme-img-03-1.png_ukayz0.webp' alt='img' className='w-[500px] h-[500px] ' />
                 </div>
             </div>
         </div>
