@@ -42,7 +42,7 @@ export default function ViewTest() {
     }, []);
     return (
         <div className=" flex justify-center items-center gap-20">
-            <div className=' hidden lg:flex flex-col gap-2 items-center p-10' style={{}}>
+            <div className='flex flex-col gap-2 items-center p-10' style={{}}>
                 <img src={bg1} alt='bg' width={750} height={1700} className='relative' />
                 <div className='absolute flex translate-x-10 translate-y-4'>
                     <img src={subitem} alt='subitem' width={90} height={90} className='rotate-180 opacity-50' />

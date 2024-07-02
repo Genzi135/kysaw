@@ -10,51 +10,27 @@ import tuvan from '../../assets/reason/tuvan.jpg';
 import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
 import ProductData from "../app/(pages)/product/[id]/data";
 import '../app/globals.css';
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect } from "react";
 import GeneBenefitSlider from "@/components/GeneBenefitSlider";
 import ViewTest from "@/app/(pages)/test/ViewTest";
-
-
-
+import { motion } from "framer-motion";
 
 export default function HomePage() {
     const [animate, setAnimate] = useState(false);
-    const nuocbotRef = useRef(null);
-    const congngheRef = useRef(null);
-    const tuvanRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        if (entry.target.classList.contains("hidden-left")) {
-                            entry.target.classList.add("visible-left");
-                            entry.target.classList.remove("hidden-left");
-                        } else if (entry.target.classList.contains("hidden-right")) {
-                            entry.target.classList.add("visible-right");
-                            entry.target.classList.remove("hidden-right");
-                        }
-                    }
-                });
-            },
-            { threshold: 0.1 }
-        );
-
-        if (nuocbotRef.current) observer.observe(nuocbotRef.current);
-        if (congngheRef.current) observer.observe(congngheRef.current);
-        if (tuvanRef.current) observer.observe(tuvanRef.current);
-
-        return () => {
-            if (nuocbotRef.current) observer.unobserve(nuocbotRef.current);
-            if (congngheRef.current) observer.unobserve(congngheRef.current);
-            if (tuvanRef.current) observer.unobserve(tuvanRef.current);
-        };
-    }, []);
 
     useEffect(() => {
         setAnimate(true);
     }, []);
+
+    const fadeInLeft = {
+        hidden: { opacity: 0, x: -100 },
+        visible: { opacity: 1, x: 0 }
+    };
+
+    const fadeInRight = {
+        hidden: { opacity: 0, x: 100 },
+        visible: { opacity: 1, x: 0 }
+    };
 
     return (
         <main className="mt-[70px] bg-white scroll-smooth">
@@ -68,29 +44,24 @@ export default function HomePage() {
             <div className={animate ? 'slide-up' : 'invisible'}>
                 <GeneBenefitSlider />
             </div>
-            <div className="w-full flex flex-col justify-center items-center" style={{ backgroundImage: `linear-gradient(to bottom, ${COLOR.backgroundPrimary}, ${COLOR.backgroundSecondary}, ${COLOR.backgroundPrimary})` }}>
+            <div className="w-full hidden lg:flex flex-col justify-center items-center" style={{ backgroundImage: `linear-gradient(to bottom, ${COLOR.backgroundPrimary}, ${COLOR.backgroundSecondary}, ${COLOR.backgroundPrimary})` }}>
                 <label className="text-white text-2xl md:text-3xl font-manropeBold mt-14">Sản phẩm gen từ chúng tôi</label>
-
                 <ViewTest />
             </div>
 
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50 ">
                 <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Thông tin về các sản phẩm</label>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] md:max-w-[1220px] overflow-hidden">
-                    <div class="flex overflow-hidden gap-10 group p-10">
-                        <div class="flex justify-center items-center gap-10 flex-col sm:flex-row  animate-none sm:animate-loop-scroll group-hover:paused ">
-                            {ProductData.map((e, index) => {
-                                return (
-                                    <ProductCard data={e} key={index} />
-                                );
-                            })}
+                    <div className="flex overflow-hidden gap-10 group p-10">
+                        <div className="flex justify-center items-center gap-10 flex-col sm:flex-row  animate-none sm:animate-loop-scroll group-hover:paused ">
+                            {ProductData.map((e, index) => (
+                                <ProductCard data={e} key={index} />
+                            ))}
                         </div>
-                        <div class="hidden sm:flex space-x-10 animate-loop-scroll group-hover:paused">
-                            {ProductData.map((e, index) => {
-                                return (
-                                    <ProductCard data={e} key={index} />
-                                );
-                            })}
+                        <div className="hidden sm:flex space-x-10 animate-loop-scroll group-hover:paused">
+                            {ProductData.map((e, index) => (
+                                <ProductCard data={e} key={index} />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -101,10 +72,17 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5  overflow-hidden">
+            <div className="flex flex-col justify-center items-center p-2 md:p-5 gap-5 overflow-hidden">
                 <label className="text-black text-xl md:text-3xl font-manropeBold p-2 mt-5 mb-5">Tại sao nên chọn KYSAW</label>
                 <div className="flex flex-col justify-center items-center pl-10 pb-10 pr-10 max-w-[1220px] gap-2 xl:gap-5">
-                    <div ref={nuocbotRef} className="hidden-left flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.1 }}
+                        variants={fadeInLeft}
+                        transition={{ duration: 1 }}
+                        className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md"
+                    >
                         <Image
                             src={nuocbot}
                             alt="reason1"
@@ -118,8 +96,15 @@ export default function HomePage() {
                                 Phương pháp an toàn, không đau và dễ thực hiện, cho phép khách hàng tự lấy mẫu tại nhà một cách tiện lợi.
                             </label>
                         </div>
-                    </div>
-                    <div ref={congngheRef} className="hidden-right flex flex-col sm:flex-row-reverse justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.1 }}
+                        variants={fadeInRight}
+                        transition={{ duration: 1 }}
+                        className="flex flex-col sm:flex-row-reverse justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5"
+                    >
                         <Image
                             src={congnghe}
                             alt="reason2"
@@ -134,8 +119,15 @@ export default function HomePage() {
                                 Sử dụng công nghệ tiên tiến nhất để đảm bảo kết quả phân tích gen có độ tin cậy cao và mang lại giá trị ý nghĩa cho người dùng.
                             </label>
                         </div>
-                    </div>
-                    <div ref={tuvanRef} className="hidden-left flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.1 }}
+                        variants={fadeInLeft}
+                        transition={{ duration: 1 }}
+                        className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5"
+                    >
                         <Image
                             src={tuvan}
                             alt="reason3"
@@ -150,7 +142,7 @@ export default function HomePage() {
                                 Chúng tôi tự hào về đội ngũ chuyên gia tận tâm, luôn sẵn sàng hỗ trợ và đồng hành cùng khách hàng trong suốt quá trình sử dụng dịch vụ.
                             </label>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
