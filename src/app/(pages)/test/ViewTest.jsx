@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import '../../globals.css'
 
-export default function Test() {
+export default function ViewTest() {
 
     const genloveskinLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875922/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Skin_button_vasvrs.svg';
     const genlovekidLogoHex = 'https://res.cloudinary.com/diribdgsz/image/upload/v1719875914/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Kid_button_fqpe8f.svg';
@@ -41,12 +41,12 @@ export default function Test() {
         // };
     }, []);
     return (
-        <div className="mt-24 flex justify-center items-center mb-20 gap-20">
+        <div className=" flex justify-center items-center gap-20">
             <div className=' hidden lg:flex flex-col gap-2 items-center p-10' style={{}}>
                 <img src={bg1} alt='bg' width={750} height={1700} className='relative' />
                 <div className='absolute flex translate-x-10 translate-y-4'>
                     <img src={subitem} alt='subitem' width={90} height={90} className='rotate-180 opacity-50' />
-                    <img src={subitem} alt='subitem' width={150} height={150} className='translate-y-2 opacity-20' />
+                    <img src={subitem} alt='subitem' width={150} height={150} className='translate-y-2 opacity-65' />
                 </div>
 
                 <div className='absolute flex gap-4 translate-y-[100px] -translate-x-8'>
@@ -67,7 +67,7 @@ export default function Test() {
                 <div className='absolute flex gap-6 translate-y-[700px] -translate-x-4'>
                     <img src={genlovefitLogoHex} alt='item' width={300} height={300} className='animate-float' />
                     <img src={fitdesc} alt='desc' width={300} height={300} className='animate-' />
-                    <img src={subitem} alt='subitem' width={250} height={250} className='-translate-x-6 translate-y-[-22px] opacity-60' />
+                    <img src={subitem} alt='subitem' width={250} height={250} className='-translate-x-6 translate-y-[-22px] opacity-65' />
                 </div>
 
                 <div className='absolute flex gap-4 translate-y-[920px] -translate-x-10'>

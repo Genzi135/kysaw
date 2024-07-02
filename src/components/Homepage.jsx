@@ -12,6 +12,7 @@ import ProductData from "../app/(pages)/product/[id]/data";
 import '../app/globals.css';
 import { useEffect, useRef, useState } from "react";
 import GeneBenefitSlider from "@/components/GeneBenefitSlider";
+import ViewTest from "@/app/(pages)/test/ViewTest";
 
 
 
@@ -67,9 +68,14 @@ export default function HomePage() {
             <div className={animate ? 'slide-up' : 'invisible'}>
                 <GeneBenefitSlider />
             </div>
+            <div className="w-full flex flex-col justify-center items-center" style={{ backgroundImage: `linear-gradient(to bottom, ${COLOR.backgroundPrimary}, ${COLOR.backgroundSecondary}, ${COLOR.backgroundPrimary})` }}>
+                <label className="text-white text-2xl md:text-3xl font-manropeBold mt-14">Sản phẩm gen từ chúng tôi</label>
+
+                <ViewTest />
+            </div>
 
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50 ">
-                <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Sản phẩm gen từ chúng tôi</label>
+                <label className="text-black text-xl md:text-3xl font-manropeBold p-5">Thông tin về các sản phẩm</label>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] md:max-w-[1220px] overflow-hidden">
                     <div class="flex overflow-hidden gap-10 group p-10">
                         <div class="flex justify-center items-center gap-10 flex-col sm:flex-row  animate-none sm:animate-loop-scroll group-hover:paused ">
