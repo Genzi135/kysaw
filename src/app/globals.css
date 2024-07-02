@@ -133,16 +133,52 @@ body {
 
   0%,
   100% {
-    transform: translateY(-2%);
+    transform: translateY(-1%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
 
   50% {
-    transform: translateY(2%);
+    transform: translateY(1%);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 
 .animate-bounceSlow {
-  animation: bounceSlow 2s infinite;
+  animation: bounceSlow 3s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 4s infinite;
+}
+
+@keyframes pingSlow {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05)
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pingSlow {
+  animation: pingSlow 4s infinite;
 }
