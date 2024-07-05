@@ -24,8 +24,8 @@ export default function MobileViewTest() {
 
 
     return (
-        <div className='flex flex-col justify-center items-center mt-10 relative w-full max-w-[1220px] h-auto'>
-            <Image src={bg1} alt='background image' width={400} height={700} layout='fit' />
+        <div className='flex flex-col justify-center items-center mt-10 relative w-full max-w-[1220px] h-auto pb-20'>
+            <Image src={bg1} alt='background image' width={400} height={750} layout='fit' />
             <div className='flex justify-center items-center gap-[3px] flex-row-reverse absolute top-0'>
                 <img src={genlovemeLogoHex} alt='logoHex' width={120} height={120} className='animate-float' />
                 <img src={medesc} alt='desc' width={120} height={120} />

@@ -1,12 +1,8 @@
 import Image from "next/image";
 import LogoKysaw from '../../../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png'
-import JH from '../../../../assets/Partners/JH.jpg'
-import GS from '../../../../assets/Partners/GS.png'
 import { COLOR } from "@/utils/COLORS";
 import TeamCard from "@/components/TeamCard";
 import HomepageBanner from '../../../../assets/Slider/HomepageBanner.png';
-import tamnhin from '../../../../assets/Slider/tamnhin.png';
-import sumenh from '../../../../assets/Slider/sumenh.png';
 
 export const metadata = {
     title: 'Giới thiệu - Kysaw',
@@ -91,7 +87,7 @@ export default function About() {
                         <div className="flex justify-center items-center flex-col md:flex-row">
 
                             <div className="w-[70%] flex flex-col justify-center items-center">
-                                <Image src={tamnhin} alt="tamnhin" layout="responsive" width={'100%'} height={'100%'} />
+                                <img src='https://res.cloudinary.com/diribdgsz/image/upload/v1720149610/kysaw/benefit/Duke_Illustration_for_KYSAW-41_izswn0.png' alt="tamnhin" layout="responsive" width={'100%'} height={'100%'} />
                             </div>
                             <div className="flex flex-col justify-center items-center relative">
                                 <label className="font-manropeBold text-xl text-white md:text-xl absolute top-[-20px] rounded-full pl-6 pr-6 pt-1 pb-1" style={{ backgroundColor: COLOR.backgroundPrimary }}>Tầm nhìn</label>
@@ -111,7 +107,7 @@ export default function About() {
                                 <label className="font-manropeBold text-xl text-white md:text-xl absolute top-[-20px] rounded-full pl-6 pr-6 pt-1 pb-1" style={{ backgroundColor: COLOR.backgroundPrimary }}>Sứ mệnh</label>
                             </div>
                             <div className="w-[70%] flex flex-col justify-center items-center">
-                                <Image src={sumenh} alt="sumenh" layout="responsive" width={'100%'} height={'100%'} />
+                                <img src='https://res.cloudinary.com/diribdgsz/image/upload/v1720149613/kysaw/benefit/Duke_Illustration_for_KYSAW-42_g613r4.png' alt="sumenh" layout="responsive" width={'100%'} height={'100%'} />
                             </div>
                         </div>
                         <div className="flex justify-center items-center gap-5 md:gap-10 p-5 mt-10 rounded-lg flex-wrap lg:flex-nowrap bg-blue-50 text-center mb-5">

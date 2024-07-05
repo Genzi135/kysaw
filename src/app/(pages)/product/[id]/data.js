@@ -4,7 +4,7 @@ const ProductData = [
         productName: "Gencare Premium",
         color: '#b98838',
         bannerUrl: '',
-        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633260/kysaw/avatarProduct/Gencare_Premium_x98qae.jpg',
+        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_Gencare_Premium_button_oz5lyn.svg',
         price: 'Liên hệ',
         benefits: [
             "Tầm soát nguy cơ mắc các bệnh mãn tính, nguy cơ ung thư và các bệnh di truyền lặn phổ biến của người Việt Nam.",
@@ -30,7 +30,7 @@ const ProductData = [
         productName: "YamuGen",
         color: '#2795cc',
         bannerUrl: '',
-        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633262/kysaw/avatarProduct/YamuGene_ivq1pp.jpg',
+        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920403/kysaw/listProduct/KYSAW_Product_Logos_Yamugene_Button_yhc7n3.svg',
         price: 'Liên hệ',
         benefits: [
             "Tầm soát nguy cơ của 16-18 bệnh mãn tính và ung thư do di truyền.",
@@ -57,7 +57,7 @@ const ProductData = [
         productName: "GenLove Skin",
         color: '#ed5c90',
         bannerUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633208/kysaw/Skin_copy_xmztdn.jpg',
-        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633261/kysaw/avatarProduct/GenLove_Skin_xmjbkk.jpg',
+        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Skin_button_ehlpxl.svg',
         price: 'Liên hệ',
         benefits: [
             "Giúp người thực hiện hiểu được những đặc tính của da, từ đó biết được cách chăm sóc da phù hợp để có được làn da trẻ và đẹp.",
@@ -84,7 +84,7 @@ const ProductData = [
         productName: "GenLove Fit",
         color: '#4ebb85',
         bannerUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633208/kysaw/GenLove_Fit_copy_pwcrh5.jpg',
-        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633260/kysaw/avatarProduct/GenLove_Fit_x5lur9.jpg',
+        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920394/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Fit_Button_rxrnc4.svg',
         price: 'Liên hệ',
         benefits: [
             "Giúp người làm xét nghiệm hiểu được những đặc tính về chuyển hóa/dung nạp năng lượng từ thức ăn của cơ thể.",
@@ -112,7 +112,7 @@ const ProductData = [
         productName: "GenLove Kid",
         color: '#fcc939',
         bannerUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633208/kysaw/Kids_copy_nlrh3c.jpg',
-        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633260/kysaw/avatarProduct/GenLove_Kid_elbboh.jpg',
+        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920402/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Kid_button_n5p1ps.svg',
         price: 'Liên hệ',
         benefits: [
             "Giải mã các tiềm năng di truyền liên quan đến thể chất, tính cách, năng lực nhận thức, ghi nhớ… cho trẻ.",
@@ -142,7 +142,7 @@ const ProductData = [
         productName: "GenLove Me",
         color: '#46c5e4',
         bannerUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633208/kysaw/Family_1_copy_qvq6fm.jpg',
-        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1718633260/kysaw/avatarProduct/GenLove_Me_biptrm.jpg',
+        avatarUrl: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719920398/kysaw/listProduct/KYSAW_Product_Logos_GenLove_Me_button_ehrsok.svg',
         price: 'Liên hệ',
         benefits: [
             "Cung cấp những thông tin về tiềm lực của chính bạn.",
