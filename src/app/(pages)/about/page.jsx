@@ -84,7 +84,7 @@ export default function About() {
                 <div className="flex flex-col justify-center items-center p-5 md:pl-10 md:pr-10 max-w-[1220px]">
                     <label className="font-manropeBold text-2xl md:text-4xl pb-5 mt-5">Tầm nhìn & sứ mệnh</label>
                     <div className="flex flex-col justify-center items-center gap-10 lg:gap-0">
-                        <div className="flex justify-center items-center flex-col md:flex-row">
+                        <div className="flex justify-center items-center flex-col md:flex-row gap-10 ">
 
                             <div className="w-[70%] flex flex-col justify-center items-center">
                                 <img src='https://res.cloudinary.com/diribdgsz/image/upload/v1720149610/kysaw/benefit/Duke_Illustration_for_KYSAW-41_izswn0.png' alt="tamnhin" layout="responsive" width={'100%'} height={'100%'} />
@@ -97,7 +97,7 @@ export default function About() {
                             </div>
 
                         </div>
-                        <div className="flex justify-center items-center flex-col-reverse md:flex-row">
+                        <div className="flex justify-center items-center flex-col-reverse md:flex-row gap-10">
                             <div className="flex flex-col justify-center items-center relative">
                                 <div className="w-[100%] border-2 rounded-lg p-10">
                                     Giúp người Việt chăm sóc sức khỏe hiệu quả hơn qua việc kết nối khoa học công nghệ gene với các giải pháp chủ động khác.

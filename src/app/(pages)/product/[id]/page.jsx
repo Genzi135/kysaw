@@ -38,14 +38,14 @@ export default function ProductDetail() {
                 )}
             </div>
             <div className='flex justify-center items-center bg-blue-50 w-full'>
-                <div className='flex flex-col lg:flex-row justify-center items-start w-[1220px] mt-14'>
+                <div className='flex flex-col lg:flex-row justify-center items-center md:items-start w-[1220px] mt-14'>
                     {data.avatarUrl && (
                         <div className='flex justify-center items-start flex-col'>
-                            <img src={data.avatarUrl} alt='avatar' className='w-full max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6' />
+                            <img src={data.avatarUrl} alt='avatar' className='w-full max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white' />
                             <label className='font-extrabold pb-10 italic cursor-pointer' style={{ color: COLOR.backgroundPrimary }}>Tham khảo kết quả mẫu</label>
                         </div>
                     )}
-                    <div className='flex flex-1 flex-col justify-center items-start gap-2 pl-20 pr-5 '>
+                    <div className='flex flex-1 flex-col justify-center items-start gap-2 pl-10 md:pl-20 pr-5 '>
                         {data.productName && (
                             <div className='font-manropeExtrabold text-3xl mt-5' >
                                 {data.productName}
@@ -53,7 +53,7 @@ export default function ProductDetail() {
                         )}
                         {data.price && (
                             <div className='font-manropeBold text-3xl' style={{ color: data.color ? data.color : '' }}>
-                                {formatCurrency(data.price)}
+                                Giá: {data.price}
                             </div>
                         )}
 
@@ -67,9 +67,9 @@ export default function ProductDetail() {
                         </div>
                         <div className='flex flex-col'>
                             <label className='text-xl font-manropeBold'>Các chỉ số xét nghiệm</label>
-                            <div className='grid grid-cols-2 w-full'>
+                            <div className='md:grid grid-cols-2 w-full flex flex-wrap'>
                                 {data.indicators.map((indicator, index) => (
-                                    <div className='flex gap-2 mt-2 pr-4' key={index}><BsHouseFill size={22} />{indicator}</div>
+                                    <div className='flex items-center gap-2 mt-2 pr-4' key={index}><div className='max-w-2 max-h-2 min-w-2 min-h-2 rounded-full bg-black' />{indicator}</div>
                                 ))}
                             </div>
                         </div>
@@ -187,7 +187,7 @@ export default function ProductDetail() {
                         </div>
                     </div>
                 </div>
-                <div className='w-full lg:w-[49%] flex justify-center items-center'>
+                <div className='w-full lg:w-[49%] flex justify-center items-center p-2'>
                     <img src='https://res.cloudinary.com/diribdgsz/image/upload/v1719924082/kysaw/benefit/genesolutions-san-pham-genloveme-img-03-1.png_ukayz0.webp' alt='img' className='w-[500px] h-[500px] ' />
                 </div>
             </div>
