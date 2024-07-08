@@ -142,16 +142,16 @@ export default function Consultants() {
                     <CertificateSlider props={list} />
                 </div>
             </div>
-            <div className="flex flex-wrap justify-center items-center max-w-[1220px] x-full p-10">
+            <div className="flex flex-col justify-center items-center w-full max-w-[1220px]  p-10">
 
                 {consultants.map((e, index) => {
                     return (
-                        <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg m-4 p-5 hover:shadow-gray-400 ">
+                        <div key={index} className="w-full max-w-[800px] rounded overflow-hidden shadow-lg m-4 p-5 hover:shadow-gray-400 ">
                             <div className="pb-2 mb-2 border-b-2">
                                 <div className="font-manropeBold text-xl">{e.name}</div>
                                 <div>Ngày cấp chứng nhận: {e.certificationDate}</div>
                             </div>
-                            <div>
+                            <div className="flex justify-start items-center gap-10">
                                 <div><label className="font-manropeBold">Số điện thoại:</label>{e.phone} </div>
                                 <div><label className="font-manropeBold">Email:</label> {e.email}</div>
                             </div>
