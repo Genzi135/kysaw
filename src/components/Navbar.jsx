@@ -22,10 +22,6 @@ const Navbar = () => {
             tag: '/',
         }, {
             id: 2,
-            title: 'Giới thiệu',
-            tag: '/about',
-        }, {
-            id: 3,
             title: 'Sản phẩm',
             tag: '/product',
         },
@@ -70,6 +66,20 @@ const Navbar = () => {
                             </Link>
                         )
                     })}
+                    <div className="dropdown dropdown-hover">
+                        <Link href={'/about'}
+                            className={`flex text-base justify-center items-center cursor-pointer font-manropeBold relative hover:before:w-[100%] hover:text-[#1b6891] pl-1 pr-1 pt-3 pb-3 ${'/about' === path ? "before:w-full before:bg-black" : ""} before:bg-[#1b6891] before:w-[0%] before:left-0 before:absolute before:content-[''] before:h-[2px] before:duration-300 before:bottom-0`}
+                        >
+                            {'Thông tin'}
+                        </Link>
+                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow text-base">
+                            <li><a href='/about'>Về chúng tôi</a></li>
+                            <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
+                            <li><a href='/about#genesolutions'>Gene Solotions</a></li>
+                            <li><a href='/consultants'>Tư vấn viên</a></li>
+                            <li><a href='/recruitment'>Tuyển dụng</a></li>
+                        </ul>
+                    </div>
                     <button className='btn text-white transition-transform duration-200 ease-linear hover:scale-105 font-manrope text-base' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
                 </div>
                 <div className="flex md:hidden">
@@ -95,6 +105,20 @@ const Navbar = () => {
                                 </Link>
                             )
                         })}
+                        <div className="">
+                            <Link href={'/about'}
+                                className={`block p-4 hover:bg-gray-100 cursor-pointer ${"/about" === path ? " font-manropeBold" : ""}`}
+                            >
+                                {'Thông tin'}
+                            </Link>
+                            <ul tabIndex={0} className="menu bg-base-100 z-[1] w-52 pl-6 text-base">
+                                <li><a href='/about'>Về chúng tôi</a></li>
+                                <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
+                                <li><a href='/about#genesolutions'>Gene Solotions</a></li>
+                                <li><a href='/consultants'>Tư vấn viên</a></li>
+                                <li><a href='/recruitment'>Tuyển dụng</a></li>
+                            </ul>
+                        </div>
                         <button className='btn text-white mt-4 transition-transform duration-200 ease-linear hover:scale-105 font-manrope' style={{ backgroundColor: COLOR.backgroundPrimary }} onClick={handleFreeConsultClick}>Tư vấn miễn phí</button>
                     </div>
                 </div>

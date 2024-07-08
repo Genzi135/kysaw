@@ -63,8 +63,8 @@ export default function About() {
     ];
 
     return (
-        <div className="mt-[70px]">
-            <div className="flex justify-center items-center" style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},#15BEF2)` }}>
+        <div className="mt-[70px] scroll-smooth">
+            <div id="about" className="flex justify-center items-center" style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},#15BEF2)` }}>
                 <Image src={HomepageBanner} alt="banner" layout="responsive" className="max-w-[1220px]" />
             </div>
             <div className="flex justify-center items-center">
@@ -137,38 +137,40 @@ export default function About() {
                         <TeamCard props={e} key={index} />
                     ))}
                 </div>
+                <div id="jh-bioholdings"></div>
             </div>
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5 mt-[60px]">
                 <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8">
                     <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-45px] sm:top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold sm:w-[450px] sm:h-[125px] h-[90px] w-[250px]">
                         <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963130/kysaw/partners/JHBioHolding_Logo-02_hdewen.png" alt="jh bioholding" className="sm:h-[90px] w-[auto] h-[60px]" />
                     </div>
-                    <p className="mt-[52px] text-xl">
+                    <p className="mt-[52px] text-lg sm:text-xl">
                         JH Bioholdings là Bệnh viện - Viện nghiên cứu Trung tâm xét nghiệm hàng đầu và là đối tác của hơn 400 bệnh viện tại Hàn Quốc. 2023 là bước ngoặt lớn của sản phẩm xét nghiệm gen di truyền tầm soát ung thư Yamugene trên thị trường Việt Nam.
                     </p>
-                    <p className="text-xl">
+                    <p className=" text-lg sm:text-xl">
                         Với phương châm hoạt động cống hiến hết mình để phát triển các sản phẩm và hệ thống chẩn đoán phân tử khác nhau thông qua việc đầu tư vào R&D nhằm đóng góp vào cuộc sống khỏe mạnh của nhân loại.
                     </p>
-                    <p className="text-xl">
+                    <p className=" text-lg sm:text-xl">
                         Được sự gửi gắm chính phủ Hàn Quốc, JH là doanh nghiệp hàng đầu về mảng xét nghiệm tại Hàn và được bảo trợ của chính phủ Hàn Quốc đến với Việt Nam.
                     </p>
                     <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963131/kysaw/partners/YamuGene_Certificate-14_zw2qrd.png" alt="jg certificate" className="w-auto h-auto" />
-                    <p className="text-xl">
+                    <p className=" text-lg sm:text-xl">
                         JH Bioholdings là đơn vị được cấp phép sản xuất, kinh doanh, nghiên cứu di truyền, và có đầy đủ chứng nhận quản lý chất lượng ISO, CE, GMP.
                     </p>
-                    <p className="text-xl text-start">
+                    <p className=" text-lg sm:text-xl text-start">
                         KYSAW hân hạnh được lựa chọn là đối tác môi giới độc quyền sản phẩm Yamugene của JH Bioholdings.
                     </p>
+                    <div id="genesolutions"></div>
                 </div>
                 <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8 mt-[80px]">
-                    <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-45px] sm:top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold sm:w-[450px] sm:h-[125px] h-[90px] w-[250px]">
+                    <div id="genesolutions" className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-45px] sm:top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold sm:w-[450px] sm:h-[125px] h-[90px] w-[250px]">
                         <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963129/kysaw/partners/GenSolution_Logo-02_gewouq.png" alt="gs" className="sm:h-[90px] w-[auto] h-[60px]" />
                     </div>
-                    <p className="mt-[52px] text-xl">
+                    <p className="mt-[52px]  text-lg sm:text-xl">
                         Gene Solutions thành lập với tầm nhìn trở thành tổ chức hàng đầu tại Việt Nam và khu vực trong lĩnh vực nghiên cứu phát triển, ứng dụng công nghệ phân tích di truyền và giải mã gene vào nền y học chính xác. Sứ mệnh của Gene Solutions là giúp cải thiện sức khỏe cộng đồng bằng giải pháp gene tiên tiến, chất lượng và đảm bảo chi phí hợp lý nhất. Hiện nay Gene Solutions đã vươn xa trong khu vực, có mặt tại 4 quốc gia gồm: Singapore, Indonesia, Thailand, Philippines.
                     </p>
-                    <div className="w-full text-xl">Năng lực mạnh mẽ và uy tín</div>
-                    <div className="w-full text-xl">
+                    <div className="w-full  text-lg sm:text-xl">Năng lực mạnh mẽ và uy tín</div>
+                    <div className="w-full  text-lg sm:text-xl">
                         <ul className="list-disc ml-10">
                             <li>15 Tiến sĩ trong lĩnh vực Genetics, Cancer biology, Bioinformatics, ComputerScience...</li>
                             <li>15 công bố quốc tế</li>
