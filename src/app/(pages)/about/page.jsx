@@ -139,8 +139,11 @@ export default function About() {
                 </div>
                 <div id="jh-bioholdings"></div>
             </div>
-            <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5 mt-[60px]">
-                <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8">
+            <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-5 ">
+                <div className="w-full h-auto mb-[50px] flex justify-center items-center">
+                    <label className="text-black text-xl md:text-3xl font-manropeBold">Đối tác của chúng tôi</label>
+                </div>
+                <div className="flex flex-col justify-center items-center relative p-10 border-2 max-w-[1220px] rounded-lg gap-8 mt-10">
                     <div className="flex justify-center items-center absolute pl-5 pr-5 pt-2 pb-2 text-nowrap top-[-45px] sm:top-[-65px] border-2 rounded-full bg-white text-xl font-manropeBold sm:w-[450px] sm:h-[125px] h-[90px] w-[250px]">
                         <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963130/kysaw/partners/JHBioHolding_Logo-02_hdewen.png" alt="jh bioholding" className="sm:h-[90px] w-[auto] h-[60px]" />
                     </div>

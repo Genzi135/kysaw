@@ -25,111 +25,97 @@ export default function Consultants() {
 
     const consultants = [
         {
-            id: 1,
-            name: "Alice Nguyen",
-            position: "Chief Geneticist",
-            photo: "https://via.placeholder.com/150",
-            bio: "Alice has 25 years of experience in genetic engineering and is the chief architect of our gene therapy programs."
+            name: "Nguyễn Văn A",
+            certificationDate: "2023-01-01",
+            phone: "0901234567",
+            email: "nguyenvana@example.com"
         },
         {
-            id: 2,
-            name: "Robert Lee",
-            position: "Bioinformatics Specialist",
-            photo: "https://via.placeholder.com/150",
-            bio: "Robert specializes in bioinformatics, leveraging computational tools to advance our genetic research."
+            name: "Trần Thị B",
+            certificationDate: "2023-02-15",
+            phone: "0912345678",
+            email: "tranthib@example.com"
         },
         {
-            id: 3,
-            name: "Linda Tran",
-            position: "Clinical Genomics Scientist",
-            photo: "https://via.placeholder.com/150",
-            bio: "Linda focuses on translating genomic discoveries into clinical applications, improving patient outcomes."
+            name: "Lê Thị C",
+            certificationDate: "2023-03-20",
+            phone: "0923456789",
+            email: "lethic@example.com"
         },
         {
-            id: 4,
-            name: "David Kim",
-            position: "Molecular Biologist",
-            photo: "https://via.placeholder.com/150",
-            bio: "David's expertise in molecular biology drives our research on genetic mutations and their implications."
+            name: "Phạm Văn D",
+            certificationDate: "2023-04-10",
+            phone: "0934567890",
+            email: "phamvand@example.com"
         },
         {
-            id: 5,
-            name: "Jessica Pham",
-            position: "Genetics Researcher",
-            photo: "https://via.placeholder.com/150",
-            bio: "Jessica conducts cutting-edge research in human genetics, contributing to our understanding of hereditary diseases."
+            name: "Hoàng Thị E",
+            certificationDate: "2023-05-05",
+            phone: "0945678901",
+            email: "hoangthie@example.com"
         },
         {
-            id: 6,
-            name: "James Ho",
-            position: "Gene Therapy Specialist",
-            photo: "https://via.placeholder.com/150",
-            bio: "James develops innovative gene therapy treatments aimed at curing genetic disorders."
+            name: "Võ Văn F",
+            certificationDate: "2023-06-18",
+            phone: "0956789012",
+            email: "vovanf@example.com"
         },
         {
-            id: 7,
-            name: "Sophia Le",
-            position: "Biotech Engineer",
-            photo: "https://via.placeholder.com/150",
-            bio: "Sophia integrates engineering principles with biological sciences to advance our genetic engineering projects."
+            name: "Đặng Thị G",
+            certificationDate: "2023-07-22",
+            phone: "0967890123",
+            email: "dangthig@example.com"
         },
         {
-            id: 8,
-            name: "Michael Tran",
-            position: "Genomic Data Analyst",
-            photo: "https://via.placeholder.com/150",
-            bio: "Michael analyzes genomic data to identify genetic variations associated with various diseases."
+            name: "Bùi Văn H",
+            certificationDate: "2023-08-30",
+            phone: "0978901234",
+            email: "buivanh@example.com"
         },
         {
-            id: 9,
-            name: "Emily Nguyen",
-            position: "Research Scientist",
-            photo: "https://via.placeholder.com/150",
-            bio: "Emily's research focuses on understanding the genetic basis of complex traits and diseases."
+            name: "Ngô Thị I",
+            certificationDate: "2023-09-12",
+            phone: "0989012345",
+            email: "ngothii@example.com"
         },
         {
-            id: 10,
-            name: "Daniel Nguyen",
-            position: "Genetics Lab Manager",
-            photo: "https://via.placeholder.com/150",
-            bio: "Daniel oversees the daily operations of our genetics lab, ensuring all research is conducted efficiently."
+            name: "Đỗ Văn J",
+            certificationDate: "2023-10-25",
+            phone: "0990123456",
+            email: "dovanj@example.com"
         },
         {
-            id: 11,
-            name: "Sarah Park",
-            position: "Epigenetics Researcher",
-            photo: "https://via.placeholder.com/150",
-            bio: "Sarah investigates the role of epigenetic changes in gene expression and disease."
+            name: "Hồ Thị K",
+            certificationDate: "2023-11-05",
+            phone: "0901123456",
+            email: "hothik@example.com"
         },
         {
-            id: 12,
-            name: "Kevin Vo",
-            position: "Genomics Project Manager",
-            photo: "https://via.placeholder.com/150",
-            bio: "Kevin manages large-scale genomics projects, coordinating efforts across multiple teams."
+            name: "Dương Văn L",
+            certificationDate: "2023-12-15",
+            phone: "0902234567",
+            email: "duongvanl@example.com"
         },
         {
-            id: 13,
-            name: "Anna Phan",
-            position: "Genetic Counselor",
-            photo: "https://via.placeholder.com/150",
-            bio: "Anna provides genetic counseling to patients, helping them understand their genetic risks and options."
+            name: "Lý Thị M",
+            certificationDate: "2024-01-10",
+            phone: "0903345678",
+            email: "lythim@example.com"
         },
         {
-            id: 14,
-            name: "William Bui",
-            position: "Genomics Educator",
-            photo: "https://via.placeholder.com/150",
-            bio: "William educates healthcare professionals and the public about the latest advancements in genomics."
+            name: "Vũ Văn N",
+            certificationDate: "2024-02-20",
+            phone: "0904456789",
+            email: "vuvann@example.com"
         },
         {
-            id: 15,
-            name: "Natalie Vo",
-            position: "Genomics Policy Advisor",
-            photo: "https://via.placeholder.com/150",
-            bio: "Natalie advises on policies related to genomic research and its ethical implications."
+            name: "Trịnh Thị O",
+            certificationDate: "2024-03-05",
+            phone: "0905567890",
+            email: "trinhthio@example.com"
         }
     ];
+
 
     const user = {
         id: 1,
@@ -156,43 +142,24 @@ export default function Consultants() {
                     <CertificateSlider props={list} />
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center max-w-[1220px] x-full">
-                <label> Tư vấn viên</label>
-                <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
-                    <img className="w-full" src={user.photo} alt={user.name} />
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">{user.name}</div>
-                        <p className="text-gray-700 text-base">
-                            {user.position}
-                        </p>
-                        <p className="text-gray-700 text-base">
-                            {user.bio}
-                        </p>
-                    </div>
-                </div>
+            <div className="flex flex-wrap justify-center items-center max-w-[1220px] x-full p-10">
 
-                <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white">
-                    <img className="w-full h-48 object-cover" src={user.photo} alt={user.name} />
-                    <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">{user.name}</div>
-                        <div className="text-gray-700 text-base font-semibold">{user.position}</div>
-                        <p className="text-gray-700 text-base mt-2">
-                            {user.bio}
-                        </p>
-                    </div>
-                    <div className="w-full flex justify-center items-center p-5">
-                        <div className="cursor-pointer hover:text-teal-700" onClick={() => document.getElementById('userDetail').showModal()}>Xem chi tiết</div>
-                    </div>
-                </div>
+                {consultants.map((e, index) => {
+                    return (
+                        <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg m-4 p-5 hover:shadow-gray-400 ">
+                            <div className="pb-2 mb-2 border-b-2">
+                                <div className="font-manropeBold text-xl">{e.name}</div>
+                                <div>Ngày cấp chứng nhận: {e.certificationDate}</div>
+                            </div>
+                            <div>
+                                <div><label className="font-manropeBold">Số điện thoại:</label>{e.phone} </div>
+                                <div><label className="font-manropeBold">Email:</label> {e.email}</div>
+                            </div>
+                        </div>
+                    )
+                })}
 
-                <dialog id="userDetail" className="w-[90vw] h-[90vh] rounded-lg p-5">
-                    <div className="flex justify-end items-center">
-                        <form method="dialog">
-                            <button className=" hover:bg-gray-300 bg-gray-100 rounded-full p-2 w-10 h-10 flex justify-center items-center cursor-pointer" >X</button>
-                        </form>
-                    </div>
-                    <div>Thông tin chi tiết</div>
-                </dialog>
+
 
             </div>
         </div>
