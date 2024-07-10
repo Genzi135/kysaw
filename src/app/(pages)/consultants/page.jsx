@@ -128,8 +128,8 @@ export default function Consultants() {
 
     return (
         <div className="mt-20 scroll-smooth flex flex-col justify-center items-center">
-            <div className="flex max-w-[1220px] w-full h-auto justify-center items-center p-10 max-h-[500px] bg-gray-200">
-                <div className="rounded-box bg-black max-h-[500px] max-w-[400px]">
+            <div className="flex max-w-[1220px] w-full h-full justify-center items-center p-44 max-h-[500px] bg-gray-200">
+                {/* <div className="rounded-box bg-black max-h-[500px] max-w-[400px]">
                     <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1720432426/chat-app/PicsArt_01-15-12.02.38_bigiqm.jpg" alt="avatar" className="w-[auto] h-[auto] max-h-[500px] max-w-[400px]" />
                 </div>
                 <div className="w-full h-full flex flex-col p-5">
@@ -140,7 +140,7 @@ export default function Consultants() {
                     <label>Biết đi xe máy, không biết đi xe đợp</label>
                     <label>Chứng nhận - bằng cấp:</label>
                     <CertificateSlider props={list} />
-                </div>
+                </div> */}
             </div>
             <div className="flex flex-col justify-center items-center w-full max-w-[1220px]  p-10">
 
@@ -151,7 +151,7 @@ export default function Consultants() {
                                 <div className="font-manropeBold text-xl">{e.name}</div>
                                 <div>Ngày cấp chứng nhận: {e.certificationDate}</div>
                             </div>
-                            <div className="flex justify-start items-center gap-10">
+                            <div className="flex justify-start items-center flex-wrap sm:gap-10">
                                 <div><label className="font-manropeBold">Số điện thoại:</label>{e.phone} </div>
                                 <div><label className="font-manropeBold">Email:</label> {e.email}</div>
                             </div>

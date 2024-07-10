@@ -37,10 +37,8 @@ export default function ProductCard({ data }) {
                         {data.indicators && data.indicators.map((e, index) => {
                             return (
                                 <div key={index} className="text-ellipsis ">{e}<br></br></div>
-
                             )
                         })}
-
                     </div>
                 </div>
                 <div className="absolute bottom-[80px] left-[20px] sm:hidden">...</div>
