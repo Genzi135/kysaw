@@ -26,7 +26,7 @@ export default function ProductCard({ data }) {
         //     </div>
         // </div>
         <div className='w-[300px] sm:w-[550px] h-[300px] flex justify-center items-center relative duration-300 mb-[150px] sm:mb-0'>
-            <img src={data.avatarUrl && data.avatarUrl} alt='avatar' width={200} height={200} className='absolute z-30 sm:top-4 sm:left-[20px] -top-10' />
+            <Image src={data.avatarUrl && data.avatarUrl} alt='avatar' width={200} height={200} className='absolute z-30 sm:top-4 sm:left-[20px] -top-10' />
             <div className='w-full h-[90px] top-[30px] sm:top-[auto] sm:w-[210px] sm:h-[55%] absolute sm:bottom-4 z-20 sm:left-[16px] sm:rounded-xl rounded-t-xl ' style={{ backgroundColor: data.color && data.color }}>
                 <Image src={logowhite} alt="logo" width={130} height={130} className=' sm:bottom-0 sm:mt-[100px] sm:ml-2 hidden sm:block' />
             </div>

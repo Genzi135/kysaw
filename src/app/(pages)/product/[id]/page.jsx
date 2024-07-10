@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 import ProductData from './data';
 import { usePathname } from 'next/navigation';
 import Slider from '@/components/Slider';
-import { formatCurrency } from '@/utils/format';
 import { COLOR } from '@/utils/COLORS';
 import { BsClipboard2HeartFill, BsClockFill, BsHeadset, BsHouseFill } from 'react-icons/bs';
-import Steps from '@/components/Steps';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ProductDetail() {
     const [data, setData] = useState(null);
@@ -41,7 +41,7 @@ export default function ProductDetail() {
                 <div className='flex flex-col lg:flex-row justify-center items-center md:items-start w-[1220px] mt-14'>
                     {data.avatarUrl && (
                         <div className='flex justify-center items-start flex-col'>
-                            <img src={data.avatarUrl} alt='avatar' className='w-full max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white' />
+                            <Image src={data.avatarUrl} alt='avatar' width={'100%'} height={'100%'} className='w-full max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white' />
                             <label className='font-extrabold pb-10 italic cursor-pointer' style={{ color: COLOR.backgroundPrimary }}>Tham khảo kết quả mẫu</label>
                         </div>
                     )}
@@ -74,9 +74,9 @@ export default function ProductDetail() {
                             </div>
                         </div>
                         <div>
-                            <button className='btn w-[260px] text-lg text-white mt-5 mb-14 ' style={{ backgroundColor: COLOR.backgroundPrimary }}>
+                            <Link href={'#tuvan'}><button className='btn w-[260px] text-lg text-white mt-5 mb-14 ' style={{ backgroundColor: COLOR.backgroundPrimary }}>
                                 <BsHeadset size={20} />
-                                Tư vấn ngay</button>
+                                Tư vấn ngay</button></Link>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ export default function ProductDetail() {
                 {data.introductions && (
                     <div className='flex flex-col justify-center items-center md:flex-row max-w-[1220px]'>
                         <div className='w-full md:w-[50%]'>
-                            <img src={data.introductions.image} alt='content image' className='w-[400px] mx-auto' />
+                            <Image src={data.introductions.image} alt='content image' width={'400px'} className='w-[400px] mx-auto' />
                         </div>
                         <div className='w-full md:w-[50%] p-3 flex flex-col gap-3 text-lg'>
                             {data.introductions.content.map((paragraph, index) => (

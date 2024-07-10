@@ -1,25 +1,23 @@
+import { imgShared } from "@/utils/images";
 import GeneBenefitCard from "./GeneBenefitCard";
-import GeneBenefit1 from '../../assets/Slider/Hieu ro co the.png';
-import GeneBenefit2 from '../../assets/Slider/Phong ngua rui ro.png';
-import GeneBenefit3 from '../../assets/Slider/Toi uu suc khoe.png';
 import { useState } from "react";
 
 export default function GeneBenefitSlider() {
     const geneBenefit = [
         {
-            path: 'https://res.cloudinary.com/diribdgsz/image/upload/v1720149610/kysaw/benefit/Duke_Illustration_for_KYSAW-39_lboj0g.png',
+            path: imgShared.benefit.HieuRoCoThe,
             label: 'HieuRoCoThe',
             title: 'Hiểu rõ cơ thể',
             content: 'Xét nghiệm DNA giúp bạn hiểu rõ hơn về cơ thể và gen di truyền của mình. Thông tin từ xét nghiệm có thể tiết lộ về đặc điểm sinh học, tình trạng sức khỏe, và tiềm năng di truyền, giúp bạn có cái nhìn toàn diện về bản thân.'
         },
         {
-            path: 'https://res.cloudinary.com/diribdgsz/image/upload/v1720149610/kysaw/benefit/Duke_Illustration_for_KYSAW-38_ntav3s.png',
+            path: imgShared.benefit.PhongNguaRuiRo,
             label: 'PhongNguaRuiRo',
             title: 'Phòng ngừa rủi ro',
             content: 'Xét nghiệm DNA giúp phát hiện các yếu tố rủi ro di truyền, từ đó bạn có thể chuẩn bị và thực hiện các biện pháp phòng ngừa kịp thời nhằm giảm thiểu nguy cơ mắc các bệnh di truyền và bảo vệ sức khỏe của bản thân bạn và gia đình.'
         },
         {
-            path: 'https://res.cloudinary.com/diribdgsz/image/upload/v1720149610/kysaw/benefit/Duke_Illustration_for_KYSAW-40_uv5xjf.png',
+            path: imgShared.benefit.ToiUuSucKhoe,
             label: 'ToiUuSucKhoe',
             title: 'Tối ưu sức khỏe',
             content: 'Dựa trên kết quả xét nghiệm DNA, bạn có thể điều chỉnh chế độ ăn uống, tập luyện và lối sống sao cho phù hợp với cấu trúc gen của mình. Điều này giúp tối ưu hóa sức khỏe và tăng cường chất lượng cuộc sống hàng ngày.'

@@ -1,20 +1,15 @@
 'use client'
 import Image from "next/image";
-import JH from '../../assets/Partners/JH.jpg';
-import GS from '../../assets/Partners/GS.png';
 import { COLOR } from "@/utils/COLORS";
 import ProductCard from "@/components/ProductCard";
-import nuocbot from '../../assets/reason/nuocbot.jpg';
-import congnghe from '../../assets/reason/congnghe.jpg';
-import tuvan from '../../assets/reason/tuvan.jpg';
-import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
-import ProductData from "../app/(pages)/product/[id]/data";
+import ProductData from "./(pages)/product/[id]/data";
 import '../app/globals.css';
 import { useState, useEffect } from "react";
 import GeneBenefitSlider from "@/components/GeneBenefitSlider";
-import ViewTest from "@/app/(pages)/test/ViewTest";
 import { motion } from "framer-motion";
-import MobileViewTest from "@/app/(pages)/test/MobileViewTest";
+import { imgShared } from "@/utils/images";
+import HomeMainBanner from "@/components/HomeMainBanner";
+import HomeSubBanner from "@/components/HomeSubBanner";
 
 export default function HomePage() {
     const [animate, setAnimate] = useState(false);
@@ -39,7 +34,7 @@ export default function HomePage() {
                 className="flex justify-center items-center"
                 style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},${COLOR.backgroundSecondary})` }}
             >
-                <Image src={HomepageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
+                <Image src={imgShared.Banner.HomePageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
             </div>
 
             <div className={animate ? 'slide-up' : 'invisible' + 'flex justify-center items-center '}>
@@ -47,11 +42,11 @@ export default function HomePage() {
             </div>
             <div className="w-full hidden lg:flex flex-col justify-center items-center" style={{ backgroundImage: `linear-gradient(to bottom, ${COLOR.backgroundPrimary}, ${COLOR.backgroundSecondary}, ${COLOR.backgroundPrimary})` }}>
                 <label className="text-white text-2xl md:text-3xl font-manropeBold mt-14">Sản phẩm gen từ chúng tôi</label>
-                <ViewTest />
+                <HomeMainBanner />
             </div>
             <div className="w-full flex lg:hidden flex-col justify-center items-center" style={{ backgroundImage: `linear-gradient(to bottom, ${COLOR.backgroundPrimary}, ${COLOR.backgroundSecondary}, ${COLOR.backgroundPrimary})` }}>
                 <label className="text-white text-xl md:text-3xl font-manropeBold mt-14">Sản phẩm gen từ chúng tôi</label>
-                <MobileViewTest />
+                <HomeSubBanner />
             </div>
 
             <div className="hidden flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50 ">
@@ -89,7 +84,7 @@ export default function HomePage() {
                         className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md"
                     >
                         <Image
-                            src={nuocbot}
+                            src={imgShared.reason.NuocBot}
                             alt="reason1"
                             className="rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl w-[100%] sm:w-[55%]"
                         />
@@ -111,7 +106,7 @@ export default function HomePage() {
                         className="flex flex-col sm:flex-row-reverse justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5"
                     >
                         <Image
-                            src={congnghe}
+                            src={imgShared.reason.CongNghe}
                             alt="reason2"
                             className="rounded-t-xl sm:rounded-tl-none sm:rounded-r-xl w-[100%] sm:w-[55%]"
                         />
@@ -134,7 +129,7 @@ export default function HomePage() {
                         className="flex flex-col sm:flex-row justify-start items-center sm:gap-5 bg-blue-50 rounded-xl shadow-md mt-5"
                     >
                         <Image
-                            src={tuvan}
+                            src={imgShared.reason.TuVan}
                             alt="reason3"
                             className="rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl w-[100%] sm:w-[55%]"
                         />
@@ -165,10 +160,10 @@ export default function HomePage() {
                 <label className="text-black text-xl md:text-3xl font-manropeBold mt-5">Đối tác của chúng tôi</label>
                 <div className="flex justify-center items-center gap-5 md:gap-10">
                     <div className="flex justify-center items-center bg-white ">
-                        <Image src={JH} alt="logo" width={200} height={200} />
+                        <Image src={imgShared.partners.JH} alt="logo" width={200} height={200} />
                     </div>
                     <div className="flex justify-center items-center bg-white">
-                        <Image src={GS} alt="logo" width={200} height={200} />
+                        <Image src={imgShared.partners.GS} alt="logo" width={200} height={200} />
                     </div>
                 </div>
             </div>

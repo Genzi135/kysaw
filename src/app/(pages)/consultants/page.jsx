@@ -1,27 +1,8 @@
 'use client'
-import CertificateSlider from "@/components/CertificateSlider";
 
 
 export default function Consultants() {
 
-    const list = [
-        {
-            id: 1,
-            content: 'Bằng mặt nhưng không bằng lòng'
-        }, {
-            id: 2,
-            content: 'Bằng chíu bằng chíu'
-        }, {
-            id: 3,
-            content: 'Chứng nào tật nấy'
-        }, {
-            id: 4,
-            content: 'Bằng lòng đi em anh dìa quê dắt má lên liền'
-        }, {
-            id: 3,
-            content: 'Chứng minh thư (hết hạn)'
-        },
-    ]
 
     const consultants = [
         {
@@ -116,34 +97,11 @@ export default function Consultants() {
         }
     ];
 
-
-    const user = {
-        id: 1,
-        name: "Alice Nguyen",
-        position: "Chief Geneticist",
-        photo: "https://via.placeholder.com/150",
-        bio: "Alice has 25 years of experience in genetic engineering and is the chief architect of our gene therapy programs."
-    }
-
-
     return (
         <div className="mt-20 scroll-smooth flex flex-col justify-center items-center">
             <div className="flex max-w-[1220px] w-full h-full justify-center items-center p-44 max-h-[500px] bg-gray-200">
-                {/* <div className="rounded-box bg-black max-h-[500px] max-w-[400px]">
-                    <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1720432426/chat-app/PicsArt_01-15-12.02.38_bigiqm.jpg" alt="avatar" className="w-[auto] h-[auto] max-h-[500px] max-w-[400px]" />
-                </div>
-                <div className="w-full h-full flex flex-col p-5">
-                    <label className="font-manropeBold text-4xl">Genzi </label>
-                    <label>2 tủi</label>
-                    <label>Trình độ 16/12</label>
-                    <label>Có phiếu bé ngoan (tự photo)</label>
-                    <label>Biết đi xe máy, không biết đi xe đợp</label>
-                    <label>Chứng nhận - bằng cấp:</label>
-                    <CertificateSlider props={list} />
-                </div> */}
             </div>
             <div className="flex flex-col justify-center items-center w-full max-w-[1220px]  p-10">
-
                 {consultants.map((e, index) => {
                     return (
                         <div key={index} className="w-full max-w-[800px] rounded overflow-hidden shadow-lg m-4 p-5 hover:shadow-gray-400 ">
@@ -158,9 +116,6 @@ export default function Consultants() {
                         </div>
                     )
                 })}
-
-
-
             </div>
         </div>
     )

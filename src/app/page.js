@@ -1,4 +1,4 @@
-import HomePage from "@/components/Homepage";
+import HomePage from "@/app/Homepage";
 import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
   ogTitle: 'Trang Chủ - KYSAW',
   ogDescription: 'KYSAW là đơn vị tiên phong trong việc ứng dụng công nghệ gene vào đời sống, cung cấp các giải pháp chăm sóc sức khỏe toàn diện và bảo vệ tài chính gia đình.',
   ogImage: HomepageBanner.src,
-  ogUrl: 'https://kysaw.vercel.app',
+  ogUrl: 'https://kysaw.com',
 };
 
 
