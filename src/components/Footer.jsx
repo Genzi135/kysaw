@@ -49,22 +49,22 @@ export default function Footer() {
 
     const products = [
         {
-            title: 'YamuGene',
+            title: 'Yamu Gene ',
             link: '/product/yamugene'
         }, {
-            title: 'GenePremium',
+            title: 'Gen Care Premium',
             link: '/product/genepremium',
         }, {
-            title: 'GeneLoveMe',
+            title: 'Gen Love Me',
             link: '/product/geneloveMe'
         }, {
-            title: 'GeneLoveSkin',
+            title: 'Gen Love Skin',
             link: '/product/geneloveSkin'
         }, {
-            title: 'GeneLoveFit',
+            title: 'Gen Love Fit',
             link: '/product/genelovefit'
         }, {
-            title: 'GeneLoveKid',
+            title: 'Gen Love Kid',
             link: '/product/genelovekid'
         },
     ]
@@ -128,27 +128,29 @@ export default function Footer() {
                 <div className='flex justify-around items-start flex-col md:flex-row ml-5 mr-5 mb-5 w-[1220px]'>
                     <div className='flex flex-col justify-center items-start mt-5'>
                         <label className='text-xl font-manropeBold mb-1'>Sản phẩm</label>
-                        <Link href={'/product/yamuGen'} className='hover:text-sky-600'>YamuGene</Link>
-                        <Link href={'/product/gencarepremium'} className='hover:text-sky-500'>Gene Care Premium</Link>
-                        <Link href={'/product/genloveme'} className='hover:text-sky-500'>GeneLoveMe</Link>
-                        <Link href={'/product/genloveskin'} className='hover:text-sky-500'>GeneLoveSkin</Link>
-                        <Link href={'/product/genlovefit'} className='hover:text-sky-500'>GeneLoveFit</Link>
-                        <Link href={'/product/genlovekid'} className='hover:text-sky-500'>GeneLoveKid</Link>
+                        <Link href={'/product/yamuGen'} className='hover:text-sky-600'>Yamu Gene</Link>
+                        <Link href={'/product/gencarepremium'} className='hover:text-sky-500'>Gen Care Premium</Link>
+                        <Link href={'/product/genloveme'} className='hover:text-sky-500'>Gen Love Me</Link>
+                        <Link href={'/product/genloveskin'} className='hover:text-sky-500'>Gen Love Skin</Link>
+                        <Link href={'/product/genlovefit'} className='hover:text-sky-500'>Gen Love Fit</Link>
+                        <Link href={'/product/genlovekid'} className='hover:text-sky-500'>Gen Love Kid</Link>
                     </div>
                     <div className='flex flex-col justify-center items-start mt-5'>
                         <label className='text-xl font-manropeBold mb-1'>Công ty</label>
                         <Link href={'/about'} className='hover:text-sky-500'>Về chúng tôi</Link>
                         <Link href={'/about#doitac'} className='hover:text-sky-500'>Đối tác của chúng tôi</Link>
+                        <Link href={'/consultants'} className='hover:text-sky-500'>Tư vấn viên</Link>
+                        <Link href={'/recruitment'} className='hover:text-sky-500'>Tuyển dụng</Link>
                     </div>
                     <div className='flex flex-col justify-center items-start mt-5'>
                         <label className='text-xl font-manropeBold mb-1'>Liên hệ</label>
                         {/* <Link href={'#tuvan'} className='hover:text-sky-500'>Tư vấn (Miễn phí)</Link> */}
                         <div className='flex justify-start items-center gap-2 mt-1'>
-                            <BiSolidPhoneCall size={30} className='rounded-full p-1 border-[2px] border-black text-black' />
+                            <BiSolidPhoneCall size={25} className='rounded-full p-1 border-[2px] border-black text-black' />
                             <div className='text-black'>(+84) 345 972 986</div>
                         </div>
                         <div className='flex justify-start items-center gap-2 mt-1'>
-                            <BiLogoGmail size={30} className='rounded-full p-1 border-[2px] border-black text-black' />
+                            <BiLogoGmail size={25} className='rounded-full p-1 border-[2px] border-black text-black' />
                             <div className='text-black'>info@kysaw.vn</div>
                         </div>
                     </div>
@@ -160,7 +162,7 @@ export default function Footer() {
                         <Image src={imgShared.logos.white} alt='logo' width={120} height={120} />
                     </div>
                     <div className='flex justify-start items-center gap-2'>
-                        <BiSolidMap size={30} className='rounded-full p-1 border-[2px] border-white text-white' />
+                        <BiSolidMap size={30} className='rounded-full p-1 border-[2px] border-white text-white text-nowrap' />
                         <div className='text-white'>373/48 Âu Cơ, Q. Tân Phú, TPHCM</div>
                     </div>
                 </div>

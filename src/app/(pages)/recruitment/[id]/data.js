@@ -1,19 +1,22 @@
 export const RecruitmentData = [
     {
-        id: 'sales',
-        name: 'Nhân viên Sales',
+        id: 'chuyenvienkinhdoanh',
+        name: 'Chuyên viên kinh doanh',
         location: 'HCM',
         salary: 'Thoả thuận',
         time: 'Full-time',
         role: 'Nhân viên chính thức',
         jobDescription: [
-            'a', 'b', 'c', 'd'
+            'Tìm kiếm và kết nối khách hàng sử dụng dịch vụ Kysaw', 'Tư vấn và chăm sóc khách hàng trực tiếp và gián tiếp', 'Học hỏi kiến thức chuyên môn để cung cấp cho khách hàng dịch vụ đúng chuẩn', 'Chăm sóc khách hàng hiệu quả để nhận được thêm sự giới thiệu bán hàng'
         ],
         jobRequirement: [
-            'a', 'b', 'c', 'd', 'e', 'f'
+            'Tốt nghiệp cao đẳng hoặc đại học'
         ],
         benefit: [
-            1, 2, 3, 4, 5
+            'Toàn thời gian, linh hoạt bất kỳ nơi đâu',
+            'Lương cứng mỗi tháng 10.000.000+++',
+            'Thưởng hiệu quả theo KPI hàng tháng',
+            'Và nhiều chế độ nhân sự khác'
         ]
     },
 ]

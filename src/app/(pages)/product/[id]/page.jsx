@@ -3,11 +3,11 @@
 import { useEffect, useState } from 'react';
 import ProductData from './data';
 import { usePathname } from 'next/navigation';
-import Slider from '@/components/Slider';
 import { COLOR } from '@/utils/COLORS';
 import { BsClipboard2HeartFill, BsClockFill, BsHeadset, BsHouseFill } from 'react-icons/bs';
 import Image from 'next/image';
 import Link from 'next/link';
+import { imgShared } from '@/utils/images';
 
 export default function ProductDetail() {
     const [data, setData] = useState(null);
@@ -29,19 +29,21 @@ export default function ProductDetail() {
     }
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center scroll-smooth">
             <div className='flex justify-center items-center'>
                 {data.bannerUrl ? (
                     <img src={data.bannerUrl} alt='banner' className='w-full mt-[70px]' layout='responsive' />
                 ) : (
-                    <Slider />
+                    <Image src={imgShared.Banner.HomePageBanner} alt='banner' className='w-full mt-[70px]' layout='responsive' style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},${COLOR.backgroundSecondary})` }} />
                 )}
             </div>
             <div className='flex justify-center items-center bg-blue-50 w-full'>
                 <div className='flex flex-col lg:flex-row justify-center items-center md:items-start w-[1220px] mt-14'>
                     {data.avatarUrl && (
                         <div className='flex justify-center items-start flex-col'>
-                            <Image src={data.avatarUrl} alt='avatar' width={'100%'} height={'100%'} className='w-full max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white' />
+                            <div className=' max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white p-10'>
+                                <Image src={data.avatarUrl} alt='avatar' width={'100%'} height={'100%'} />
+                            </div>
                             <label className='font-extrabold pb-10 italic cursor-pointer' style={{ color: COLOR.backgroundPrimary }}>Tham khảo kết quả mẫu</label>
                         </div>
                     )}
@@ -87,11 +89,11 @@ export default function ProductDetail() {
                     <div className='font-manropeBold text-2xl rounded-badge border-2 p-2 pl-6 pr-6 absolute w-fit text-nowrap bg-white'>Giới thiệu chung</div>
                 </div>
                 {data.introductions && (
-                    <div className='flex flex-col justify-center items-center md:flex-row max-w-[1220px]'>
-                        <div className='w-full md:w-[50%]'>
-                            <Image src={data.introductions.image} alt='content image' width={'400px'} className='w-[400px] mx-auto' />
+                    <div className='flex flex-col justify-center items-center  max-w-[1220px]'>
+                        <div className='w-full md:w-[850px] flex justify-center items-center'>
+                            <Image src={data.introductions.image} alt='content image' width={'auto'} height={'auto'} className='mx-auto' loading='lazy' />
                         </div>
-                        <div className='w-full md:w-[50%] p-3 flex flex-col gap-3 text-lg'>
+                        <div className='w-full md:w-[1000px] flex flex-col gap-3 text-lg'>
                             {data.introductions.content.map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
                             ))}

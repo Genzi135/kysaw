@@ -5,37 +5,37 @@ import LogoKysawFullColor from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.pn
 
 import GenLoveMe from '../../assets/Product/GenLove_Me_biptrm.jpg';
 import GenLoveMeLogo from '../../assets/Product/KYSAW_Product_Logos_GenLove_Me_org_weqgap.svg';
-import GenLoveMeProduct from '../../assets/Product/GenLove_Me_oleivp.png';
+import GenLoveMeProduct from '../../assets/Product/Product KV_Product KV - GenLove Me.png';
 import GenLoveMeHex from '../../assets/Product/KYSAW_Product_Logos_GenLove_Me_button_ehrsok.svg';
 import GenLoveMeTag from '../../assets/Product/KYSAW_Product_Logos_GenLove_Me_Tag_fcsp5d.svg';
 
 import GenLoveKid from '../../assets/Product/GenLove_Kid_elbboh.jpg';
 import GenLoveKidLogo from '../../assets/Product/KYSAW_Product_Logos_GenLove_Kid_org_j3czui.svg';
-import GenLoveKidProduct from '../../assets/Product/GenLove_Kid_psrjmh.png';
-import GenLoveKidHex from '../../assets/Product/KYSAW_Product_Logos_GenLove_Fit_Button_rxrnc4.svg';
+import GenLoveKidProduct from '../../assets/Product/Product KV_Product KV - GenLove Kid.png';
+import GenLoveKidHex from '../../assets/Product/KYSAW_Product_Logos_GenLove_Kid_button_n5p1ps.svg';
 import GenLoveKidTag from '../../assets/Product/KYSAW_Product_Logos_GenLove_Kid_Tag_slhy6o.svg';
 
 import GenLoveSkin from '../../assets/Product/GenLove_Skin_xmjbkk.jpg';
 import GenLoveSkinLogo from '../../assets/Product/KYSAW_Product_Logos_GenLove_Skin_org_yggjhu.svg';
-import GenLoveSkinProduct from '../../assets/Product/GenLove_Skin_jvehbi.png';
+import GenLoveSkinProduct from '../../assets/Product/Product KV_Product KV - GenLove Skin.png';
 import GenLoveSkinHex from '../../assets/Product/KYSAW_Product_Logos_GenLove_Skin_button_ehlpxl.svg';
 import GenLoveSkinTag from '../../assets/Product/KYSAW_Product_Logos_GenLove_Skin_Tag_nqgsk0.svg';
 
 import GenLoveFit from '../../assets/Product/GenLove_Fit_x5lur9.jpg';
 import GenLoveFitLogo from '../../assets/Product/KYSAW_Product_Logos_GenLove_Fit_org_mwvvr5.svg';
-import GenLoveFitProduct from '../../assets/Product/GenLove_Fit_ev6tzt.png';
+import GenLoveFitProduct from '../../assets/Product/Product KV_Product KV - GenLove Fit.png';
 import GenLoveFitHex from '../../assets/Product/KYSAW_Product_Logos_GenLove_Fit_Button_rxrnc4.svg';
 import GenLoveFitTag from '../../assets/Product/KYSAW_Product_Logos_GenLove_Kid_Tag_slhy6o.svg';
 
 import YamuGen from '../../assets/Product/Yamugene_ivq1pp.jpg';
 import YamuGenLogo from '../../assets/Product/KYSAW_Product_Logos_Yamugene_Org_jq2net.svg';
-import YamuGenProduct from '../../assets/Product/YamuGene_mgubl4.png';
+import YamuGenProduct from '../../assets/Product/Product KV_Product KV - YamuGene.png';
 import YamuGenHex from '../../assets/Product/KYSAW_Product_Logos_Yamugene_Button_yhc7n3.svg';
 import YamuGenTag from '../../assets/Product/KYSAW_Product_Logos_Yamugene_Tag_ixomz2.svg';
 
 import GenCarePre from '../../assets/Product/Gencare_Premium_x98qae.jpg';
 import GenCarePreLogo from '../../assets/Product/KYSAW_Product_Logos_Gencare_Premium_org_kumdzh.svg';
-import GenCarePreProduct from '../../assets/Product/YamuGene_mgubl4.png';
+import GenCarePreProduct from '../../assets/Product/Product KV_Product KV - GeneCare Premium.png';
 import GenCarePreHex from '../../assets/Product/KYSAW_Product_Logos_Gencare_Premium_button_oz5lyn.svg';
 import GenCarePreTag from '../../assets/Product/KYSAW_Product_Logos_Gencare_Premium_Tag_mphl8m.svg';
 
@@ -56,6 +56,11 @@ import ToiUuSucKhoe from '../../assets/Product/Duke_Illustration_for_KYSAW-40_uv
 
 import TamNhin from '../../assets/Product/Duke_Illustration_for_KYSAW-41_izswn0.png';
 import SuMenh from '../../assets/Product/Duke_Illustration_for_KYSAW-42_g613r4.png';
+
+import BannerMe from '../../assets/Slider/Family 1 copy.png'
+import BannerFit from '../../assets/Slider/GenLove Fit copy.png'
+import BannerKid from '../../assets/Slider/Kids copy.png'
+import BannerSkin from '../../assets/Slider/Skin final copy.png'
 
 export const imgShared = {
     logos: {
@@ -119,7 +124,11 @@ export const imgShared = {
         TuVan: TuVan,
     },
     Banner: {
-        HomePageBanner: HomePageBanner
+        HomePageBanner: HomePageBanner,
+        GenLoveMe: BannerMe,
+        GenLoveSkin: BannerSkin,
+        GenLoveFit: BannerFit,
+        GenLoveKid: BannerKid,
     },
     benefit: {
         HieuRoCoThe: HieuRoCoThe,

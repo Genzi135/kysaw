@@ -17,7 +17,20 @@ export default function HomeMainBanner() {
                     <Image src={imgShared.subItem} alt='subitem' width={180} height={180} className='rotate-180 translate-x-2 translate-y-5 opacity-80' />
                     <Image src={imgShared.genLoveMe.tag} alt='desc' width={200} height={200} className='animate-' />
                     <a href='/product/genloveme' className='group relative flex justify-center items-center tooltip' data-tip='Click để xem chi tiết' >
-                        <div className='absolute opacity-0 translate-x-0 duration-200 group-hover:opacity-100 group-hover:-translate-x-56 bg-white '>GEN LOVE ME</div>
+                        <div className='absolute opacity-0 scale-0 -translate-y-6 translate-x-0 duration-300 group-hover:opacity-100 group-hover:-translate-x-[290px]  group-hover:scale-100 h-fit w-fit bg-white z-10 p-2 pr-6 flex flex-col items-start rounded-xl'   >
+                            <div>
+                                Công nghệ: <label className='font-manropeBold'>Next Generation Sequencing</label>
+                            </div>
+                            <div className='text-left text-nowrap'>
+                                Phân tích 38 gene đánh giá 6 đặc tính: <br></br>
+                                - Các chỉ số tính cách<br></br>
+                                - Sức mạnh – Sức bền cơ bắp <br></br>
+                                - Chất lượng giấc ngủ <br></br>
+                                - Khả năng ngôn ngữ & ghi nhớ <br></br>
+                                - Khả năng hấp thu dinh dưỡng và chuyển hóa <br></br>
+                                - Khả năng nhiễm Siêu vi
+                            </div>
+                        </div>
                         <Image src={imgShared.genLoveMe.hex} alt='item' width={230} height={230} className='animate-float cursor-pointer' />
                     </a>
                 </div>
