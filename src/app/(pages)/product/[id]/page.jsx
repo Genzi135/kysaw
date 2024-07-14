@@ -100,8 +100,7 @@ export default function ProductDetail() {
                         </div>
                     </div>
                 )}
-                <div className='w-full border-[1px] max-w-[1220px]'>
-
+                <div className='w-full border-[1px] max-w-[1220px] mt-10'>
                 </div>
 
             </div>
