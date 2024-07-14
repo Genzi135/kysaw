@@ -10,7 +10,7 @@ export const metadata = {
   ogTitle: 'Trang Chủ - KYSAW',
   ogDescription: 'KYSAW là đơn vị tiên phong trong việc ứng dụng công nghệ gene vào đời sống, cung cấp các giải pháp chăm sóc sức khỏe toàn diện và bảo vệ tài chính gia đình.',
   ogImage: HomepageBanner.src,
-  ogUrl: 'https://kysaw.com',
+  ogUrl: 'https://kysaw.vn',
 };
 
 
