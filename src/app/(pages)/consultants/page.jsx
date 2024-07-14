@@ -1,112 +1,53 @@
 'use client'
 
+import { COLOR } from "@/utils/COLORS";
+import { imgShared } from "@/utils/images";
+import Image from "next/image";
+import { useState } from "react";
+import { consultants } from "./data";
 
 export default function Consultants() {
+    const [data, setData] = useState(consultants);
+    const [selectedLocation, setSelectedLocation] = useState("");
 
+    const uniqueLocations = [...new Set(consultants.map(consultant => consultant.location))];
 
-    const consultants = [
-        {
-            name: "Nguyễn Văn A",
-            certificationDate: "2023-01-01",
-            phone: "0901234567",
-            email: "nguyenvana@example.com"
-        },
-        {
-            name: "Trần Thị B",
-            certificationDate: "2023-02-15",
-            phone: "0912345678",
-            email: "tranthib@example.com"
-        },
-        {
-            name: "Lê Thị C",
-            certificationDate: "2023-03-20",
-            phone: "0923456789",
-            email: "lethic@example.com"
-        },
-        {
-            name: "Phạm Văn D",
-            certificationDate: "2023-04-10",
-            phone: "0934567890",
-            email: "phamvand@example.com"
-        },
-        {
-            name: "Hoàng Thị E",
-            certificationDate: "2023-05-05",
-            phone: "0945678901",
-            email: "hoangthie@example.com"
-        },
-        {
-            name: "Võ Văn F",
-            certificationDate: "2023-06-18",
-            phone: "0956789012",
-            email: "vovanf@example.com"
-        },
-        {
-            name: "Đặng Thị G",
-            certificationDate: "2023-07-22",
-            phone: "0967890123",
-            email: "dangthig@example.com"
-        },
-        {
-            name: "Bùi Văn H",
-            certificationDate: "2023-08-30",
-            phone: "0978901234",
-            email: "buivanh@example.com"
-        },
-        {
-            name: "Ngô Thị I",
-            certificationDate: "2023-09-12",
-            phone: "0989012345",
-            email: "ngothii@example.com"
-        },
-        {
-            name: "Đỗ Văn J",
-            certificationDate: "2023-10-25",
-            phone: "0990123456",
-            email: "dovanj@example.com"
-        },
-        {
-            name: "Hồ Thị K",
-            certificationDate: "2023-11-05",
-            phone: "0901123456",
-            email: "hothik@example.com"
-        },
-        {
-            name: "Dương Văn L",
-            certificationDate: "2023-12-15",
-            phone: "0902234567",
-            email: "duongvanl@example.com"
-        },
-        {
-            name: "Lý Thị M",
-            certificationDate: "2024-01-10",
-            phone: "0903345678",
-            email: "lythim@example.com"
-        },
-        {
-            name: "Vũ Văn N",
-            certificationDate: "2024-02-20",
-            phone: "0904456789",
-            email: "vuvann@example.com"
-        },
-        {
-            name: "Trịnh Thị O",
-            certificationDate: "2024-03-05",
-            phone: "0905567890",
-            email: "trinhthio@example.com"
-        }
-    ];
+    const handleLocationChange = (event) => {
+        const location = event.target.value;
+        setSelectedLocation(location);
+        setData(location ? consultants.filter(consultant => consultant.location === location) : consultants);
+    };
 
     return (
-        <div className="mt-20 scroll-smooth flex flex-col justify-center items-center">
-            <div className="flex max-w-[1220px] w-full h-full justify-center items-center p-44 max-h-[500px] bg-gray-200">
+        <div className="mt-16 scroll-smooth flex flex-col justify-center items-center">
+            <div className="w-full h-auto flex justify-center items-center" style={{ backgroundColor: COLOR.bannerRecruitment }}>
+                <div className="flex max-w-[1220px] w-full h-full justify-center items-center max-h-[500px] " >
+                    <Image src={imgShared.Banner.Consultants} alt="banner" className="w-full h-full" layout="responsive" />
+                </div>
+            </div>
+            <div className="flex justify-center items-center max-w-[1220px] w-full"  >
+                <label className="md:text-4xl text-2xl font-manropeBold text-white rounded-xl p-5 mt-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>KYSAW - Tư vấn viên</label>
+            </div>
+            <div className="flex justify-center items-center max-w-[1220px] w-full mt-10" >
+                <div className="flex justify-center items-center gap-2">
+                    <label className="text-lg sm:text-xl">Địa điểm:</label>
+                    <select value={selectedLocation} onChange={handleLocationChange} className="select select-bordered text-base ">
+                        <option value="">-Chọn tỉnh/thành phố-</option>
+                        {uniqueLocations.map((location, index) => {
+                            return (
+                                <option key={index} value={location} className="sm:text-base text-sm">{location}</option>
+                            )
+                        })}
+                    </select>
+                </div>
             </div>
             <div className="flex flex-col justify-center items-center w-full max-w-[1220px]  p-10">
-                {consultants.map((e, index) => {
+                {data.map((e, index) => {
                     return (
                         <div key={index} className="w-full max-w-[800px] rounded overflow-hidden shadow-lg m-4 p-5 hover:shadow-gray-400 ">
-                            <div className="pb-2 mb-2 border-b-2">
+                            <div className="pb-2 mb-2 border-b-2 space-y-1">
                                 <div className="font-manropeBold text-xl">{e.name}</div>
+                                <div className="text-base">[{e.location}]</div>
                                 <div>Ngày cấp chứng nhận: {e.certificationDate}</div>
                             </div>
                             <div className="flex justify-start items-center flex-wrap sm:gap-10">

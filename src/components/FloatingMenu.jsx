@@ -12,7 +12,7 @@ export default function FloatingMenu() {
         window.open('https://m.me/kysaw.vn')
     }
     return (
-        <div className="fixed bottom-5 right-2">
+        <div className="fixed bottom-5 right-2 z-50]">
             <div className="flex flex-col justify-center items-center gap-5 pb-5">
                 <div onClick={() => directToZalo()} className={`cursor-pointer ${isOpenMenu ? "scale-100 -translate-y-2 visible" : "scale-0 translate-y-8 invisible"} duration-200 ease-linear`}>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/2048px-Icon_of_Zalo.svg.png" alt="zalo" width={40} height={40} />

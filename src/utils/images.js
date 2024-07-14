@@ -62,6 +62,9 @@ import BannerFit from '../../assets/Slider/GenLove Fit copy.png'
 import BannerKid from '../../assets/Slider/Kids copy.png'
 import BannerSkin from '../../assets/Slider/Skin final copy.png'
 
+import BannerRecruitment from '../../assets/Slider/Tuyen Dung Banner-01.jpg';
+import BannerConsultants from '../../assets/Slider/Certified Agent Banner-02-02.jpg';
+
 export const imgShared = {
     logos: {
         white: LogoKysawWhite,
@@ -129,6 +132,8 @@ export const imgShared = {
         GenLoveSkin: BannerSkin,
         GenLoveFit: BannerFit,
         GenLoveKid: BannerKid,
+        Consultants: BannerConsultants,
+        Recruitment: BannerRecruitment,
     },
     benefit: {
         HieuRoCoThe: HieuRoCoThe,

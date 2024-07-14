@@ -2,16 +2,22 @@ import Link from "next/link";
 import { RecruitmentData } from "./[id]/data";
 import { COLOR } from "@/utils/COLORS";
 import { BsCashStack, BsPersonVcard, BsPinMapFill } from "react-icons/bs";
+import Image from "next/image";
+import { imgShared } from "@/utils/images";
 
 export default function Recruitment() {
 
     return (
         <div className="mt-[72px] flex flex-col justify-center items-center scroll-smooth">
-            <div className="flex justify-center items-center w-full" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-                <div className="flex justify-center items-center max-w-[1220px] w-full p-10" >
-                    <label className="md:text-4xl text-2xl font-manropeBold text-white">KYSAW - Giải mã Gen vẹn toàn sức khỏe</label>
+            <div className="flex justify-center items-center w-full" style={{ backgroundColor: COLOR.bannerRecruitment }}>
+                <div className="flex justify-center items-center max-w-[1220px] w-full">
+                    <Image src={imgShared.Banner.Recruitment} alt="banner" className="w-full h-full" layout="responsive" />
                 </div>
             </div>
+            <div className="flex justify-center items-center max-w-[1220px] w-full"  >
+                <label className="md:text-4xl text-2xl font-manropeBold text-white rounded-xl p-5 mt-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>KYSAW - Tuyển dụng</label>
+            </div>
+
             <div className="flex justify-center items-center max-w-[1000px] w-full p-5">
                 {RecruitmentData.map((e) => {
                     return (
@@ -38,12 +44,6 @@ export default function Recruitment() {
                 <label>Email: <label className="font-manropeBold">info@kysaw.vn</label></label>
                 <label>Điện thoại: <label className="font-manropeBold">(+84) 345 972 986</label></label>
             </div>
-            {/* <div className="w-full max-w-[1220px] flex flex-col justify-center items-center p-5">
-                Quy trình Tuyển dụng của KYSAW
-            </div>
-            <div className="w-full max-w-[1220px] flex flex-col justify-center items-center p-5">
-                Câu hỏi thường gặp
-            </div> */}
         </div>
     )
 }

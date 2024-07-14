@@ -2,8 +2,8 @@ import { imgShared } from "@/utils/images";
 
 const ProductData = [
     {
-        productId: "yamuGen",
-        productName: "YamuGen",
+        productId: "yamuGene",
+        productName: "Yamu Gene",
         color: '#2795cc',
         bannerUrl: '',
         avatarUrl: imgShared.yamuGen.hex,
