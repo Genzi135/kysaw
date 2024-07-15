@@ -25,12 +25,24 @@ export default function Consultants() {
                     <Image src={imgShared.Banner.Consultants} alt="banner" className="w-full h-full" layout="responsive" />
                 </div>
             </div>
-            <div className="flex justify-center items-center max-w-[1220px] w-full"  >
-                <label className="md:text-4xl text-2xl font-manropeBold text-white rounded-xl p-5 mt-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>KYSAW - Tư vấn viên</label>
+            <div className="flex justify-center items-center max-w-[1050px] w-full flex-col md:flex-row mt-5 md:mt-10"  >
+                <div className="flex justify-center items-center md:w-[49%]">
+                    <Image src={imgShared.reason.AgentHoldingCertificate} alt="agent" className="w-full h-full" />
+                </div>
+                <div className="flex flex-col justify-center items-center md:items-start gap-2 p-5 md:p-10 md:w-[49%]">
+                    <label className="text-4xl font-manropeBold mb-6">Đội ngũ tư vấn</label>
+                    <p className="text-balance text-base md:text-lg">
+                        Chúng tôi tự hào giới thiệu đội ngũ tư vấn chuyên nghiệp của KYSAW. Mỗi đại lý đều đã trải qua quá trình đào tạo chuyên sâu và vượt qua các bài kiểm tra nghiêm ngặt để đảm bảo họ đáp ứng mọi tiêu chuẩn cao nhất về năng lực và chuyên môn. Điều này đảm bảo rằng các đại lý của chúng tôi luôn cung cấp thông tin chính xác và đáng tin cậy cho khách hàng.
+                    </p>
+                    <p className="text-balance md:text-lg text-base">
+                        Bất kể bạn có câu hỏi hay cần hỗ trợ, đội ngũ đại lý của chúng tôi luôn sẵn sàng đồng hành và hỗ trợ bạn một cách tận tâm. Với cam kết mang đến dịch vụ tốt nhất, chúng tôi tin rằng bạn sẽ hoàn toàn hài lòng với sự tư vấn và hỗ trợ từ các tư vấn viên hàng đầu của chúng tôi.
+                    </p>
+                </div>
             </div>
-            <div className="flex justify-center items-center max-w-[1220px] w-full mt-10" >
+            <div className="flex flex-col justify-center items-center max-w-[1220px] w-full md:mt-10" >
+                <div className="sm:text-lg text-base mb-2 p-5">Để tìm tư vấn viên gần nhất, xin vui lòng chọn khu vực của bạn</div>
                 <div className="flex justify-center items-center gap-2">
-                    <label className="text-lg sm:text-xl">Địa điểm:</label>
+                    <label className="text-lg sm:text-lg">Khu vực:</label>
                     <select value={selectedLocation} onChange={handleLocationChange} className="select select-bordered text-base ">
                         <option value="">-Chọn tỉnh/thành phố-</option>
                         {uniqueLocations.map((location, index) => {

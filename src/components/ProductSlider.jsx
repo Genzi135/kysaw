@@ -7,10 +7,10 @@ export default function ProductSlider() {
     const [index, setIndex] = useState(0);
 
     const listImage = [
-        { path: imgShared.Banner.GenLoveMe, label: 'img1', color: '#46c5e4' },
-        { path: imgShared.Banner.GenLoveFit, label: 'img2', color: '#4ebb85' },
-        { path: imgShared.Banner.GenLoveSkin, label: 'img3', color: '#ed5c90' },
-        { path: imgShared.Banner.GenLoveKid, label: 'img4', color: '#fcc939' },
+        { path: imgShared.Banner.GenLoveMe, label: 'img1', color: '#47c5e4' },
+        { path: imgShared.Banner.GenLoveFit, label: 'img2', color: '#50ba83' },
+        { path: imgShared.Banner.GenLoveSkin, label: 'img3', color: '#b52b43' },
+        { path: imgShared.Banner.GenLoveKid, label: 'img4', color: '#ffca35' },
     ];
 
     const nextClick = () => {

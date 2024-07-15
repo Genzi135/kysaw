@@ -2,7 +2,7 @@ import Image from "next/image";
 import LogoKysaw from '../../../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png'
 import { COLOR } from "../../../utils/COLORS";
 import TeamCard from "../../../components/TeamCard";
-import HomepageBanner from '../../../../assets/Slider/HomepageBanner.png';
+import { imgShared } from "../../../utils/images";
 
 export const metadata = {
     title: 'Giới thiệu - Kysaw',
@@ -65,7 +65,7 @@ export default function About() {
     return (
         <div className="mt-[70px] scroll-smooth">
             <div id="about" className="flex justify-center items-center" style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},#15BEF2)` }}>
-                <Image src={HomepageBanner} alt="banner" layout="responsive" className="max-w-[1220px]" />
+                <Image src={imgShared.Banner.HomePageBanner} alt="banner" layout="responsive" className="max-w-[1220px]" />
             </div>
             <div className="flex justify-center items-center">
                 <div className="flex flex-col justify-center items-center pl-5 pr-5 pb-5 md:pl-10 md:pr-10 max-w-[1220px]">

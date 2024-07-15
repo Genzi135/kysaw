@@ -5,7 +5,6 @@ import { BiLogoGmail, BiSolidMap, BiSolidPhoneCall } from 'react-icons/bi';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
-import contact from '../../assets/Slider/contactEmail.png'
 import { imgShared } from '../utils/images';
 
 export default function Footer() {
@@ -74,7 +73,7 @@ export default function Footer() {
             <div className='flex justify-center items-center bg-blue-50 pb-10'>
                 <div className='flex flex-col md:flex-row justify-center items-center p-5 max-w-[1220px]'>
                     <div>
-                        <Image src={contact} alt='contactEmail' className='w-[400px]' />
+                        <Image src={imgShared.ContactEmail} alt='contactEmail' className='w-[400px]' />
                     </div>
                     <div className='form flex flex-col gap-2 text-sm md:text-xl'>
                         <label className='font-manropeBold text-2xl flex justify-center items-center'>Dịch vụ khách hàng</label>

@@ -1,4 +1,4 @@
-import HomePageBanner from '../../assets/Slider/HomepageBanner.png';
+import HomePageBanner from '../../assets/Banners/HomepageBanner.png';
 
 import LogoKysawWhite from '../../assets/Logo/KYSAW_LOGO_FINAL_WHITE_COLOR.png';
 import LogoKysawFullColor from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png';
@@ -50,6 +50,8 @@ import NuocBot from '../../assets/reason/nuocbot.jpg';
 import CongNghe from '../../assets/reason/congnghe.jpg';
 import TuVan from '../../assets/reason/tuvan.jpg';
 
+import AgentHoldingCertificate from '../../assets/reason/Agent Holding Certificate-44.png';
+
 import HieuRoCoThe from '../../assets/Product/Duke_Illustration_for_KYSAW-39_lboj0g.png';
 import PhongNguaRuiRo from '../../assets/Product/Duke_Illustration_for_KYSAW-38_ntav3s.png';
 import ToiUuSucKhoe from '../../assets/Product/Duke_Illustration_for_KYSAW-40_uv5xjf.png';
@@ -57,13 +59,17 @@ import ToiUuSucKhoe from '../../assets/Product/Duke_Illustration_for_KYSAW-40_uv
 import TamNhin from '../../assets/Product/Duke_Illustration_for_KYSAW-41_izswn0.png';
 import SuMenh from '../../assets/Product/Duke_Illustration_for_KYSAW-42_g613r4.png';
 
-import BannerMe from '../../assets/Slider/Family 1 copy.png'
-import BannerFit from '../../assets/Slider/GenLove Fit copy.png'
-import BannerKid from '../../assets/Slider/Kids copy.png'
-import BannerSkin from '../../assets/Slider/Skin final copy.png'
+import BannerMe from '../../assets/Banners/Banner GenLove Me - 47c5e4.jpg'
+import BannerFit from '../../assets/Banners/Banner GenLove Fit - 50ba83.jpg'
+import BannerKid from '../../assets/Banners/Banner GenLove Kid - ffca35.jpg'
+import BannerSkin from '../../assets/Banners/Banner GenLove Skin - b52b43.jpg'
+import BannerGenCarePre from '../../assets/Banners/Banner GenCare Premium - 0eacb0.jpg';
+import BannerYamuGene from '../../assets/Banners/Banner YamuGene - a3c93a.jpg';
 
-import BannerRecruitment from '../../assets/Slider/Tuyen Dung Banner-01.jpg';
-import BannerConsultants from '../../assets/Slider/Certified Agent Banner-02-02.jpg';
+import BannerRecruitment from '../../assets/Banners/Tuyen Dung Banner-01.jpg';
+import BannerConsultants from '../../assets/Banners/Tuyen Dung Banner-02.jpg';
+
+import ContactEmail from '../../assets/reason/contactEmail.png';
 
 export const imgShared = {
     logos: {
@@ -125,6 +131,7 @@ export const imgShared = {
         NuocBot: NuocBot,
         CongNghe: CongNghe,
         TuVan: TuVan,
+        AgentHoldingCertificate: AgentHoldingCertificate,
     },
     Banner: {
         HomePageBanner: HomePageBanner,
@@ -132,6 +139,8 @@ export const imgShared = {
         GenLoveSkin: BannerSkin,
         GenLoveFit: BannerFit,
         GenLoveKid: BannerKid,
+        GenCarePre: BannerGenCarePre,
+        YamuGene: BannerYamuGene,
         Consultants: BannerConsultants,
         Recruitment: BannerRecruitment,
     },
@@ -143,5 +152,6 @@ export const imgShared = {
     about: {
         TamNhin: TamNhin,
         SuMenh: SuMenh,
-    }
+    },
+    ContactEmail: ContactEmail,
 };
