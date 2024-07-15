@@ -3,11 +3,11 @@
 import { useEffect, useState } from 'react';
 import ProductData from './data';
 import { usePathname } from 'next/navigation';
-import { COLOR } from '@/utils/COLORS';
+import { COLOR } from '../../../../utils/COLORS';
 import { BsClipboard2HeartFill, BsClockFill, BsHeadset, BsHouseFill } from 'react-icons/bs';
 import Image from 'next/image';
 import Link from 'next/link';
-import { imgShared } from '@/utils/images';
+import { imgShared } from '../../../../utils/images';
 
 export default function ProductDetail() {
     const [data, setData] = useState(null);

@@ -1,15 +1,15 @@
 'use client'
 import Image from "next/image";
-import { COLOR } from "@/utils/COLORS";
-import ProductCard from "@/components/ProductCard";
+import { COLOR } from "../utils/COLORS";
+import ProductCard from "../components/ProductCard";
 import ProductData from "./(pages)/product/[id]/data";
 import '../app/globals.css';
 import { useState, useEffect } from "react";
-import GeneBenefitSlider from "@/components/GeneBenefitSlider";
+import GeneBenefitSlider from "../components/GeneBenefitSlider";
 import { motion } from "framer-motion";
-import { imgShared } from "@/utils/images";
-import HomeMainBanner from "@/components/HomeMainBanner";
-import HomeSubBanner from "@/components/HomeSubBanner";
+import { imgShared } from "../utils/images";
+import HomeMainBanner from "../components/HomeMainBanner";
+import HomeSubBanner from "../components/HomeSubBanner";
 
 export default function HomePage() {
     const [animate, setAnimate] = useState(false);

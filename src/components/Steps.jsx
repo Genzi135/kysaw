@@ -1,4 +1,4 @@
-import { COLOR } from "@/utils/COLORS";
+import { COLOR } from "../utils/COLORS";
 import { BsClipboard2HeartFill, BsClockFill, BsHouseFill } from "react-icons/bs";
 
 export default function Steps() {

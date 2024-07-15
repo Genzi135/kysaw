@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { imgShared } from '@/utils/images'
+import { imgShared } from '../utils/images'
 import '../app/globals.css'
 import Image from 'next/image'
 

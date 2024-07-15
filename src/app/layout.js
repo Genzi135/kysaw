@@ -1,10 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Toaster } from "react-hot-toast";
 import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
-import FloatingMenu from "@/components/FloatingMenu";
+import FloatingMenu from "../components/FloatingMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 

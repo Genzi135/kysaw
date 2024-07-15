@@ -1,7 +1,7 @@
 'use client'
 
-import { COLOR } from "@/utils/COLORS";
-import { imgShared } from "@/utils/images";
+import { COLOR } from "../../../utils/COLORS";
+import { imgShared } from "../../../utils/images";
 import Image from "next/image";
 import { useState } from "react";
 import { consultants } from "./data";

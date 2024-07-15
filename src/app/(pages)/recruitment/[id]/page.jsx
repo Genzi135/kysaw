@@ -2,10 +2,10 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { RecruitmentData } from "./data";
-import { COLOR } from "@/utils/COLORS";
+import { COLOR } from "../../../../utils/COLORS";
 import Link from "next/link";
 import Image from "next/image";
-import { imgShared } from "@/utils/images";
+import { imgShared } from "../../../../utils/images";
 import { BsCashStack, BsPersonVcard, BsPinMapFill } from "react-icons/bs";
 
 export default function JobDetail() {

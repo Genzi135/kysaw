@@ -1,4 +1,4 @@
-import HomePage from "@/app/Homepage";
+import HomePage from "./Homepage";
 import HomepageBanner from '../../assets/Slider/HomepageBanner.png';
 
 export const metadata = {

@@ -1,12 +1,12 @@
 'use client';
 import Image from 'next/image';
-import { COLOR } from '@/utils/COLORS';
+import { COLOR } from '../utils/COLORS';
 import { BiLogoGmail, BiSolidMap, BiSolidPhoneCall } from 'react-icons/bi';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import contact from '../../assets/Slider/contactEmail.png'
-import { imgShared } from '@/utils/images';
+import { imgShared } from '../utils/images';
 
 export default function Footer() {
     const [inputPhone, setInputPhone] = useState('');

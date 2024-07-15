@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { RecruitmentData } from "./[id]/data";
-import { COLOR } from "@/utils/COLORS";
+import { COLOR } from "../../../utils/COLORS";
 import { BsCashStack, BsPersonVcard, BsPinMapFill } from "react-icons/bs";
 import Image from "next/image";
-import { imgShared } from "@/utils/images";
+import { imgShared } from "../../../utils/images";
 
 export default function Recruitment() {
 

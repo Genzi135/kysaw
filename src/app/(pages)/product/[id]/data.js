@@ -1,4 +1,4 @@
-import { imgShared } from "@/utils/images";
+import { imgShared } from "../../../../utils/images";
 
 const ProductData = [
     {

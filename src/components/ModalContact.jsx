@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { COLOR } from "@/utils/COLORS";
+import { COLOR } from "../utils/COLORS";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiLogoGmail, BiSolidPhoneCall } from "react-icons/bi";
 import axios from "axios";

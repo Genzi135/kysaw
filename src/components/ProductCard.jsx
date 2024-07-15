@@ -1,4 +1,4 @@
-import { COLOR } from "@/utils/COLORS";
+import { COLOR } from "../utils/COLORS";
 import logowhite from '../../assets/Logo/KYSAW_LOGO_FINAL_WHITE_COLOR.png'
 import Image from "next/image";
 

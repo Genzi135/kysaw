@@ -1,5 +1,5 @@
 'use client'
-import { imgShared } from "@/utils/images";
+import { imgShared } from "../utils/images";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

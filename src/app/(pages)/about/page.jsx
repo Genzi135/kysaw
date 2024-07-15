@@ -1,7 +1,7 @@
 import Image from "next/image";
 import LogoKysaw from '../../../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png'
-import { COLOR } from "@/utils/COLORS";
-import TeamCard from "@/components/TeamCard";
+import { COLOR } from "../../../utils/COLORS";
+import TeamCard from "../../../components/TeamCard";
 import HomepageBanner from '../../../../assets/Slider/HomepageBanner.png';
 
 export const metadata = {

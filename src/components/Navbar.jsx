@@ -5,7 +5,7 @@ import Logo from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png'
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { COLOR } from '@/utils/COLORS';
+import { COLOR } from '../utils/COLORS';
 import { BiLogoGmail, BiSolidPhoneCall } from 'react-icons/bi'
 import ModalContact from './ModalContact';
 import FormContact from './FormContact';

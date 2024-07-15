@@ -1,7 +1,7 @@
 'use client'
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "../../../components/ProductCard";
 import ProductData from "./[id]/data";
-import ProductSlider from "@/components/ProductSlider";
+import ProductSlider from "../../../components/ProductSlider";
 
 export default function Product() {
 
