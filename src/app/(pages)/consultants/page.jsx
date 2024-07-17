@@ -29,12 +29,12 @@ export default function Consultants() {
                 <div className="flex justify-center items-center md:w-[49%]">
                     <Image src={imgShared.reason.AgentHoldingCertificate} alt="agent" className="w-full h-full" />
                 </div>
-                <div className="flex flex-col justify-center items-center md:items-start gap-2 p-5 md:p-10 md:w-[49%]">
+                <div className="flex flex-col justify-center items-center md:items-start gap-2 p-5 md:p-0 md:w-[49%]">
                     <label className="text-4xl font-manropeBold mb-6">Đội ngũ tư vấn</label>
-                    <p className="text-balance text-base md:text-lg">
+                    <p className="text-left text-base md:text-lg">
                         Chúng tôi tự hào giới thiệu đội ngũ tư vấn chuyên nghiệp của KYSAW. Mỗi đại lý đều đã trải qua quá trình đào tạo chuyên sâu và vượt qua các bài kiểm tra nghiêm ngặt để đảm bảo họ đáp ứng mọi tiêu chuẩn cao nhất về năng lực và chuyên môn. Điều này đảm bảo rằng các đại lý của chúng tôi luôn cung cấp thông tin chính xác và đáng tin cậy cho khách hàng.
                     </p>
-                    <p className="text-balance md:text-lg text-base">
+                    <p className="text-clip md:text-lg text-base">
                         Bất kể bạn có câu hỏi hay cần hỗ trợ, đội ngũ đại lý của chúng tôi luôn sẵn sàng đồng hành và hỗ trợ bạn một cách tận tâm. Với cam kết mang đến dịch vụ tốt nhất, chúng tôi tin rằng bạn sẽ hoàn toàn hài lòng với sự tư vấn và hỗ trợ từ các tư vấn viên hàng đầu của chúng tôi.
                     </p>
                 </div>
@@ -58,8 +58,9 @@ export default function Consultants() {
                     return (
                         <div key={index} className="w-full max-w-[800px] rounded overflow-hidden shadow-lg m-4 p-5 hover:shadow-gray-400 ">
                             <div className="pb-2 mb-2 border-b-2 space-y-1">
-                                <div className="font-manropeBold text-xl">{e.name} - {e.id}</div>
-                                <div className="text-base">[{e.region}]</div>
+                                <div className="font-manropeBold text-xl">{e.name}</div>
+                                <div>Khu vực: {e.region}</div>
+                                <div>Mã số tư vấn: {e.id}</div>
                                 <div>Ngày cấp chứng nhận: {e.issuedDate}</div>
                                 <div
                                     onClick={() => { window.open(e.certificateLink, '_blank') }}
