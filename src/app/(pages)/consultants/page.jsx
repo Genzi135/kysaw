@@ -10,12 +10,12 @@ export default function Consultants() {
     const [data, setData] = useState(consultants);
     const [selectedLocation, setSelectedLocation] = useState("");
 
-    const uniqueLocations = [...new Set(consultants.map(consultant => consultant.location))];
+    const uniqueLocations = [...new Set(consultants.map(consultant => consultant.region))];
 
     const handleLocationChange = (event) => {
         const location = event.target.value;
         setSelectedLocation(location);
-        setData(location ? consultants.filter(consultant => consultant.location === location) : consultants);
+        setData(location ? consultants.filter(consultant => consultant.region === location) : consultants);
     };
 
     return (
@@ -58,9 +58,16 @@ export default function Consultants() {
                     return (
                         <div key={index} className="w-full max-w-[800px] rounded overflow-hidden shadow-lg m-4 p-5 hover:shadow-gray-400 ">
                             <div className="pb-2 mb-2 border-b-2 space-y-1">
-                                <div className="font-manropeBold text-xl">{e.name}</div>
-                                <div className="text-base">[{e.location}]</div>
-                                <div>Ngày cấp chứng nhận: {e.certificationDate}</div>
+                                <div className="font-manropeBold text-xl">{e.name} - {e.id}</div>
+                                <div className="text-base">[{e.region}]</div>
+                                <div>Ngày cấp chứng nhận: {e.issuedDate}</div>
+                                <div
+                                    onClick={() => { window.open(e.certificateLink, '_blank') }}
+                                    style={{ color: COLOR.backgroundPrimary }}
+                                    className="cursor-pointer hover:underline"
+                                >
+                                    Xem chứng nhận
+                                </div>
                             </div>
                             <div className="flex justify-start items-center flex-wrap sm:gap-10">
                                 <div><label className="font-manropeBold">Số điện thoại:</label>{e.phone} </div>

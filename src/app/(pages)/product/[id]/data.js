@@ -3,7 +3,7 @@ import { imgShared } from "../../../../utils/images";
 const ProductData = [
     {
         productId: "yamuGene",
-        productName: "Yamu Gene",
+        productName: "YamuGene",
         color: '#a3c93a',
         bannerUrl: imgShared.Banner.YamuGene,
         avatarUrl: imgShared.yamuGen.hex,
@@ -33,7 +33,6 @@ const ProductData = [
                 description: "KYSAW sẽ gửi bộ kit lấy mẫu về địa chỉ của bạn",
                 content: [
                     "Lọ dung dịch súc miệng lấy mẫu",
-                    "Lọ đựng dung dịch mẫu",
                     "Phễu",
                     "Giấy đồng thuận",
                     "Tem dán thông tin cá nhân",
@@ -42,8 +41,9 @@ const ProductData = [
             },
             {
                 title: "Bước 2: Lấy mẫu gen tại nhà",
-                description: "Lấy mẫu gene theo đúng quy trình",
+                description: '',
                 content: [
+                    "Lấy mẫu gene theo đúng quy trình",
                     "Không đánh răng, không ăn uống, không hút thuốc, ít nhất một giờ trước khi lấy mẫu",
                     "Xoa nhẹ 2 bên má, sau đó ngậm dung dịch và súc miệng kỹ, từ 1 – 2 phút. Sau đó nhả vào lọ chứa mẫu.",
                     "Vặn chặt nắp, bỏ lại vào hộp và gửi về cho KYSAW.",
@@ -57,11 +57,11 @@ const ProductData = [
                     "Kết quả sẽ bao gồm bản cứng và bản mềm."
                 ]
             }
-        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721076282/kysaw/benefit/Yamugene_kit_xejyf4.jpg',
+        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721200049/kysaw/benefit/Yamugene_kit_qsbctn.jpg',
     },
     {
         productId: "gencarepremium",
-        productName: "Gencare Premium",
+        productName: "GenCare Premium",
         color: '#0eacb0',
         bannerUrl: imgShared.Banner.GenCarePre,
         avatarUrl: imgShared.genCarePre.hex,
@@ -99,7 +99,7 @@ const ProductData = [
                 description: "KYSAW sẽ liên lạc để gửi kết quả đến bạn, và đặt hẹn tư vấn 1-1 cùng với chuyên gia của KYSAW.",
                 content: []
             }
-        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719924082/kysaw/benefit/genesolutions-san-pham-genloveme-img-03-1.png_ukayz0.webp',
+        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721200049/kysaw/benefit/Yamugene_kit_qsbctn.jpg',
 
     },
     {
@@ -132,9 +132,8 @@ const ProductData = [
                 title: "Bước 1: Nhận kit tại nhà",
                 description: "KYSAW sẽ gửi bộ kit lấy mẫu về địa chỉ của bạn",
                 content: [
-                    "Lọ dung dịch súc miệng lấy mẫu",
-                    "Lọ đựng dung dịch mẫu",
-                    "Phễu",
+                    "Que lấy mẫu",
+                    "Sổ tay hướng dẫn",
                     "Giấy đồng thuận",
                     "Tem dán thông tin cá nhân",
                     "Hướng dẫn sử dụng"
@@ -142,19 +141,21 @@ const ProductData = [
             },
             {
                 title: "Bước 2: Lấy mẫu gen tại nhà",
-                description: "Lấy mẫu gene theo đúng quy trình",
+                description: 'Lấy mẫu gen và gửi về KYSAW',
                 content: [
-                    "Không đánh răng, không ăn uống, không hút thuốc, ít nhất một giờ trước khi lấy mẫu",
-                    "Xoa nhẹ 2 bên má, sau đó ngậm dung dịch và súc miệng kỹ, từ 1 – 2 phút. Sau đó nhả vào lọ chứa mẫu.",
-                    "Vặn chặt nắp, bỏ lại vào hộp và gửi về cho KYSAW.",
-                    "Kết quả sẽ có sau 14 ngày làm việc."
+                    "Quy trình lấy mẫu lại nhà:",
+                    "1.Súc miệng 5s với nước sạch",
+                    "2.Chà đầu que gòn lên niêm mạc má bên trong miệng (30s/bên)",
+                    "3.Để que khô tự nhiên 2-3 phút, bảo quản trong túi giấy, túi zip",
                 ]
             },
             {
                 title: "Bước 3: Nhận kết quả",
-                description: "KYSAW sẽ liên lạc để gửi kết quả đến bạn, và đặt hẹn tư vấn 1-1 cùng với chuyên gia của KYSAW.",
+                description: "KYSAW sẽ gửi kết quả vào địa chỉ email của bạn",
                 content: [
-                    "Kết quả sẽ bao gồm bản cứng và bản mềm."
+                    "Gen của bạn sẽ được giải mã và phân tích",
+                    "Kết quả nhanh chóng, chính xác dựa trên chứng cứ khoa học và công nghệ",
+                    "Cam kết bảo mật thông tin và quyền riêng tư"
                 ]
             }
         ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719924082/kysaw/benefit/genesolutions-san-pham-genloveme-img-03-1.png_ukayz0.webp',
@@ -189,9 +190,8 @@ const ProductData = [
                 title: "Bước 1: Nhận kit tại nhà",
                 description: "KYSAW sẽ gửi bộ kit lấy mẫu về địa chỉ của bạn",
                 content: [
-                    "Lọ dung dịch súc miệng lấy mẫu",
-                    "Lọ đựng dung dịch mẫu",
-                    "Phễu",
+                    "Que lấy mẫu",
+                    "Sổ tay hướng dẫn",
                     "Giấy đồng thuận",
                     "Tem dán thông tin cá nhân",
                     "Hướng dẫn sử dụng"
@@ -199,23 +199,24 @@ const ProductData = [
             },
             {
                 title: "Bước 2: Lấy mẫu gen tại nhà",
-                description: "Lấy mẫu gene theo đúng quy trình",
+                description: 'Lấy mẫu gen và gửi về KYSAW',
                 content: [
-                    "Không đánh răng, không ăn uống, không hút thuốc, ít nhất một giờ trước khi lấy mẫu",
-                    "Xoa nhẹ 2 bên má, sau đó ngậm dung dịch và súc miệng kỹ, từ 1 – 2 phút. Sau đó nhả vào lọ chứa mẫu.",
-                    "Vặn chặt nắp, bỏ lại vào hộp và gửi về cho KYSAW.",
-                    "Kết quả sẽ có sau 14 ngày làm việc."
+                    "Quy trình lấy mẫu lại nhà:",
+                    "1.Súc miệng 5s với nước sạch",
+                    "2.Chà đầu que gòn lên niêm mạc má bên trong miệng (30s/bên)",
+                    "3.Để que khô tự nhiên 2-3 phút, bảo quản trong túi giấy, túi zip",
                 ]
             },
             {
                 title: "Bước 3: Nhận kết quả",
-                description: "KYSAW sẽ liên lạc để gửi kết quả đến bạn, và đặt hẹn tư vấn 1-1 cùng với chuyên gia của KYSAW.",
+                description: "KYSAW sẽ gửi kết quả vào địa chỉ email của bạn",
                 content: [
-                    "Kết quả sẽ bao gồm bản cứng và bản mềm."
+                    "Gen của bạn sẽ được giải mã và phân tích",
+                    "Kết quả nhanh chóng, chính xác dựa trên chứng cứ khoa học và công nghệ",
+                    "Cam kết bảo mật thông tin và quyền riêng tư"
                 ]
             }
         ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719924082/kysaw/benefit/genesolutions-san-pham-genloveme-img-03-1.png_ukayz0.webp',
-
     },
     {
         productId: "genlovekid",
@@ -249,9 +250,8 @@ const ProductData = [
                 title: "Bước 1: Nhận kit tại nhà",
                 description: "KYSAW sẽ gửi bộ kit lấy mẫu về địa chỉ của bạn",
                 content: [
-                    "Lọ dung dịch súc miệng lấy mẫu",
-                    "Lọ đựng dung dịch mẫu",
-                    "Phễu",
+                    "Que lấy mẫu",
+                    "Sổ tay hướng dẫn",
                     "Giấy đồng thuận",
                     "Tem dán thông tin cá nhân",
                     "Hướng dẫn sử dụng"
@@ -259,23 +259,24 @@ const ProductData = [
             },
             {
                 title: "Bước 2: Lấy mẫu gen tại nhà",
-                description: "Lấy mẫu gene theo đúng quy trình",
+                description: 'Lấy mẫu gen và gửi về KYSAW',
                 content: [
-                    "Không đánh răng, không ăn uống, không hút thuốc, ít nhất một giờ trước khi lấy mẫu",
-                    "Xoa nhẹ 2 bên má, sau đó ngậm dung dịch và súc miệng kỹ, từ 1 – 2 phút. Sau đó nhả vào lọ chứa mẫu.",
-                    "Vặn chặt nắp, bỏ lại vào hộp và gửi về cho KYSAW.",
-                    "Kết quả sẽ có sau 14 ngày làm việc."
+                    "Quy trình lấy mẫu lại nhà:",
+                    "1.Súc miệng 5s với nước sạch",
+                    "2.Chà đầu que gòn lên niêm mạc má bên trong miệng (30s/bên)",
+                    "3.Để que khô tự nhiên 2-3 phút, bảo quản trong túi giấy, túi zip",
                 ]
             },
             {
                 title: "Bước 3: Nhận kết quả",
-                description: "KYSAW sẽ liên lạc để gửi kết quả đến bạn, và đặt hẹn tư vấn 1-1 cùng với chuyên gia của KYSAW.",
+                description: "KYSAW sẽ gửi kết quả vào địa chỉ email của bạn",
                 content: [
-                    "Kết quả sẽ bao gồm bản cứng và bản mềm."
+                    "Gen của bạn sẽ được giải mã và phân tích",
+                    "Kết quả nhanh chóng, chính xác dựa trên chứng cứ khoa học và công nghệ",
+                    "Cam kết bảo mật thông tin và quyền riêng tư"
                 ]
             }
         ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719924082/kysaw/benefit/genesolutions-san-pham-genloveme-img-03-1.png_ukayz0.webp',
-
     },
     {
         productId: "genloveme",
@@ -309,9 +310,8 @@ const ProductData = [
                 title: "Bước 1: Nhận kit tại nhà",
                 description: "KYSAW sẽ gửi bộ kit lấy mẫu về địa chỉ của bạn",
                 content: [
-                    "Lọ dung dịch súc miệng lấy mẫu",
-                    "Lọ đựng dung dịch mẫu",
-                    "Phễu",
+                    "Que lấy mẫu",
+                    "Sổ tay hướng dẫn",
                     "Giấy đồng thuận",
                     "Tem dán thông tin cá nhân",
                     "Hướng dẫn sử dụng"
@@ -319,23 +319,24 @@ const ProductData = [
             },
             {
                 title: "Bước 2: Lấy mẫu gen tại nhà",
-                description: "Lấy mẫu gene theo đúng quy trình",
+                description: 'Lấy mẫu gen và gửi về KYSAW',
                 content: [
-                    "Không đánh răng, không ăn uống, không hút thuốc, ít nhất một giờ trước khi lấy mẫu",
-                    "Xoa nhẹ 2 bên má, sau đó ngậm dung dịch và súc miệng kỹ, từ 1 – 2 phút. Sau đó nhả vào lọ chứa mẫu.",
-                    "Vặn chặt nắp, bỏ lại vào hộp và gửi về cho KYSAW.",
-                    "Kết quả sẽ có sau 14 ngày làm việc."
+                    "Quy trình lấy mẫu lại nhà:",
+                    "1.Súc miệng 5s với nước sạch",
+                    "2.Chà đầu que gòn lên niêm mạc má bên trong miệng (30s/bên)",
+                    "3.Để que khô tự nhiên 2-3 phút, bảo quản trong túi giấy, túi zip",
                 ]
             },
             {
                 title: "Bước 3: Nhận kết quả",
-                description: "KYSAW sẽ liên lạc để gửi kết quả đến bạn, và đặt hẹn tư vấn 1-1 cùng với chuyên gia của KYSAW.",
+                description: "KYSAW sẽ gửi kết quả vào địa chỉ email của bạn",
                 content: [
-                    "Kết quả sẽ bao gồm bản cứng và bản mềm."
+                    "Gen của bạn sẽ được giải mã và phân tích",
+                    "Kết quả nhanh chóng, chính xác dựa trên chứng cứ khoa học và công nghệ",
+                    "Cam kết bảo mật thông tin và quyền riêng tư"
                 ]
             }
         ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1719924082/kysaw/benefit/genesolutions-san-pham-genloveme-img-03-1.png_ukayz0.webp',
-
     },
 
 
