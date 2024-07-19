@@ -25,7 +25,7 @@ import GenLoveFit from '../../assets/Product/GenLove_Fit_x5lur9.jpg';
 import GenLoveFitLogo from '../../assets/Product/KYSAW_Product_Logos_GenLove_Fit_org_mwvvr5.svg';
 import GenLoveFitProduct from '../../assets/Product/Product KV_Product KV - GenLove Fit.png';
 import GenLoveFitHex from '../../assets/Product/KYSAW_Product_Logos_GenLove_Fit_Button_rxrnc4.svg';
-import GenLoveFitTag from '../../assets/Product/KYSAW_Product_Logos_GenLove_Kid_Tag_slhy6o.svg';
+import GenLoveFitTag from '../../assets/Product/KYSAW_Product_Logos_GenLove_Fit_Tag_oyoubt.svg';
 
 import YamuGen from '../../assets/Product/Yamugene_ivq1pp.jpg';
 import YamuGenLogo from '../../assets/Product/KYSAW_Product_Logos_Yamugene_Org_jq2net.svg';
