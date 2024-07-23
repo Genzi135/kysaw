@@ -57,7 +57,7 @@ const ProductData = [
                     "Kết quả sẽ bao gồm bản cứng và bản mềm."
                 ]
             }
-        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721200049/kysaw/benefit/Yamugene_kit_qsbctn.jpg',
+        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721706139/kysaw/benefit/YamuGene_Kit-10_pnx5ql.jpg',
     },
     {
         productId: "gencarepremium",
@@ -99,7 +99,7 @@ const ProductData = [
                 description: "KYSAW sẽ liên lạc để gửi kết quả đến bạn, và đặt hẹn tư vấn 1-1 cùng với chuyên gia của KYSAW.",
                 content: []
             }
-        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721200049/kysaw/benefit/Yamugene_kit_qsbctn.jpg',
+        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721706139/kysaw/benefit/YamuGene_Kit-10_pnx5ql.jpg',
 
     },
     {
