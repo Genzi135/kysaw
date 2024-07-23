@@ -41,10 +41,10 @@ export default function ProductDetail() {
                 </div>
             </div>
             <div className='flex justify-center items-center bg-blue-50 w-full'>
-                <div className='flex flex-col lg:flex-row justify-center items-center md:items-start w-[1220px] mt-14'>
+                <div className='flex flex-col lg:flex-row justify-center items-center lg:items-start w-[1220px] mt-14'>
                     {data.avatarUrl && (
-                        <div className='flex justify-center items-start flex-col'>
-                            <div className=' max-w-[420px] rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white p-10'>
+                        <div className='flex justify-center items-start flex-col lg:ml-5'>
+                            <div className=' max-w-[420px] w-full rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white p-10 '>
                                 <Image src={data.avatarUrl} alt='avatar' width={'100%'} height={'100%'} />
                             </div>
                             <label className='font-manropeBold pb-10 italic cursor-pointer' style={{ color: COLOR.backgroundPrimary }}>Tham khảo kết quả mẫu</label>
@@ -93,10 +93,10 @@ export default function ProductDetail() {
                 </div>
                 {data.introductions && (
                     <div className='flex flex-col justify-center items-center  max-w-[1220px]'>
-                        <div className='w-full md:w-[850px] flex justify-center items-center'>
+                        <div className='w-full lg:w-[850px] flex justify-center items-center'>
                             <Image src={data.introductions.image} alt='content image' width={'auto'} height={'auto'} className='mx-auto' loading='lazy' />
                         </div>
-                        <div className='w-full md:w-[1000px] flex flex-col gap-3 text-lg'>
+                        <div className='w-full lg:w-[1000px] flex flex-col gap-3 text-lg'>
                             {data.introductions.content.map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
                             ))}
