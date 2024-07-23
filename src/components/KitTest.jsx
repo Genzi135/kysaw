@@ -7,7 +7,7 @@ const KitTest = ({ data }) => {
 
     return (
         <div className='flex flex-col lg:flex-row justify-center items-center w-full max-w-[1220px]'>
-            <div className='w-full lg:w-[49%] flex justify-center items-start flex-col'>
+            <div className={`w-full flex justify-center items-start flex-col ${data && data.imageKit && 'lg:w-[49%]'}`}>
                 {data.steps.map((step, index) => (
                     <div key={index} className="collapse collapse-arrow">
                         <input type="radio" name="my-accordion-2" defaultChecked={index === 0} />
@@ -36,9 +36,9 @@ const KitTest = ({ data }) => {
                     </div>
                 ))}
             </div>
-            <div className='w-full lg:w-[49%] flex justify-center items-center p-2'>
+            {data && data.imageKit && <div className='w-full lg:w-[49%] flex justify-center items-center p-2'>
                 <img src={data.imageKit} alt='img' className='w-[500px] h-[500px]' />
-            </div>
+            </div>}
         </div>
     );
 };

@@ -99,7 +99,7 @@ const ProductData = [
                 description: "KYSAW sẽ liên lạc để gửi kết quả đến bạn, và đặt hẹn tư vấn 1-1 cùng với chuyên gia của KYSAW.",
                 content: []
             }
-        ], imageKit: 'https://res.cloudinary.com/diribdgsz/image/upload/v1721706466/kysaw/benefit/09c896e33ded98b3c1fc_fr81rb.jpg',
+        ], imageKit: '',
 
     },
     {
