@@ -37,7 +37,7 @@ export default function Footer() {
             } else if (inputPhone.length > 10) {
                 toast.error("Số điện thoại nhiều hơn 10 chữ số")
             } else {
-                SendEmail(inputName, inputName, inputProblem);
+                SendEmail(inputName, inputPhone, inputProblem);
                 toast.success("Đã gửi thành công");
                 setInputPhone('');
                 setInputName('');

@@ -1,34 +1,41 @@
-// pages/api/sendEmail.js
-import nodemailer from 'nodemailer';
-import { NextRequest, NextResponse } from 'next/server';
+import 'dotenv/config';
+import { NextResponse } from 'next/server';
+const { Recipient, EmailParams, MailerSend } = require('mailersend');
 
 export async function POST(req) {
     try {
-        const { name, phone, question } = await req.json();
+        const data = await req.json();
+        const { name, phone, question } = data;
 
-        // Create a transporter object using the default SMTP transport
-        let transporter = nodemailer.createTransport({
-            service: 'Gmail', // Use your email service provider
-            auth: {
-                user: process.env.EMAIL_USER, // Your email address
-                pass: process.env.EMAIL_PASS, // Your email password
-            },
+        const mailersend = new MailerSend({
+            apiKey: process.env.MAILERSEND_TOKEN,
         });
-        console.log(process.env.EMAIL_USER);
-        // Email options
-        let mailOptions = {
-            from: process.env.EMAIL_USER,
-            to: 'genzi13052002@gmail.com', // Replace with the recipient's email address
-            subject: 'New Inquiry',
-            text: `Name: ${name}\nPhone: ${phone}\nQuestion: ${question}`,
-        };
 
-        // Send the email
-        await transporter.sendMail(mailOptions);
-        return NextResponse.json({ status: 'success', message: 'Email sent successfully' });
+        const recipients = [new Recipient("kysaw.vn@gmail.com", "Recipient")];
+
+        const emailParams = new EmailParams()
+            .setFrom({ email: "MS_dsHoVu@trial-3zxk54v0061gjy6v.mlsender.net", name: "KYSAW-website" })
+            .setTo(recipients)
+            .setSubject("Liên hệ từ khách hàng")
+            .setHtml(`
+                <div>
+                    <h1>Thông tin liên hệ từ khách hàng</h1>
+                    <p><strong>Tên:</strong> ${name}</p>
+                    <p><strong>Số điện thoại:</strong> ${phone}</p>
+                    <p><strong>Câu hỏi:</strong></p>
+                    <blockquote style="background-color: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px;">
+                        ${question}
+                    </blockquote>
+                </div>
+            `)
+            .setText(`Tên: ${name}\nSố điện thoại: ${phone}\nCâu hỏi: ${question}`);
+
+        await mailersend.email.send(emailParams);
+
+        return NextResponse.json({ message: 'Email sent successfully' });
     } catch (error) {
-        console.error("Error processing request:", error);
-        return NextResponse.json({ status: 'error', message: 'Failed to send email' });
+        console.error("Error in sending email:", error);
+        return NextResponse.json({ error: 'Error sending email', details: error.message }, { status: 500 });
     }
 }
 

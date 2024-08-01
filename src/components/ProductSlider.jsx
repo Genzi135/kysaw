@@ -29,6 +29,7 @@ export default function ProductSlider() {
 
     return (
         <div className="flex flex-col items-center w-full relative" style={{ backgroundColor: listImage[index].color }}>
+            <div className="hidden">{listImage.map((e, index) => { <div key={index}>{e}</div> })}</div>
             <div className="max-w-[1220px] w-full h-auto relative flex justify-between items-center">
                 <motion.div
                     key={index}
