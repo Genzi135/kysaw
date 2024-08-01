@@ -42,11 +42,11 @@ export default function Consultants() {
                 <div className="sm:text-lg text-base mb-2 p-5">Để tìm tư vấn viên gần nhất, xin vui lòng chọn khu vực của bạn</div>
                 <div className="flex justify-center items-center gap-2">
                     <label className="text-lg sm:text-lg">Khu vực:</label>
-                    <select value={selectedLocation} onChange={handleLocationChange} className="select select-bordered text-base ">
+                    <select value={selectedLocation} onChange={handleLocationChange} className="select select-bordered text-base bg-white">
                         <option value="">-Chọn tỉnh/thành phố-</option>
                         {uniqueLocations.map((location, index) => {
                             return (
-                                <option key={index} value={location} className="sm:text-base text-sm">{location}</option>
+                                <option key={index} value={location} className="sm:text-base text-sm bg-white">{location}</option>
                             )
                         })}
                     </select>

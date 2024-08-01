@@ -92,10 +92,10 @@ export default function Footer() {
                                 <label className='w-full flex justify-center md:justify-start items-center font-manropeBold'>
                                     Chọn sản phẩm bạn cần tư vấn
                                 </label>
-                                <select className='select text-xl w-full'>
+                                <select className='select text-xl w-full bg-white'>
                                     {products.map((e, index) => {
                                         return (
-                                            <option className='option text-sm md:text-lg font-manropeBold' key={index}>{e.title}</option>
+                                            <option className='option text-sm md:text-lg font-manropeBold bg-white' key={index}>{e.title}</option>
                                         )
                                     })}
                                 </select>
@@ -105,19 +105,19 @@ export default function Footer() {
                                 value={inputName}
                                 onChange={onInputNameChange}
                                 placeholder='Tên'
-                                className='p-2 border border-gray-300 rounded-md input w-full'
+                                className='p-2 border border-gray-300 bg-white rounded-md input w-full'
                             />
                             <input
-                                type='text'
+                                type='text' s
                                 value={inputPhone}
                                 onChange={onInputPhoneChange}
                                 placeholder='Số điện thoại...'
-                                className='p-2 border border-gray-300 rounded-md w-full input'
+                                className='p-2 border border-gray-300 bg-white rounded-md w-full input'
                             />
                             <textarea
                                 value={inputProblem}
                                 onChange={onProblemChange}
-                                className='p-2 border border-gray-300 rounded-md w-full input h-24' placeholder='Câu hỏi...'
+                                className='p-2 border border-gray-300 bg-white rounded-md w-full input h-24' placeholder='Câu hỏi...'
                             />
                             <button onClick={() => onSubmitClick()} className='btn text-white w-full font-manropeBold tex-xl' style={{ backgroundColor: COLOR.backgroundPrimary }}>Gửi</button>
                         </div>
@@ -125,7 +125,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center bg-white'>
                 <div className='flex justify-around items-start flex-col md:flex-row ml-5 mr-5 mb-5 w-[1220px]'>
                     <div className='flex flex-col justify-center items-start mt-5'>
                         <label className='text-xl font-manropeBold mb-1'>Sản phẩm</label>

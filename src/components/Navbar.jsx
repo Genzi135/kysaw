@@ -5,8 +5,6 @@ import Logo from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png'
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { COLOR } from '../utils/COLORS';
-import { BiLogoGmail, BiSolidPhoneCall } from 'react-icons/bi'
 import ModalContact from './ModalContact';
 import FormContact from './FormContact';
 
@@ -72,7 +70,7 @@ const Navbar = () => {
                         >
                             {'Thông tin'}
                         </div>
-                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow text-base">
+                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 bg-white rounded-box z-[1] w-52 p-2 shadow text-base">
                             <li><a href='/about'>Về chúng tôi</a></li>
                             <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
                             <li><a href='/about#genesolutions'>Gene Solotions</a></li>
@@ -111,7 +109,7 @@ const Navbar = () => {
                             >
                                 {'Thông tin'}
                             </div>
-                            <ul tabIndex={0} className="menu bg-base-100 z-[1] w-52 pl-6 text-base">
+                            <ul tabIndex={0} className="menu bg-base-100 z-[1] w-52 pl-6 text-base bg-white">
                                 <li><a href='/about'>Về chúng tôi</a></li>
                                 <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
                                 <li><a href='/about#genesolutions'>Gene Solotions</a></li>
