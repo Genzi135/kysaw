@@ -16,7 +16,7 @@ export const metadata = {
     ogUrl: 'https://kysaw.com/about',
 };
 
-export default function About() {
+export default async function About() {
 
     const teamFounder = [
         {

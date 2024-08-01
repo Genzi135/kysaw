@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { imgShared } from '../utils/images';
+import { SendEmail } from '../app/services/email.service';
 
 export default function Footer() {
     const [inputPhone, setInputPhone] = useState('');
@@ -36,6 +37,7 @@ export default function Footer() {
             } else if (inputPhone.length > 10) {
                 toast.error("Số điện thoại nhiều hơn 10 chữ số")
             } else {
+                SendEmail(inputName, inputName, inputProblem);
                 toast.success("Đã gửi thành công");
                 setInputPhone('');
                 setInputName('');

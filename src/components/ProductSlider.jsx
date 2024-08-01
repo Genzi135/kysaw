@@ -14,23 +14,22 @@ export default function ProductSlider() {
         { path: imgShared.Banner.GenLoveKid, label: 'img4', color: '#ffca35' },
     ];
 
-    const nextClick = () => {
-        setIndex((prevIndex) => (prevIndex < listImage.length - 1 ? prevIndex + 1 : 0));
-    }
-
-    const prevClick = () => {
-        setIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : listImage.length - 1));
-    }
-
     useEffect(() => {
         const interval = setInterval(nextClick, 5000);
         return () => clearInterval(interval);
-    }, []);
+    }, [index]);
+
+    const nextClick = () => {
+        setIndex((prevIndex) => (prevIndex + 1) % listImage.length);
+    };
+
+    const handleDotClick = (dotIndex) => {
+        setIndex(dotIndex);
+    };
 
     return (
-        <div className="flex justify-center items-center w-full" style={{ backgroundColor: listImage[index].color }}>
-            <div className="max-w-[1220px] w-full h-[fit] relative flex justify-between items-center">
-                <button onClick={prevClick} className="w-8 h-16 text-5xl hidden sm:flex justify-center items-center absolute top-[45%] left-0 cursor-pointer rounded-md z-20 hover:bg-black/15 bg-black/5">‹</button>
+        <div className="flex flex-col items-center w-full relative" style={{ backgroundColor: listImage[index].color }}>
+            <div className="max-w-[1220px] w-full h-auto relative flex justify-between items-center">
                 <motion.div
                     key={index}
                     initial={{ opacity: 0 }}
@@ -39,10 +38,19 @@ export default function ProductSlider() {
                     transition={{ duration: 1.3 }}
                     className="relative z-10"
                 >
-                    <Image src={listImage[index].path} width={'auto'} height={'auto'} alt="banner" />
+                    <Image src={listImage[index].path} layout="responsive" width={1220} height={500} alt="banner" />
                 </motion.div>
 
-                <button onClick={nextClick} className="w-8 h-16 text-5xl hidden sm:flex justify-center items-center absolute top-[45%] right-0 cursor-pointer rounded-md z-20 hover:bg-black/15 bg-black/5">›</button>
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+                    {listImage.map((_, dotIndex) => (
+                        <div
+                            key={dotIndex}
+                            className={`w-3 h-3 border-[2px] border-gray-400 rounded-full cursor-pointer ${index === dotIndex ? `bg-inherit` : 'bg-gray-400'
+                                }`}
+                            onClick={() => handleDotClick(dotIndex)}
+                        ></div>
+                    ))}
+                </div>
             </div>
         </div>
     );

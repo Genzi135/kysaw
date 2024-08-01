@@ -1,3 +1,4 @@
+import { imgShared } from "../utils/images";
 import HomePage from "./Homepage";
 
 export const metadata = {
@@ -8,6 +9,7 @@ export const metadata = {
   robots: 'index, follow',
   ogTitle: 'Trang Chủ - KYSAW',
   ogDescription: 'KYSAW là đơn vị tiên phong trong việc ứng dụng công nghệ gene vào đời sống, cung cấp các giải pháp chăm sóc sức khỏe toàn diện và bảo vệ tài chính gia đình.',
+  ogImage: imgShared.logos.fullColor,
   ogUrl: 'https://kysaw.vn',
 };
 
