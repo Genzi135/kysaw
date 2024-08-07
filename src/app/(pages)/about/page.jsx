@@ -23,7 +23,7 @@ export default async function About() {
             image: '',
             name: 'BÙI THỊ KIM ANH',
             position: 'GIÁM ĐỐC ĐIỀU HÀNH',
-            major: 'Củ nhân kinh tế Master Business Coach',
+            major: 'Cử nhân kinh tế Master Business Coach',
             description: 'Hơn 10 năm giữ vài trò giám đốc chuyên môn tại các tập đoàn toàn cầu'
         }, {
             image: '',
