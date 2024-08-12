@@ -108,7 +108,7 @@ export default function Footer() {
                                 className='p-2 border border-gray-300 bg-white rounded-md input w-full'
                             />
                             <input
-                                type='text' s
+                                type='text'
                                 value={inputPhone}
                                 onChange={onInputPhoneChange}
                                 placeholder='Số điện thoại...'

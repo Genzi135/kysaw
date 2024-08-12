@@ -12,6 +12,8 @@ export default function ProductSlider() {
         { path: imgShared.Banner.GenLoveFit, label: 'img2', color: '#50ba83' },
         { path: imgShared.Banner.GenLoveSkin, label: 'img3', color: '#b52b43' },
         { path: imgShared.Banner.GenLoveKid, label: 'img4', color: '#ffca35' },
+        { path: imgShared.Banner.GenCarePre, label: 'img3', color: '#0eacb0' },
+        { path: imgShared.Banner.YamuGene, label: 'img4', color: '#a3c93a' },
     ];
 
     useEffect(() => {
