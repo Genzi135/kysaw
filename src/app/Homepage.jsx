@@ -34,7 +34,7 @@ export default function HomePage() {
                 className="flex justify-center items-center"
                 style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},${COLOR.backgroundSecondary})` }}
             >
-                <Image src={imgShared.Banner.HomePageBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
+                <Image src={imgShared.Banner.MainBanner} alt="banner" width={'auto'} height={'auto'} layout="responsive" className="max-w-[1220px]" />
             </div>
 
             <div className={animate ? 'slide-up' : 'invisible' + 'flex justify-center items-center '}>

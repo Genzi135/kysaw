@@ -1,4 +1,5 @@
 import HomePageBanner from '../../assets/Banners/HomepageBanner.png';
+import MainBanner from '../../assets/Banners/Main Banner - Web-01.png';
 
 import LogoKysawWhite from '../../assets/Logo/KYSAW_LOGO_FINAL_WHITE_COLOR.png';
 import LogoKysawFullColor from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png';
@@ -143,6 +144,7 @@ export const imgShared = {
         YamuGene: BannerYamuGene,
         Consultants: BannerConsultants,
         Recruitment: BannerRecruitment,
+        MainBanner: MainBanner,
     },
     benefit: {
         HieuRoCoThe: HieuRoCoThe,
