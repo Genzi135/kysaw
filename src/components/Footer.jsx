@@ -129,7 +129,7 @@ export default function Footer() {
                 <div className='flex justify-around items-start flex-col md:flex-row ml-5 mr-5 mb-5 w-[1220px]'>
                     <div className='flex flex-col justify-center items-start mt-5'>
                         <label className='text-xl font-manropeBold mb-1'>Sản phẩm</label>
-                        <Link href={'/product/yamuGen'} className='hover:text-sky-600'>YamuGene</Link>
+                        <Link href={'/product/yamuGene'} className='hover:text-sky-600'>YamuGene</Link>
                         <Link href={'/product/gencarepremium'} className='hover:text-sky-500'>GenCare Premium</Link>
                         <Link href={'/product/genloveme'} className='hover:text-sky-500'>GenLove Me</Link>
                         <Link href={'/product/genloveskin'} className='hover:text-sky-500'>GenLove Skin</Link>
