@@ -13,7 +13,7 @@ export default function ProductCard({ data }) {
                 <Image src={logowhite} alt="logo" width={130} height={130} className=' sm:bottom-0 sm:mt-[100px] sm:ml-2 hidden sm:block' />
             </div>
             <div className='w-full h-[100%] shadow-2xl relative z-10 mt-[200px] sm:ml-[120px] sm:rounded-r-xl bg-white sm:mt-0 rounded-b-xl sm:rounded-b-none group-hover:shadow-black/50'>
-                <div className="absolute p-5 w-full sm:h-[76%] sm:w-[330px] sm:right-0 flex flex-col items-center sm:pt-5 h-[50%] overflow-hidden mt-[50px] sm:mt-0">
+                <div className="absolute p-5 w-full sm:h-[75%] sm:w-[330px] sm:right-0 flex flex-col items-center sm:pt-5 h-[50%] overflow-hidden mt-[50px] sm:mt-0">
                     <a href={`/product/${data.productId}`} className="cursor-pointer hover:underline">
                         <label className="font-manropeBold text-xl sm:mt-2">{data.productName}</label>
                     </a>
