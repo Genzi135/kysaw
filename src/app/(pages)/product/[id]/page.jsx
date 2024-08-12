@@ -47,7 +47,12 @@ export default function ProductDetail() {
                             <div className=' max-w-[420px] w-full rounded-tl-[120px] rounded-br-[80px] shadow-xl mb-6 bg-white p-10 '>
                                 <Image src={data.avatarUrl} alt='avatar' width={'100%'} height={'100%'} />
                             </div>
-                            <label className='font-manropeBold pb-10 italic cursor-pointer' style={{ color: COLOR.backgroundPrimary }}>Tham khảo kết quả mẫu</label>
+                            <label className='font-manropeBold italic cursor-pointer ml-5 sm:ml-0' style={{ color: COLOR.backgroundPrimary }}
+                                onClick={() => { window.open(data?.sample.link, '_blank') }}
+                            >Tham khảo kết quả mẫu</label>
+                            {data.subSample && <label className='font-manropeBold italic cursor-pointer ml-5 sm:ml-0' style={{ color: COLOR.backgroundPrimary }}
+                                onClick={() => { window.open(data?.subSample.link, '_blank') }}
+                            >{data.subSample.name}</label>}
                         </div>
                     )}
                     <div className='flex flex-1 flex-col justify-center items-start gap-2 pl-10 md:pl-20 pr-5 '>

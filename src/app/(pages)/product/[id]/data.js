@@ -7,6 +7,14 @@ const ProductData = [
         color: '#a3c93a',
         bannerUrl: imgShared.Banner.YamuGene,
         avatarUrl: imgShared.yamuGen.hex,
+        sample: {
+            name: "Sample YamuGene",
+            link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Yamugene++-+Sample+Result.pdf",
+        },
+        subSample: {
+            name: "",
+            link: "",
+        },
         price: 'Liên hệ',
         benefits: [
             "Tầm soát nguy cơ của 16-18 bệnh mãn tính và ung thư do di truyền.",
@@ -65,6 +73,14 @@ const ProductData = [
         color: '#0eacb0',
         bannerUrl: imgShared.Banner.GenCarePre,
         avatarUrl: imgShared.genCarePre.hex,
+        sample: {
+            name: "Sample GenCare Premium",
+            link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Gencare+Premium_Report_Full_VN_120124+(1).pdf",
+        },
+        subSample: {
+            name: "Spotmas",
+            link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/KQ+mau+Spotmas+01062023.pdf",
+        },
         price: 'Liên hệ',
         benefits: [
             "Tầm soát nguy cơ mắc các bệnh mãn tính, nguy cơ ung thư và các bệnh di truyền lặn phổ biến của người Việt Nam.",
@@ -108,6 +124,14 @@ const ProductData = [
         color: '#b52b43',
         bannerUrl: imgShared.Banner.GenLoveSkin,
         avatarUrl: imgShared.genLoveSkin.hex,
+        sample: {
+            name: "Sample GenLove Skin",
+            link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Sample+Report+-+Genlove+Skin.pdf",
+        },
+        subSample: {
+            name: "",
+            link: "",
+        },
         price: 'Liên hệ',
         benefits: [
             "Giúp người thực hiện hiểu được những đặc tính của da, từ đó biết được cách chăm sóc da phù hợp để có được làn da trẻ và đẹp.",
@@ -166,6 +190,14 @@ const ProductData = [
         color: '#50ba83',
         bannerUrl: imgShared.Banner.GenLoveFit,
         avatarUrl: imgShared.genLoveFit.hex,
+        sample: {
+            name: "Sample GenLove Fit",
+            link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Sample+Report+-+Genlove+Fit+1.pdf",
+        },
+        subSample: {
+            name: "",
+            link: "",
+        },
         price: 'Liên hệ',
         benefits: [
             "Giúp người làm xét nghiệm hiểu được những đặc tính về chuyển hóa/dung nạp năng lượng từ thức ăn của cơ thể.",
@@ -224,6 +256,14 @@ const ProductData = [
         color: '#ffca35',
         bannerUrl: imgShared.Banner.GenLoveKid,
         avatarUrl: imgShared.genLoveKid.hex,
+        sample: {
+            name: "Sample Genlove Kid",
+            link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Sample+Report+Genlove+Kid.pdf",
+        },
+        subSample: {
+            name: "",
+            link: "",
+        },
         price: 'Liên hệ',
         benefits: [
             "Giải mã các tiềm năng di truyền liên quan đến thể chất, tính cách, năng lực nhận thức, ghi nhớ… cho trẻ.",
@@ -284,6 +324,14 @@ const ProductData = [
         color: '#47c5e4',
         bannerUrl: imgShared.Banner.GenLoveMe,
         avatarUrl: imgShared.genLoveMe.hex,
+        sample: {
+            name: "Sample GenLove Me",
+            link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Sample+Report+-+Genlove+Me.pdf",
+        },
+        subSample: {
+            name: "",
+            link: "",
+        },
         price: 'Liên hệ',
         benefits: [
             "Cung cấp những thông tin về tiềm lực của chính bạn.",
