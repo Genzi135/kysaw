@@ -43,6 +43,23 @@ export const consultants = [
         phone: "0838822922",
         email: "gialinhblc@gmail.com",
         certificateLink: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Tran+Thi+Gia+Linh.pdf"
+    }, {
+        name: "Nguyễn Vũ Kim Liên",
+        region: "Bình Dương",
+        id: "KA24081601",
+        issuedDate: "16/08/2024",
+        phone: "0976297247",
+        email: "nguyelv2@gmail.com",
+        certificateLink: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Nguyen+Vu+Kim+Lien.pdf"
+    },
+    {
+        name: "Lê Thị Kim Linh",
+        region: "Phú Yên",
+        id: "KA24081602",
+        issuedDate: "16/08/2024",
+        phone: "0935995308",
+        email: "kimlinhpy2017@gmail.com",
+        certificateLink: "https://kysaw.s3.ap-southeast-1.amazonaws.com/L%C3%AA+Th%E1%BB%8B+Kim+Linh.pdf"
     }
 ];
 
