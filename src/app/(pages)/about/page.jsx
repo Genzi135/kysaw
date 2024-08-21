@@ -21,14 +21,8 @@ export default async function About() {
     const teamFounder = [
         {
             image: '',
-            name: 'BÙI THỊ KIM ANH',
-            position: 'GIÁM ĐỐC ĐIỀU HÀNH',
-            major: 'Cử nhân kinh tế Master Business Coach',
-            description: 'Hơn 10 năm giữ vài trò giám đốc chuyên môn tại các tập đoàn toàn cầu'
-        }, {
-            image: '',
             name: 'BÙI NGỌC ĐOAN CHIÊU',
-            position: 'GIÁM ĐỐC CHUYÊN MÔN',
+            position: 'FOUNDER',
             major: 'Th.S. Công nghệ sinh học & Sinh tin học',
             description: 'Hơn 8 năm kinh nghiệm trong lĩnh vực xét nghiệm và chăm sóc sức khỏe chủ động'
         }, {
@@ -65,7 +59,7 @@ export default async function About() {
     return (
         <div className="mt-[70px] scroll-smooth">
             <div id="about" className="flex justify-center items-center" style={{ backgroundImage: `linear-gradient(to top, ${COLOR.backgroundPrimary},#15BEF2)` }}>
-                <Image src={imgShared.Banner.HomePageBanner} alt="banner" layout="responsive" className="max-w-[1220px]" />
+                <Image src={imgShared.Banner.MainBanner} alt="banner" layout="responsive" className="max-w-[1220px]" />
             </div>
             <div className="flex justify-center items-center">
                 <div className="flex flex-col justify-center items-center pl-5 pr-5 pb-5 md:pl-10 md:pr-10 max-w-[1220px]">
