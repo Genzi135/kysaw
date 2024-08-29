@@ -74,6 +74,7 @@ const Navbar = () => {
                             <li><a href='/about'>Về chúng tôi</a></li>
                             <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
                             <li><a href='/about#genesolutions'>Gene Solotions</a></li>
+                            <li><a href='/news'>Tin tức</a></li>
                             <li><a href='/consultants'>Tư vấn viên</a></li>
                             <li><a href='/recruitment'>Tuyển dụng</a></li>
                         </ul>
@@ -113,6 +114,7 @@ const Navbar = () => {
                                 <li><a href='/about'>Về chúng tôi</a></li>
                                 <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
                                 <li><a href='/about#genesolutions'>Gene Solotions</a></li>
+                                <li><a href='/news'>Tin tức</a></li>
                                 <li><a href='/consultants'>Tư vấn viên</a></li>
                                 <li><a href='/recruitment'>Tuyển dụng</a></li>
                             </ul>
