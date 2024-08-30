@@ -73,7 +73,7 @@ const Navbar = () => {
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 bg-white rounded-box z-[1] w-52 p-2 shadow text-base">
                             <li><a href='/about'>Về chúng tôi</a></li>
                             <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
-                            <li><a href='/about#genesolutions'>Gene Solotions</a></li>
+                            <li><a href='/about#genesolutions'>Gene Solutions</a></li>
                             <li><a href='/announcement'>Thông báo</a></li>
                             <li><a href='/consultants'>Tư vấn viên</a></li>
                             <li><a href='/recruitment'>Tuyển dụng</a></li>
@@ -113,7 +113,7 @@ const Navbar = () => {
                             <ul tabIndex={0} className="menu bg-base-100 z-[1] w-52 pl-6 text-base bg-white">
                                 <li><a href='/about'>Về chúng tôi</a></li>
                                 <li><a href='/about#jh-bioholdings'>JH Bioholdings</a></li>
-                                <li><a href='/about#genesolutions'>Gene Solotions</a></li>
+                                <li><a href='/about#genesolutions'>Gene Solutions</a></li>
                                 <li><a href='/announcement'>Thông báo</a></li>
                                 <li><a href='/consultants'>Tư vấn viên</a></li>
                                 <li><a href='/recruitment'>Tuyển dụng</a></li>
