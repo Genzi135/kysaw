@@ -18,15 +18,6 @@ export const consultants = [
         certificateLink: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Vu+Thi+Thu+Suong.pdf"
     },
     {
-        name: "Nguyễn Văn Toàn Trung",
-        region: "TP Hồ Chí Minh",
-        id: "KA24050403",
-        issuedDate: "04/05/2024",
-        phone: "0917 707273",
-        email: "Trungnguyen.taco@gmail.com",
-        certificateLink: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Nguyen+Van+Toan+Trung.pdf"
-    },
-    {
         name: "Đinh Minh Đăng",
         region: "Biên Hòa",
         id: "KA24071602",
