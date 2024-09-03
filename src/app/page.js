@@ -14,7 +14,6 @@ export const metadata = {
   ogUrl: 'https://kysaw.vn',
 };
 
-
 export default function Home() {
   return (
     <HomePage />
