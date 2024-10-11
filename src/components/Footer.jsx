@@ -90,7 +90,7 @@ export default function Footer() {
                         <div className='flex flex-col justify-center items-center gap-2 w-full grow'>
                             <div className='flex flex-col sm:flex-row gap-2 items-center w-full'>
                                 <label className='w-full flex justify-center md:justify-start items-center font-manropeBold'>
-                                    Chọn sản phẩm bạn cần tư vấn
+                                    Chọn dịch vụ bạn cần tư vấn
                                 </label>
                                 <select className='select text-xl w-full bg-white'>
                                     {products.map((e, index) => {
@@ -128,7 +128,7 @@ export default function Footer() {
             <div className='flex justify-center items-center bg-white'>
                 <div className='flex justify-around items-start flex-col md:flex-row ml-5 mr-5 mb-5 w-[1220px]'>
                     <div className='flex flex-col justify-center items-start mt-5'>
-                        <label className='text-xl font-manropeBold mb-1'>Sản phẩm</label>
+                        <label className='text-xl font-manropeBold mb-1'>dịch vụ</label>
                         <Link href={'/product/yamuGene'} className='hover:text-sky-600'>YamuGene</Link>
                         <Link href={'/product/gencarepremium'} className='hover:text-sky-500'>GenCare Premium</Link>
                         <Link href={'/product/genloveme'} className='hover:text-sky-500'>GenLove Me</Link>

@@ -12,7 +12,7 @@ export default function FormContact({ setIsFormOpen }) {
                 <div className="flex gap-5 flex-wrap overflow-y-auto max-h-screen">
                     <div className="flex flex-1 justify-start items-start w-full md:w-80 flex-col gap-5 p-5" style={{ backgroundColor: COLOR.backgroundPrimary }}>
                         <label className="text-white">
-                            Chúng tôi luôn muốn bạn hiểu rõ về sản phẩm trước khi mua bất kì sản phẩm nào từ chúng tôi vì vậy bạn có thể liên hệ với chúng tôi hoặc để lại tên, số điện thoại và câu hỏi (nếu có) để chúng tôi có thể liên hệ với bạn, xin chân thành cảm ơn!
+                            Chúng tôi luôn muốn bạn hiểu rõ về dịch vụ trước khi mua bất kì dịch vụ nào từ chúng tôi vì vậy bạn có thể liên hệ với chúng tôi hoặc để lại tên, số điện thoại và câu hỏi (nếu có) để chúng tôi có thể liên hệ với bạn, xin chân thành cảm ơn!
                         </label>
                         <div className="flex justify-start items-center gap-2">
                             <BiSolidPhoneCall size={30} className="rounded-full p-1 border-[2px] border-white text-white" />

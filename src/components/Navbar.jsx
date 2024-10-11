@@ -20,7 +20,7 @@ const Navbar = () => {
             tag: '/',
         }, {
             id: 2,
-            title: 'Sản phẩm',
+            title: 'Dịch vụ',
             tag: '/product',
         },
     ]

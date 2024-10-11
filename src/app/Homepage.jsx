@@ -82,7 +82,7 @@ export default function HomePage() {
                 }}
             >
                 <label className="text-white text-2xl md:text-3xl font-manropeBold mt-14">
-                    Sản phẩm gen từ chúng tôi
+                    Dịch vụ gen từ chúng tôi
                 </label>
                 <HomeMainBanner />
             </div>
@@ -95,7 +95,7 @@ export default function HomePage() {
                 }}
             >
                 <label className="text-white text-xl md:text-3xl font-manropeBold mt-14">
-                    Sản phẩm gen từ chúng tôi
+                    Dịch vụ gen từ chúng tôi
                 </label>
                 <HomeSubBanner />
             </div>
@@ -103,7 +103,7 @@ export default function HomePage() {
             {/* Product Information */}
             <div className="hidden flex-col justify-center items-center p-5 md:p-10 gap-10 bg-blue-50">
                 <label className="text-black text-xl md:text-3xl font-manropeBold p-5">
-                    Thông tin về các sản phẩm
+                    Thông tin về các dịch vụ
                 </label>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-[90vw] md:max-w-[1220px] overflow-hidden">
                     <div className="flex overflow-hidden gap-10 group p-10 hover:overflow-x-scroll">
@@ -125,7 +125,7 @@ export default function HomePage() {
                             className="btn text-white"
                             style={{ backgroundColor: COLOR.backgroundPrimary }}
                         >
-                            Xem thêm sản phẩm →
+                            Xem thêm dịch vụ →
                         </button>
                     </a>
                 </div>
@@ -153,7 +153,7 @@ export default function HomePage() {
                         <div className="text-base lg:p-5 lg:text-lg p-2 flex flex-col gap-2 w-full sm:w-[44%]">
                             <label className="font-manropeBold">
                                 <div className="flex justify-center sm:justify-start items-center">
-                                    Sản phẩm tiên tiến, lấy mẫu bằng nước bọt
+                                    Dịch vụ tiên tiến, lấy mẫu bằng nước bọt
                                 </div>
                             </label>
                             <label className="flex justify-center items-center">

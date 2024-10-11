@@ -4,7 +4,7 @@ import Logo from '../../assets/Logo/KYSAW_LOGO_FINAL_FULL_COLOR.png';
 
 export const metadata = {
   title: 'Trang Chủ - KYSAW',
-  description: 'KYSAW là đơn vị tiên phong đem lại giải pháp đồng bộ sáng tạo khi ứng dụng công nghệ gene vào đời sống, kết hợp cùng các giải pháp chăm sóc sức khỏe chủ động, bảo vệ tài chính gia đình, chương trình đào tạo dinh dưỡng phòng bệnh giúp khách hàng có một giải pháp trọn vẹn, an tâm, giảm chi phí tầm soát sức khỏe lan man và hiệu quả trong quá trình điều trị y tế.',
+  description: 'KYSAW cung cấp giải pháp sức khỏe toàn diện qua công nghệ xét nghiệm gene giúp tầm soát sớm ung thư, các bệnh lý mãn tính, cải thiện chất lượng cuộc sống và duy trì sự trẻ trung dài lâu',
   keywords: 'KYSAW, kysaw, công nghệ gene, chăm sóc sức khỏe, tài chính gia đình, đào tạo dinh dưỡng, giải pháp sức khỏe, tầm soát sức khỏe, điều trị y tế',
   author: 'KYSAW Team',
   robots: 'index, follow',
