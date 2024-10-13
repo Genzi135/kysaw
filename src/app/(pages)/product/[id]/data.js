@@ -2,13 +2,13 @@ import { imgShared } from "../../../../utils/images";
 
 const ProductData = [
     {
-        productId: "yamuGene",
-        productName: "YamuGene",
+        productId: "YAMUGENE",
+        productName: "YAMUGENE",
         color: '#a3c93a',
         bannerUrl: imgShared.Banner.YamuGene,
         avatarUrl: imgShared.yamuGen.hex,
         sample: {
-            name: "Sample YamuGene",
+            name: "Sample YAMUGENE",
             link: "https://kysaw.s3.ap-southeast-1.amazonaws.com/Yamugene++-+Sample+Result.pdf",
         },
         subSample: {
@@ -31,9 +31,9 @@ const ProductData = [
         introductions:
         {
             image: imgShared.yamuGen.product,
-            content: ["YamuGen là giải pháp ứng dụng công nghệ giải mã Gen tiên tiến, với chi phí tối ưu nhất, giúp bạn tầm soát nguy cơ mắc 16-18 bệnh mãn tính và ung thư do di truyền, mang lại sự an tâm và hiểu biết sâu sắc về sức khỏe di truyền của bản thân. Dịch vụ cung cấp thông tin chi tiết về nhóm ung thư do di truyền, bệnh bạch cầu cấp tính, suy giảm trí nhớ, các bệnh tim mạch, và nhóm bệnh liên quan đến miễn dịch và trao đổi chất. ",
-                "Với YamuGen, bạn sẽ được tư vấn bởi đội ngũ bác sĩ chuyên nghiệp, giúp xác định lộ trình tầm soát và chăm sóc sức khỏe chi tiết cho từng cá nhân. Điều này không chỉ giúp bạn tiết kiệm chi phí khám sức khỏe cho các hạng mục không cần thiết mà còn tạo tiền đề để cải thiện sức khỏe và chất lượng cuộc sống một cách hiệu quả nhất. Sử dụng YamuGen, bạn sẽ hiểu rõ hơn về nguy cơ di truyền của mình, từ đó xây dựng kế hoạch chăm sóc sức khỏe chủ động và kịp thời.",
-                " Hãy để YamuGen trở thành công cụ đáng tin cậy trong hành trình bảo vệ và nâng cao chất lượng cuộc sống của bạn. YamuGen – An tâm sống khỏe!"]
+            content: ["YAMUGENE là giải pháp ứng dụng công nghệ giải mã Gen tiên tiến, với chi phí tối ưu nhất, giúp bạn tầm soát nguy cơ mắc 16-18 bệnh mãn tính và ung thư do di truyền, mang lại sự an tâm và hiểu biết sâu sắc về sức khỏe di truyền của bản thân. Dịch vụ cung cấp thông tin chi tiết về nhóm ung thư do di truyền, bệnh bạch cầu cấp tính, suy giảm trí nhớ, các bệnh tim mạch, và nhóm bệnh liên quan đến miễn dịch và trao đổi chất. ",
+                "Với YAMUGENE, bạn sẽ được tư vấn bởi đội ngũ bác sĩ chuyên nghiệp, giúp xác định lộ trình tầm soát và chăm sóc sức khỏe chi tiết cho từng cá nhân. Điều này không chỉ giúp bạn tiết kiệm chi phí khám sức khỏe cho các hạng mục không cần thiết mà còn tạo tiền đề để cải thiện sức khỏe và chất lượng cuộc sống một cách hiệu quả nhất. Sử dụng YAMUGENE, bạn sẽ hiểu rõ hơn về nguy cơ di truyền của mình, từ đó xây dựng kế hoạch chăm sóc sức khỏe chủ động và kịp thời.",
+                " Hãy để YAMUGENE trở thành công cụ đáng tin cậy trong hành trình bảo vệ và nâng cao chất lượng cuộc sống của bạn. YAMUGENE – An tâm sống khỏe!"]
         },
         steps: [
             {

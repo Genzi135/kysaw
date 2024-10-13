@@ -72,6 +72,12 @@ import BannerConsultants from '../../assets/Banners/Tuyen Dung Banner-02.jpg';
 
 import ContactEmail from '../../assets/reason/contactEmail.png';
 
+import DoanChieu from '../../assets/Team/KYSAW Team-01.png'
+import AnhChieu from '../../assets/Team/KYSAW Team-02.png'
+import ThuSuong from '../../assets/Team/KYSAW Team-05.png'
+import DKF from '../../assets/Team/KYSAW Team-03.png'
+import NgocTu from '../../assets/Team/KYSAW Team-04.png'
+
 export const imgShared = {
     logos: {
         white: LogoKysawWhite,
@@ -156,4 +162,11 @@ export const imgShared = {
         SuMenh: SuMenh,
     },
     ContactEmail: ContactEmail,
+    team: {
+        DoanChieu: DoanChieu,
+        AnhChieu: AnhChieu,
+        ThuSuong: ThuSuong,
+        DKF: DKF,
+        NgocTu: NgocTu,
+    }
 };

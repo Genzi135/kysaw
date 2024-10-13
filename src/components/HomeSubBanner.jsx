@@ -33,7 +33,7 @@ export default function HomeSubBanner() {
                 <Image src={imgShared.genLoveFit.tag} alt='desc' width={120} height={120} />
             </div>
             <div className='flex justify-center items-center gap-[3px] flex-row-reverse absolute top-[500px]'>
-                <Link href={`/product/yamuGene`}>
+                <Link href={`/product/YAMUGENE`}>
                     <Image src={imgShared.yamuGen.hex} alt='logoHex' width={190} height={190} className='animate-float' />
                 </Link>
                 <Image src={imgShared.yamuGen.tag} alt='desc' width={150} height={150} />

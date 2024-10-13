@@ -95,7 +95,7 @@ export default function HomeMainBanner() {
                 <div className='absolute flex gap-1 translate-y-[920px] '>
                     <Image src={imgShared.subItem} alt='subitem' width={180} height={180} className='rotate-180 translate-x-2 translate-y-5 opacity-80' />
                     <Image src={imgShared.yamuGen.tag} alt='desc' width={280} height={280} className='animate-' />
-                    <a href='/product/yamuGene' className='group relative flex justify-center items-center tooltip' data-tip='Click để xem chi tiết'>
+                    <a href='/product/YAMUGENE' className='group relative flex justify-center items-center tooltip' data-tip='Click để xem chi tiết'>
                         <div className='absolute opacity-0 scale-0 -translate-y-0 translate-x-0 duration-300 group-hover:opacity-100 group-hover:-translate-x-[425px]  group-hover:scale-100 h-fit w-fit bg-white z-10 p-2 pr-6 flex flex-col items-start rounded-xl'>
                             <div className='text-nowrap'>
                                 Công nghệ: <label className='font-manropeBold'>Multiplex PCR</label>

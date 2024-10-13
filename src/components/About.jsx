@@ -11,13 +11,13 @@ export default async function About() {
 
     const teamFounder = [
         {
-            image: '',
+            image: imgShared.team.DoanChieu,
             name: 'BÙI NGỌC ĐOAN CHIÊU',
             position: 'FOUNDER',
             major: 'Th.S. Công nghệ sinh học & Sinh tin học',
             description: 'Hơn 8 năm kinh nghiệm trong lĩnh vực xét nghiệm và chăm sóc sức khỏe chủ động'
         }, {
-            image: '',
+            image: imgShared.team.AnhChieu,
             name: 'BÙI QUANG ANH CHIÊU',
             position: 'CỐ VẤN Y KHOA',
             major: 'BS CKI Ngoại tổng quát',
@@ -27,19 +27,19 @@ export default async function About() {
 
     const teamOpen = [
         {
-            image: '',
+            image: imgShared.team.ThuSuong,
             name: 'CRMC',
             position: 'TƯ VẤN TẦM SOÁT & ĐÁNH GIÁ NGUY CƠ UNG THƯ',
             major: 'Đội ngũ bác sĩ chuyên khoa',
             description: 'Tư vấn kết quả giải mã gene tầm soát bệnh giai đoạn sớm và theo dõi sức khỏe định kỳ'
         }, {
-            image: '',
+            image: imgShared.team.DKF,
             name: 'DKF',
             position: 'HUẤN LUYỆN VIÊN DINH DƯỠNG',
             major: 'Chứng nhận quốc tế từ Precision Nutrition',
             description: 'Thiết kế giải pháp dinh dưỡng phòng bệnh cá nhân hóa'
         }, {
-            image: '',
+            image: imgShared.team.NgocTu,
             name: 'ZOEL',
             position: 'HUẤN LUYỆN VIÊN TINH THẦN',
             major: 'Reiki, Chuông xoay, Thiền, Yoga',
@@ -109,14 +109,14 @@ export default async function About() {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center p-5 md:p-10 gap-10" style={{ backgroundColor: COLOR.backgroundPrimary }}>
-                <label className="text-white text-xl md:text-3xl font-manropeBold">Đội ngũ của chúng tôi</label>
-                <label className="text-white text-lg md:text-2xl font-manropeBold">Founder & co-founders</label>
+                <label className="text-white text-xl md:text-3xl font-manropeBold mt-8 mb-4">Đội ngũ của chúng tôi</label>
+                {/* <label className="text-white text-lg md:text-2xl font-manropeBold">Founder & co-founders</label> */}
                 <div className="flex flex-wrap justify-center items-center gap-10">
                     {teamFounder.map((e, index) => (
                         <TeamCard props={e} key={index} />
                     ))}
                 </div>
-                <label className="text-white text-lg md:text-2xl font-manropeBold">Hệ sinh thái mở rộng</label>
+                {/* <label className="text-white text-lg md:text-2xl font-manropeBold">Hệ sinh thái mở rộng</label> */}
                 <div className="flex flex-wrap justify-center items-center gap-10">
                     {teamOpen.map((e, index) => (
                         <TeamCard props={e} key={index} />
@@ -134,7 +134,7 @@ export default async function About() {
                         <img src="https://res.cloudinary.com/diribdgsz/image/upload/v1718963130/kysaw/partners/JHBioHolding_Logo-02_hdewen.png" alt="jh bioholding" className="sm:h-[90px] w-[auto] h-[60px]" />
                     </div>
                     <p className="mt-[52px] text-lg sm:text-xl">
-                        JH Bioholdings là Bệnh viện - Viện nghiên cứu Trung tâm xét nghiệm hàng đầu và là đối tác của hơn 400 bệnh viện tại Hàn Quốc. 2023 là bước ngoặt lớn của dịch vụ xét nghiệm gen di truyền tầm soát ung thư Yamugene trên thị trường Việt Nam.
+                        JH Bioholdings là Bệnh viện - Viện nghiên cứu Trung tâm xét nghiệm hàng đầu và là đối tác của hơn 400 bệnh viện tại Hàn Quốc. 2023 là bước ngoặt lớn của dịch vụ xét nghiệm gen di truyền tầm soát ung thư YAMUGENE trên thị trường Việt Nam.
                     </p>
                     <p className=" text-lg sm:text-xl">
                         Với phương châm hoạt động cống hiến hết mình để phát triển các dịch vụ và hệ thống chẩn đoán phân tử khác nhau thông qua việc đầu tư vào R&D nhằm đóng góp vào cuộc sống khỏe mạnh của nhân loại.
@@ -147,7 +147,7 @@ export default async function About() {
                         JH Bioholdings là đơn vị được cấp phép sản xuất, kinh doanh, nghiên cứu di truyền, và có đầy đủ chứng nhận quản lý chất lượng ISO, CE, GMP.
                     </p>
                     <p className=" text-lg sm:text-xl text-start">
-                        KYSAW hân hạnh được lựa chọn là đối tác môi giới độc quyền dịch vụ Yamugene của JH Bioholdings.
+                        KYSAW hân hạnh được lựa chọn là đối tác môi giới độc quyền dịch vụ YAMUGENE của JH Bioholdings.
                     </p>
                     <div>
                         <label
