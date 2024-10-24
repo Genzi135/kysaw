@@ -7,7 +7,7 @@ import { COLOR } from "../../../utils/COLORS";
 export default function Product() {
 
     const viewPriceList = () => {
-        window.open("https://kysaw.s3.ap-southeast-1.amazonaws.com/KYSAW+-+Bang+Bao+Gia+Ban+Le.pdf")
+        window.open("https://kysaw.s3.ap-southeast-1.amazonaws.com/KYSAW+-+Bang+Bao+Gia+Ban+Le+-+24Oct23.pdf")
     }
 
     return (
@@ -24,7 +24,7 @@ export default function Product() {
                         );
                     })}
                     <div className="w-full mt-[36px]">
-                        <label onClick={() => viewPriceList()} className="ml-[40px] text-2xl hover:underline cursor-pointer" style={{ color: COLOR.backgroundPrimary }}>Xem bảng giá bán lẻ</label>
+                        <label onClick={() => viewPriceList()} className="ml-[40px] md:text-xl hover:underline cursor-pointer" style={{ color: COLOR.backgroundPrimary }}>Xem bảng giá bán lẻ</label>
                     </div>
                 </div>
 
