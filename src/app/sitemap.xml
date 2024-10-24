@@ -16,18 +16,18 @@
         <loc>https://kysaw.vn/about</loc>
         <lastmod>2024-07-14</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://kysaw.vn/consultants</loc>
         <lastmod>2024-07-14</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://kysaw.vn/recruitment</loc>
         <lastmod>2024-07-14</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.5</priority>
     </url>
 </urlset>
