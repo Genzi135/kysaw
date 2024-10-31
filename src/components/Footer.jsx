@@ -147,6 +147,12 @@ export default function Footer() {
                         <label className='text-xl font-manropeBold mb-1'>Liên hệ</label>
                         {/* <Link href={'#tuvan'} className='hover:text-sky-500'>Tư vấn (Miễn phí)</Link> */}
                         <div className='flex justify-start items-center gap-2 mt-1'>
+                            Công ty TNHH KYSAW
+                        </div>
+                        <div className='flex justify-start items-center gap-2 mt-1'>
+                            MST: 0318502266
+                        </div>
+                        <div className='flex justify-start items-center gap-2 mt-1'>
                             <BiSolidPhoneCall size={25} className='rounded-full p-1 border-[2px] border-black text-black' />
                             <div className='text-black'>(+84) 345 972 986</div>
                         </div>
@@ -158,13 +164,13 @@ export default function Footer() {
                 </div>
             </div>
             <div className='flex w-full justify-center items-center' style={{ backgroundColor: COLOR.backgroundPrimary }}>
-                <div className='flex justify-between items-center pl-10 pr-10 pt-2 pb-2 max-w-[1220px] w-full' >
+                <div className='flex justify-between items-center pl-10 pr-10 pt-2 pb-2 max-w-[1220px] w-full flex-col sm:gap-2 sm:flex-row' >
                     <div className='flex justify-center items-center'>
                         <Image src={imgShared.logos.white} alt='logo' width={120} height={120} />
                     </div>
                     <div className='flex justify-start items-center gap-2'>
                         <BiSolidMap size={30} className='rounded-full p-1 border-[2px] border-white text-white text-nowrap' />
-                        <div className='text-white'>373/48 Âu Cơ, Q. Tân Phú, TPHCM</div>
+                        <div className='text-white'>373/48 Âu Cơ, Phường Phú Trung, Quận Tân Phú, TPHCM, Việt Nam</div>
                     </div>
                 </div>
             </div>

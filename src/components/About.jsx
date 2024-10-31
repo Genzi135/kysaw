@@ -6,8 +6,7 @@ import TeamCard from "./TeamCard";
 import { imgShared } from "../utils/images";
 
 
-
-export default async function About() {
+export default function About() {
 
     const teamFounder = [
         {
