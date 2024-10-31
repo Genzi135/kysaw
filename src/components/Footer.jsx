@@ -147,7 +147,7 @@ export default function Footer() {
                         <label className='text-xl font-manropeBold mb-1'>Liên hệ</label>
                         {/* <Link href={'#tuvan'} className='hover:text-sky-500'>Tư vấn (Miễn phí)</Link> */}
                         <div className='flex justify-start items-center gap-2 mt-1'>
-                            Công ty TNHH KYSAW
+                            Công ty Cổ Phần KYSAW
                         </div>
                         <div className='flex justify-start items-center gap-2 mt-1'>
                             MST: 0318502266
